@@ -1,0 +1,14 @@
+<suite name="SelfServe" verbose="10">
+    <test name="SelfServe">
+        <groups>
+            <run><include name="SelfServe" /></run>
+            <run><exclude name="Regression" /></run>
+                        <run><exclude name="Contactus" /></run>
+        </groups>
+        <packages>
+        <package name="bg.framework.app.functional.test.common"/>
+            
+        <package name="bg.framework.app.functional.test.selfServe"/>
+        </packages>
+    </test>
+</suite>

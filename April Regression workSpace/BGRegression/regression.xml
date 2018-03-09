@@ -1,0 +1,20 @@
+<suite name="Regression" verbose="10">
+    <test name="Regression">
+<echo message="Inside regression common.bg-url is ${common.bg-url}" />
+        <groups>
+            <run><exclude name="Regression" /></run>
+            <run><exclude name="Complex" /></run>
+            <run><exclude name="Refactoring" /></run>
+            <run><exclude name="Acquisition" /></run>
+            <run><exclude name="Conversion" /></run>
+            <run><exclude name="Services" /></run>
+            <run><exclude name="Fusion" /></run>
+            <run><exclude name="InProgress" /></run>
+            <run><include name="Saber" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test.sales"/>
+            
+        </packages>
+    </test>
+</suite>

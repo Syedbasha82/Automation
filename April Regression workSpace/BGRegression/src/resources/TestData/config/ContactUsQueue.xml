@@ -1,0 +1,225 @@
+<map>
+    <entry>
+        <string>Gas/Electricity enquiries,Direct Debit/Payment scheme</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Tariff/prices</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Bill enquiry/Meter reading</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Refunds</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Update my email/telephone number</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Other</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Make a complaint</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Upgrade my agreement</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Amend or cancel an existing appointment</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Billing and payment enquiries</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Book an engineer or annual service</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Query on recent visit</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Make a complaint</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Other</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Sales appointment/Quotation queries</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Installation appointments</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Other</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Make a complaint</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Moving home or changing name(s)</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>I want to join/have recently joined</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Gas Prepayment</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Electricity Prepayment</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Dual Fuel Prepayment</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Make a complaint</string>
+        <ContactUsQueue>
+            <ContactUsQueue>Autocef</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    
+    <entry>
+        <string>Nectar,Account enquiry</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Nectar,Replacement card</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Nectar,Other</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Submitting a meter reading online</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Making a payment/viewing my bill online</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,I cannot register</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+    <string>Website/Online account,Registering/Logging in/Resetting my password</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Access/Understand my online bill</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Reset my password</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Changing my personal details</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Other</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,A fault with the website</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,A fault with my mobile App</string>
+        <ContactUsQueue>
+            <ContactUsQueue>KANA</ContactUsQueue>
+        </ContactUsQueue>
+    </entry>
+</map>

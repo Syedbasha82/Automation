@@ -1,0 +1,76 @@
+<map>
+    <entry>
+        
+        <string>PNBGasTestData</string>
+        <PredictNextBill>
+        <gasEstimatedRead>1275</gasEstimatedRead>
+        <elecEstimatedRead>0</elecEstimatedRead>
+        <elecDualEstimatedRead>0</elecDualEstimatedRead>
+        
+        </PredictNextBill>
+	</entry>
+	
+	
+	<entry>
+		<string>PNBElectricityTestData</string>
+		<PredictNextBill>
+		<gasEstimatedRead>0</gasEstimatedRead>
+        <elecEstimatedRead>39300</elecEstimatedRead>
+        <elecDualEstimatedRead>0</elecDualEstimatedRead>
+		</PredictNextBill>
+	</entry>
+	
+	<entry>
+		<string>PNBJIDualTestData</string>
+		<PredictNextBill>
+		<gasEstimatedRead>8618</gasEstimatedRead>
+        <elecEstimatedRead>14834</elecEstimatedRead>
+        <elecDualEstimatedRead>2648</elecDualEstimatedRead>
+		</PredictNextBill>
+	</entry>
+	
+	
+	<entry>
+		<string>PNBJITestData</string>
+		<PredictNextBill>
+		<gasEstimatedRead>1089</gasEstimatedRead>
+        <elecEstimatedRead>3836</elecEstimatedRead>
+        <elecDualEstimatedRead>82861</elecDualEstimatedRead>
+		</PredictNextBill>
+	</entry>
+	
+	
+    <entry>
+        
+        <string>PNBGasImplausibleTestData</string>
+        <PredictNextBill>
+        <gasEstimatedRead>45</gasEstimatedRead>
+        <elecEstimatedRead>0</elecEstimatedRead>
+        <elecDualEstimatedRead>0</elecDualEstimatedRead>
+        
+        </PredictNextBill>
+	</entry>
+	
+	
+	<entry>
+		<string>PNBElectricityImplausibleTestData</string>
+		<PredictNextBill>
+		<gasEstimatedRead>0</gasEstimatedRead>
+        <elecEstimatedRead>398</elecEstimatedRead>
+        <elecDualEstimatedRead>39254</elecDualEstimatedRead>
+		</PredictNextBill>
+	</entry>
+	
+	<entry>
+		<string>PNBJIImplausibleTestData</string>
+		<PredictNextBill>
+		<gasEstimatedRead>77</gasEstimatedRead>
+        <elecEstimatedRead>88</elecEstimatedRead>
+        <elecDualEstimatedRead>82861</elecDualEstimatedRead>
+		</PredictNextBill>
+	</entry>
+	
+	
+</map>
+        
+        

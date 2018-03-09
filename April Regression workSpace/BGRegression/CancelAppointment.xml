@@ -1,0 +1,14 @@
+<suite name=" BGMO Online Appointment Booking " verbose="10">
+	<test name="Cancel Appointment">
+		<classes>
+			<class
+
+				name="bg.framework.app.functional.test.selfServe.CancelAnAppointmentTest">
+				<methods>
+					<include name="cancelAnAppointment_Dual_OAM_Email_TC_004" />
+					
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

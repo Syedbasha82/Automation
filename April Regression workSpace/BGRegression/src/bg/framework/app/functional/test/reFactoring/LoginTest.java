@@ -1,0 +1,548 @@
+package bg.framework.app.functional.test.reFactoring;
+
+import java.util.ArrayList;
+
+import bg.framework.app.functional.action.common.HomePageAction;
+import bg.framework.app.functional.action.common.LoginAction;
+import bg.framework.app.functional.action.sales.AcquisitionAction;
+import bg.framework.app.functional.entities.Acquisition;
+import bg.framework.app.functional.entities.UserProfile;
+import bg.framework.app.functional.page.common.GlobalErrorMessages;
+import bg.framework.app.functional.test.common.TestBase;
+import bg.framework.app.functional.util.OnlineDBConnector;
+import bg.framework.app.functional.util.Report;
+import bg.framework.app.functional.util.SiebelDataBase;
+import bg.framework.app.functional.util.TestDataHelper;
+import org.testng.annotations.Test;
+
+import static bg.framework.app.functional.entities.FunctionalCategory.*;
+
+public class LoginTest extends TestBase {
+      SiebelDataBase siebelDB = new SiebelDataBase();
+
+	//Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Refactoring})
+    public void loginVerificationForElectricity() {
+        Report.createTestLogHeader("Login Verification", "Login for Electricity");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+  //      getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .logout();
+    }
+
+  //Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Refactoring})
+    public void loginVerificationForDualAccount() {
+        Report.createTestLogHeader("Login Verification", "Login for Dual account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+
+
+  //Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {/*Login,*/OAMRegression})
+    public void loginVerificationForGasAccount() {
+        Report.createTestLogHeader("Login Verification", "Login for Gas account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+  //      getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+        .logout();
+    }
+
+  //Mandatory field : UCRN and Account Number in userprofile.
+    @Test(groups = { /*Login,*/})
+    public void loginVerificationForElectricityAccount() {
+        Report.createTestLogHeader("Login Verification", "Login for Inactive less than 6 months Electricity account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+     //   siebelDB.setAccountStatus(userProfile.getElecAccount(), -4);
+     //   getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+
+  //Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {/*Login,Regression,*/OAMRegression})
+    public void loginVerificationForJIAccount() {
+        Report.createTestLogHeader("Login Verification", "Login for JI account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("JIAccount");
+ //       getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+        .logout();
+    }
+
+  //Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = { Login,Regression})
+    public void loginVerificationForNonOAMAccount() {
+        Report.createTestLogHeader("Login Verification", "Negative Login for Dual account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileAnonymous(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyAccountAbsense(userProfile.getAccNumber())
+                .logout();
+    }
+    //Mandatory field : UCRN and Account Number in userprofile .
+   @Test(groups = {Login,Complex,Regression})
+    public void loginVerificationForDualAccountAndJI() {
+        Report.createTestLogHeader("Login Verification", "Login for Dual and JI account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("JIAndDualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+        .logout();
+    }
+   //Mandatory field : UCRN and Account Number in userprofile .
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForDualAndBGS() {
+        Report.createTestLogHeader("Login Verification", "Login for dual BGS account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getBgsAccount())
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+        .logout();
+    }
+    //Mandatory field : UCRN and Account Number in userprofile .
+    @Test(groups = {Login,Complex,Regression})
+    public void loginVerificationForWTPGasAndElectricity() {
+        Report.createTestLogHeader("Login Verification", "Login for WTP Gas + Electricity account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("WTPAndGasAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+        .logout();
+    }
+    
+    //  Mandatory field : UCRN and Account Number in userprofile
+   @Test(groups = {Login,Complex,Regression})
+    public void loginVerificationForWTPElectricityAndGasAccount() {
+        Report.createTestLogHeader("Login Verification", "login for British Gas account (WTP Electricity + Gas account)");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("WTPAndElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+
+
+  //Mandatory : UCRN, and Account Number Email and Lastname.
+    @Test(groups = {Login,Regression})
+
+    public void loginVerificationForGasSSOAccount() {
+        Report.createTestLogHeader("Login Verification", "login for British Gas account with SSO account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("SSOAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+        .logout();
+    }
+
+
+    //Mandatory field : UCRN and Account Number in userprofile .
+    @Test(groups = {Login,Regression})
+    public void loginLockedAccountVerification() {
+        Report.createTestLogHeader("Account Login Verification", "Account Lock after 3 Incorrect passwords");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        OnlineDBConnector db = new OnlineDBConnector();
+        db.dbAccountlock(userProfile.getUCRN());
+        new HomePageAction()
+                .navigateToLogin()
+                .verifyLockedAccount(userProfile);
+    }
+
+
+    //Mandatory field : UCRN and Account Number in userprofile .
+    @Test(groups = {Login,Regression})
+    public void loginErrorVerification() {
+        Report.createTestLogHeader("Account Login Verification", "Login with incorrect credentials");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginErrorValidation(userProfile)
+                .logout();
+
+    }
+
+    //Mandatory field : UCRN and Account Number in userprofile .
+
+    @Test(groups = {Login,Regression })
+    public void loginInactiveLessSixVerification() {
+        Report.createTestLogHeader("Account Login Verification ", "Login account inactive less than 6 mths");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        SiebelDataBase siebelDataBase = new SiebelDataBase();
+        siebelDataBase.setAccountStatus(userProfile.getAccNumber(), -3);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+                .verifyInactiveLessSix()
+        .logout();
+    }
+
+    //Mandatory field : UCRN and Account Number in userprofile .
+
+    @Test(groups = {Login,Regression})
+    public void loginInactiveMoreVerification() {
+        Report.createTestLogHeader("Account Login Verification ", "Error message while Login account inactive greater than 6 mths");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        SiebelDataBase siebelDataBase = new SiebelDataBase();
+        siebelDataBase.setAccountStatus(userProfile.getAccNumber(), -9);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginForInactiveAccount(userProfile);
+    }
+    //Mandatory field : UCRN and Account Number in userprofile .
+    @Test(groups = {Login,Regression})
+    public void loginEmailCheckVerification() {
+        Report.createTestLogHeader("Account Login Verification ", "Email Check verification");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        SiebelDataBase siebelDataBase = new SiebelDataBase();
+        siebelDataBase.setAccountStatus(userProfile.getAccNumber(), 3);
+        new HomePageAction()
+                .navigateToLogin()
+                .emailCheckBoxVerification(userProfile);
+
+
+    }
+    //  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForSSOAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify Login for SSO only account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("SSOAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getAccNumber())
+        .logout();
+    }
+//  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForMulSupplyAddrAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify login for British Gas account (dual account)multiple supplier address");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .verifyLogin(userProfile.getLastName(),userProfile.getGasAccount())
+        .logout();
+    }
+    //  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForDualJIMulSupplyAddrAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify login for British Gas account (dual account + JI )multiple supplier address");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .verifyLogin(userProfile.getLastName(),userProfile.getAccNumber())
+        .logout();
+    }
+    //  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForDualBGSMulSupplyAddrAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify login for British Gas account (dual account + BGS)multiple supplier address");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .verifyLogin(userProfile.getLastName(),userProfile.getAccNumber())
+        .logout();
+    }
+    
+    //  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Complex})
+    public void loginVerificationForAutoRegAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify whether AR customer is displayed with the Account overview page while trying to login to the application from login page");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("AutoReg");
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+//  Mandatory field : UCRN and Account Number and email in userprofile
+    @Test(groups = {Login,Regression})
+    public void forcedLoginforEnergySmartCustomer() {
+        Report.createTestLogHeader("Forced Login Energy Smart", "Verify whether the user is able to login to the application when navigated from the ESmart Your Order page Forced login");
+        final Acquisition acquisition = new TestDataHelper().getAcquisitionData("standardDualAcquisition");
+        final UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+        
+        new HomePageAction()
+        		.navigateToLogout();
+        new AcquisitionAction()
+                .goToElecClearAndSimplesmart()
+                .forcedLoginYourOrderPage(acquisition, userProfile)
+                .logoutFromThankYouPage();
+    }
+//  Mandatory field : UCRN and Account Number and Email in userprofile
+    @Test(groups = {Login,Regression}) 
+    public void forcedLoginforEnergyShopCustomer() {
+        Report.createTestLogHeader("Forced Login Energy Shop", "Verify whether the user is able to login to the application when navigated from the EShop Your order details page Forced Registration");
+        final Acquisition acquisition = new TestDataHelper().getAcquisitionData("standardDualAcquisition");
+        final UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+        
+        new HomePageAction()
+				.navigateToLogout();
+        new AcquisitionAction()
+                .goToElecClearAndSimplesmart()
+                .forcedLoginYourOrderPage(acquisition, userProfile)
+                .logoutFromThankYouPage();
+    }
+//  Mandatory field : UCRN and Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForMixedInactiveAccount() {
+        Report.createTestLogHeader("Mixed customer Login Verification", "Verify that Accounnt");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("MixedBrandCustomer");
+        siebelDB.setAccountStatus(userProfile.getElecAccount(), +12);
+        siebelDB.setBrandSainsbury(userProfile.getGasAccount());
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+    
+    
+//  Mandatory field : UCRN and BGS & Elec Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForInactiveBGSAccount() {
+        Report.createTestLogHeader("Login Verification", "Less than 6 months tries to login - BGS account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("HomeServicesAccount");
+        siebelDB.setAccountStatus(userProfile.getBgsAccount(), -5);
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+    
+    //  Mandatory field : UCRN and Elec Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForInactiveElecAccount() {
+        Report.createTestLogHeader("Login Verification", "Accounts overview page is displayed when a BG only customer with last login timestamp backdated with in 6 months");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        siebelDB.setAccountStatus(userProfile.getElecAccount(), -5);
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+   
+    //  Mandatory field : UCRN and Elec Account Number in userprofile
+    @Test(groups = {Login,Regression})
+    public void loginVerificationForMPDOverlayverification() {
+        Report.createTestLogHeader("Login Verification", "Verify that a Manage Personal Details Overlay will open when a Mixed customer logged in into BG before 6 months");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        siebelDB.setAccountStatus(userProfile.getElecAccount(), -5);
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+        .logout();
+    }
+    
+    
+    @Test(groups = {Login,Regression})
+    public void loginVerificationDual() {
+        Report.createTestLogHeader("Login Verification", "Verify login Ele greater than 6 months and Gas less than 6 month");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+ //       siebelDB.setAccountStatus(userProfile.getElecAccount(), -3);
+ //       siebelDB.setAccountStatus(userProfile.getGasAccount(), -9);
+ //       getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getElecAccount())
+                .logout();
+    }
+    
+    
+    @Test(groups = {Login,Regression})
+    public void loginVerificationBilledAccount() {
+        Report.createTestLogHeader("Login Verification", "Verify login FInally billed account less than 6 month");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+        siebelDB.setAccountStatus(userProfile.getGasAccount(), -3);
+        getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLogin()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+                .logout();
+    }
+    
+    @Test(groups = {Login,Regression})
+    public void loginVerificationWithForgotPassword() {
+        Report.createTestLogHeader("Login Verification", "Verify login with forgotPassword Journey");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+  //      siebelDB.setAccountStatus(userProfile.getGasAccount(), -3);
+  //      getCustomerDetailsToUserProfileOAM(userProfile);
+    
+        new HomePageAction()
+		        .navigateToForgottenPasswordScreen()
+		        .verifyOneTimePwd(userProfile);
+        new LoginAction()
+                .loginDetails(userProfile)
+                .verifyLogin(userProfile.getLastName(), userProfile.getGasAccount())
+                .logout();
+    }
+    
+    /*Userprofile - AccNumber,UCRN,elecAccount*/
+    @SuppressWarnings("unchecked")
+    @Test(groups = {BGRRegistration,Refactoring})
+    public void verifyLoginErrorMessage() {
+		 Report.createTestLogHeader("Login", "Error Message Validation");
+		 UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccountInactive");
+		 ArrayList<String> errList= new HomePageAction().navigateToCQ5();
+		 errList.add(new GlobalErrorMessages().NEW_NEW_BLUE_LOGINTRYCOUNT_1);
+		 errList.add(new GlobalErrorMessages().NEW_NEW_BLUE_LOGINTRYCOUNT_2);
+		 errList.add(new GlobalErrorMessages().NEW_NEW_BLUE_LOGINTRYCOUNT_3);
+		 new HomePageAction()
+         		.navigateToLogin()
+         		.loginPasswordErrorMessageValidation(userProfile,errList);
+    
+    
+    }
+//////////////////////////////////////////////////////LOGIN FOR SERVICE ACCOUNT VIA DEEPLINK//////////////////////////////////////////////////////////////
+    
+    @Test(groups = {Login,Refactoring})
+    public void loginVerificationForServiceAccount() {
+    	/////////////DATA SHOULD BE SINGLE SERVICE ACCOUNT/////////////////////
+        Report.createTestLogHeader("Login Verification", "Login for Single Service Account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("HomeServicesAccount");
+        //getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLoginServiceDeepLink()
+                .loginDetails(userProfile)
+                .verifyAccountSummary()
+                .logout();
+    }    
+    @Test(groups = {Login,Refactoring})
+    public void loginVerificationForNoServiceAccount() {
+    	/////////////DATA SHOULD NOT HAVE SERVICE ACCOUNT: CAN GIVE ANY ENERGY ACCOUNT/////////////////////
+    	//////////////TRY WITH DUAL,SEINGLE FUEL,WTP,SSO,LAPSED SERVICE ACCOUNT///////////////////
+        Report.createTestLogHeader("Login Verification", "Login for No Service Account");
+        UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+        //getCustomerDetailsToUserProfileOAM(userProfile);
+        new HomePageAction()
+                .navigateToLoginServiceDeepLink()
+                .loginDetails(userProfile)
+                .verifyAccountSummaryForNoServiceAccount()
+                .logout();
+    }
+        @Test(groups = {Login,Refactoring})
+        public void loginVerificationForMoreThanOneServiceAccount() {
+        	/////////////DATA SHOULD HAVE MORE THAN ONE SERVICE ACCOUNT/////////////////////
+            Report.createTestLogHeader("Login Verification", "Login for More Than One Service Account");
+            UserProfile userProfile = new TestDataHelper().getUserProfile("HomeSerivcesAccount");
+            //getCustomerDetailsToUserProfileOAM(userProfile);
+            new HomePageAction()
+                    .navigateToLoginServiceDeepLink()
+                    .loginDetails(userProfile)
+                    .navigateToAccountSummaryForMoreThanOneServiceAccount(userProfile)
+                    .logout();
+    }    
+    
+        @Test(groups = {Login,Refactoring})
+        public void loginVerificationForOneServiceAccountPend() {
+        	/////////////DATA SHOULD HAVE MORE THAN ONE SERVICE ACCOUNT/////////////////////
+            Report.createTestLogHeader("Login Verification", "Login for More Than One Service Account");
+            UserProfile userProfile = new TestDataHelper().getUserProfile("HomeSerivcesAccount");
+            //getCustomerDetailsToUserProfileOAM(userProfile);
+            new HomePageAction()
+                    .navigateToLoginServiceDeepLink()
+                    .loginDetails(userProfile)
+                    .verifyAccountSummaryforPend()
+                    .logout();
+    }    
+        @Test(groups = {Login,Refactoring})
+        public void loginVerificationForOneServiceAccountCOMP() {
+        	/////////////DATA SHOULD HAVE MORE THAN ONE SERVICE ACCOUNT/////////////////////
+            Report.createTestLogHeader("Login Verification", "Login for More Than One Service Account");
+            UserProfile userProfile = new TestDataHelper().getUserProfile("HomeSerivcesAccount");
+            //getCustomerDetailsToUserProfileOAM(userProfile);
+            new HomePageAction()
+                    .navigateToLoginServiceDeepLink()
+                    .loginDetails(userProfile)
+                    .verifyAccountSummaryforCOMP()
+                    .logout();
+    }    
+    
+        @Test(groups = {Login,Refactoring})
+        public void loginVerificationForOneServiceAccountDONE() {
+        	/////////////DATA SHOULD HAVE MORE THAN ONE SERVICE ACCOUNT/////////////////////
+            Report.createTestLogHeader("Login Verification", "Login for More Than One Service Account");
+            UserProfile userProfile = new TestDataHelper().getUserProfile("HomeSerivcesAccount");
+            //getCustomerDetailsToUserProfileOAM(userProfile);
+            new HomePageAction()
+                    .navigateToLoginServiceDeepLink()
+                    .loginDetails(userProfile)
+                    .verifyAccountSummaryforDONE()
+                    .logout();
+    }    
+        @Test(groups = {Login,Refactoring})
+        public void loginVerificationForOneServiceAccountNoSlots() {
+        	/////////////DATA SHOULD HAVE MORE THAN ONE SERVICE ACCOUNT/////////////////////
+            Report.createTestLogHeader("Login Verification", "Login for More Than One Service Account");
+            UserProfile userProfile = new TestDataHelper().getUserProfile("HomeSerivcesAccount");
+            //getCustomerDetailsToUserProfileOAM(userProfile);
+            new HomePageAction()
+                    .navigateToLoginServiceDeepLink()
+                    .loginDetails(userProfile)
+                    .verifyAccountSummaryforNoSlots()
+                    .logout();
+    }    
+    
+}

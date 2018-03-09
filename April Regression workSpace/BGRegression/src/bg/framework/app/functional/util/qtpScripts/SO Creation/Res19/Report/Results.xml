@@ -1,0 +1,2330 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step?,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?)>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="GMT Standard Time">
+<General productName="QuickTest Professional" productVer="10.00" os="Windows XP" host="CNDWVP017060070"><DocLocation><![CDATA[C:\Documents and Settings\mathuric\Desktop\workspace\BGRegression\src\bg\framework\app\functional\util\qtpScripts\SO Creation]]></DocLocation></General>
+<Doc rID="T1"   productName= "QuickTest Professional"  >
+<DName><![CDATA[SO Creation]]></DName>
+<Res><![CDATA[Res19]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table">
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<AdditionalInfo>
+<AdditionalDataName><![CDATA[Web Services Run Toolkit]]></AdditionalDataName>
+<AdditionalDataValue><![CDATA[.NET Framework 2.0 WSE 3.0]]></AdditionalDataValue>
+</AdditionalInfo>
+<Action rID="T3">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T4">
+<Obj plainTxt="False" ><![CDATA[SystemUtil]]></Obj>
+<Details plainTxt="False" ><![CDATA[SystemUtil]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:21]]></Time>
+<TimeTick>1376461581</TimeTick>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Run "C:\Program Files\SAP\FrontEnd\SAPgui\saplogon.exe",1]]></Obj>
+<Details plainTxt="False" ><![CDATA[Run "C:\Program Files\SAP\FrontEnd\SAPgui\saplogon.exe",1]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:21]]></Time>
+<TimeTick>1376461581</TimeTick>
+<NodeArgs eType="Replay" icon="4" nRep="11" status="Passed" Source="Action1" SourceLine="1" >
+<Disp><![CDATA[Run "C:\Program Files\SAP\FrontEnd\SAPgui\saplogon.exe",1]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="4" nRep="10" status="Passed" Source="Action1" SourceLine="1" >
+<Disp><![CDATA[SystemUtil]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:47]]></Time>
+<TimeTick>1376461607</TimeTick>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:47]]></Time>
+<TimeTick>1376461607</TimeTick>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/ncic0"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/ncic0"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:47]]></Time>
+<TimeTick>1376461607</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="15" Source="Action1" SourceLine="77" >
+<Disp><![CDATA["OKCode":Set "/ncic0"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:47]]></Time>
+<TimeTick>1376461607</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="17" Source="Action1" SourceLine="78" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA["Cont. Acct":Set "850026959363"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "850026959363"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:51]]></Time>
+<TimeTick>1376461611</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="19" Source="Action1" SourceLine="80" >
+<Disp><![CDATA["Cont. Acct":Set "850026959363"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA["Cont. Acct":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:51]]></Time>
+<TimeTick>1376461611</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="21" Source="Action1" SourceLine="81" >
+<Disp><![CDATA["Cont. Acct":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA["Find Partner":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:52]]></Time>
+<TimeTick>1376461612</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="23" Source="Action1" SourceLine="82" >
+<Disp><![CDATA["Find Partner":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA["Confirm Partner":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:26:55]]></Time>
+<TimeTick>1376461615</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="25" Source="Action1" SourceLine="83" >
+<Disp><![CDATA["Confirm Partner":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA["TableTreeControl":ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959363;RegExp:=Contract .*;RegExp:=Installation .* "]]></Obj>
+<Details plainTxt="False" ><![CDATA[ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959363;RegExp:=Contract .*;RegExp:=Installation .* "]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:00]]></Time>
+<TimeTick>1376461620</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="27" Source="Action1" SourceLine="89" >
+<Disp><![CDATA["TableTreeControl":ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959363;RegExp:=Contract .*;RegExp:=Installation .* "]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[MPAN.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:04]]></Time>
+<TimeTick>1376461624</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="29" Source="Action1" SourceLine="95" >
+<Disp><![CDATA[MPAN.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[MPR.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:05]]></Time>
+<TimeTick>1376461625</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="30" Source="Action1" SourceLine="102" >
+<Disp><![CDATA[MPR.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[MPR]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:05]]></Time>
+<TimeTick>1376461625</TimeTick>
+<HtmlStep rID="T18">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "MPAN": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:05</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">MPAN Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">2476507007&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">MPAN_value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461625</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="32" Source="Action1" SourceLine="103" >
+<Disp><![CDATA[Output "MPAN"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="31" Source="Action1" SourceLine="103" >
+<Disp><![CDATA[MPR]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Premise]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:05]]></Time>
+<TimeTick>1376461625</TimeTick>
+<HtmlStep rID="T20">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Premise": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:05</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">Premise Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">2800011627&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">Premise_value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461625</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="34" Source="Action1" SourceLine="109" >
+<Disp><![CDATA[Output "Premise"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="33" Source="Action1" SourceLine="109" >
+<Disp><![CDATA[Premise]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA["Premise":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:05]]></Time>
+<TimeTick>1376461625</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="36" Source="Action1" SourceLine="111" >
+<Disp><![CDATA["Premise":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:05]]></Time>
+<TimeTick>1376461625</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="38" Source="Action1" SourceLine="112" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA["StatusBar":Object Premise will be displayed]]></Obj>
+<Details plainTxt="False" ><![CDATA[Success]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:07]]></Time>
+<TimeTick>1376461627</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="40" Source="Action1" SourceLine="113" >
+<Disp><![CDATA["StatusBar":Object Premise will be displayed]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[Connection Obj.]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:07]]></Time>
+<TimeTick>1376461627</TimeTick>
+<HtmlStep rID="T25">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Connection Obj.": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:07</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">Connection Obj. Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">4200016254&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">Connection_Obj._value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461627</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="42" Source="Action1" SourceLine="114" >
+<Disp><![CDATA[Output "Connection Obj."]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="41" Source="Action1" SourceLine="114" >
+<Disp><![CDATA[Connection Obj.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:07]]></Time>
+<TimeTick>1376461627</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="44" Source="Action1" SourceLine="116" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA["Devices":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:10]]></Time>
+<TimeTick>1376461630</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="46" Source="Action1" SourceLine="117" >
+<Disp><![CDATA["Devices":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[Device data]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiTable]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:12]]></Time>
+<TimeTick>1376461632</TimeTick>
+<HtmlStep rID="T29">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Device data": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:12</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Standard Output Value</span></body></html>]]></HTML>
+<TimeTick>1376461632</TimeTick>
+<HtmlStep rID="T30">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1">  "Device data": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:12</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Results: Checked  1 cells;
+ Succeeded:	  1;
+Failed:	  0</span></body></html>]]></HTML>
+<TimeTick>1376461632</TimeTick>
+<NodeArgs eType="Verification" icon="12" nRep="49" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Output "Device data"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Verification" icon="12" nRep="48" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Output "Device data"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="12" nRep="47" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Device data]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA["Device data":SelectCell 1,"Device"]]></Obj>
+<Details plainTxt="False" ><![CDATA[SelectCell 1,"Device"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:12]]></Time>
+<TimeTick>1376461632</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="51" Source="Action1" SourceLine="120" >
+<Disp><![CDATA["Device data":SelectCell 1,"Device"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:12]]></Time>
+<TimeTick>1376461632</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="53" Source="Action1" SourceLine="121" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP":Select "General"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "General"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:17]]></Time>
+<TimeTick>1376461637</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="55" Source="Action1" SourceLine="122" >
+<Disp><![CDATA["TABSTRIP":Select "General"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA[ManufSerialNo.]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:19]]></Time>
+<TimeTick>1376461639</TimeTick>
+<HtmlStep rID="T35">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "ManufSerialNo.": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:19</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">ManufSerialNo. Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">G4K50382620313&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">ManufSerialNo._value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461639</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="57" Source="Action1" SourceLine="123" >
+<Disp><![CDATA[Output "ManufSerialNo."]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="56" Source="Action1" SourceLine="123" >
+<Disp><![CDATA[ManufSerialNo.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:19]]></Time>
+<TimeTick>1376461639</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="59" Source="Action1" SourceLine="136" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:21]]></Time>
+<TimeTick>1376461641</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="61" Source="Action1" SourceLine="137" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:23]]></Time>
+<TimeTick>1376461643</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="63" Source="Action1" SourceLine="138" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/ncic0"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/ncic0"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:25]]></Time>
+<TimeTick>1376461645</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="65" Source="Action1" SourceLine="77" >
+<Disp><![CDATA["OKCode":Set "/ncic0"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:25]]></Time>
+<TimeTick>1376461645</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="67" Source="Action1" SourceLine="78" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA["Cont. Acct":Set "850026959907"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "850026959907"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:27]]></Time>
+<TimeTick>1376461647</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="69" Source="Action1" SourceLine="80" >
+<Disp><![CDATA["Cont. Acct":Set "850026959907"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA["Cont. Acct":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:27]]></Time>
+<TimeTick>1376461647</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="71" Source="Action1" SourceLine="81" >
+<Disp><![CDATA["Cont. Acct":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA["Find Partner":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:27]]></Time>
+<TimeTick>1376461647</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="73" Source="Action1" SourceLine="82" >
+<Disp><![CDATA["Find Partner":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA["Confirm Partner":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:28]]></Time>
+<TimeTick>1376461648</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="75" Source="Action1" SourceLine="83" >
+<Disp><![CDATA["Confirm Partner":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA["TableTreeControl":ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959907;RegExp:=Contract .*;RegExp:=Installation .* "]]></Obj>
+<Details plainTxt="False" ><![CDATA[ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959907;RegExp:=Contract .*;RegExp:=Installation .* "]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:32]]></Time>
+<TimeTick>1376461652</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="77" Source="Action1" SourceLine="89" >
+<Disp><![CDATA["TableTreeControl":ActivateNode "RegExp:=Partner .*;RegExp:=Premise .*;RegExp:=Contract Account 850026959907;RegExp:=Contract .*;RegExp:=Installation .* "]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[MPAN.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:34]]></Time>
+<TimeTick>1376461654</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="78" Source="Action1" SourceLine="95" >
+<Disp><![CDATA[MPAN.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA[MPAN]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:34]]></Time>
+<TimeTick>1376461654</TimeTick>
+<HtmlStep rID="T48">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "MPAN": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:34</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">MPAN Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">1416343870005&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">MPAN_value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461654</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="80" Source="Action1" SourceLine="96" >
+<Disp><![CDATA[Output "MPAN"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="79" Source="Action1" SourceLine="96" >
+<Disp><![CDATA[MPAN]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[MPR.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:35]]></Time>
+<TimeTick>1376461655</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="82" Source="Action1" SourceLine="102" >
+<Disp><![CDATA[MPR.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Premise]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:36]]></Time>
+<TimeTick>1376461656</TimeTick>
+<HtmlStep rID="T51">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Premise": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:36</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">Premise Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">2800011627&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">Premise_value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461656</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="84" Source="Action1" SourceLine="109" >
+<Disp><![CDATA[Output "Premise"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="83" Source="Action1" SourceLine="109" >
+<Disp><![CDATA[Premise]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA["Premise":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:36]]></Time>
+<TimeTick>1376461656</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="86" Source="Action1" SourceLine="111" >
+<Disp><![CDATA["Premise":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:36]]></Time>
+<TimeTick>1376461656</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="88" Source="Action1" SourceLine="112" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T54">
+<Obj plainTxt="False" ><![CDATA["StatusBar":Object Premise will be displayed]]></Obj>
+<Details plainTxt="False" ><![CDATA[Success]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:37]]></Time>
+<TimeTick>1376461657</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="90" Source="Action1" SourceLine="113" >
+<Disp><![CDATA["StatusBar":Object Premise will be displayed]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T55">
+<Obj plainTxt="False" ><![CDATA[Connection Obj.]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:37]]></Time>
+<TimeTick>1376461657</TimeTick>
+<HtmlStep rID="T56">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Connection Obj.": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:37</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">Connection Obj. Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">4200016254&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">Connection_Obj._value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461657</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="92" Source="Action1" SourceLine="114" >
+<Disp><![CDATA[Output "Connection Obj."]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="91" Source="Action1" SourceLine="114" >
+<Disp><![CDATA[Connection Obj.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T57">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:37]]></Time>
+<TimeTick>1376461657</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="94" Source="Action1" SourceLine="116" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T58">
+<Obj plainTxt="False" ><![CDATA["Devices":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:39]]></Time>
+<TimeTick>1376461659</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="96" Source="Action1" SourceLine="117" >
+<Disp><![CDATA["Devices":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T59">
+<Obj plainTxt="False" ><![CDATA[Device data]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiTable]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:41]]></Time>
+<TimeTick>1376461661</TimeTick>
+<HtmlStep rID="T60">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "Device data": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:41</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Standard Output Value</span></body></html>]]></HTML>
+<TimeTick>1376461661</TimeTick>
+<HtmlStep rID="T61">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1">  "Device data": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:41</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Results: Checked  1 cells;
+ Succeeded:	  1;
+Failed:	  0</span></body></html>]]></HTML>
+<TimeTick>1376461661</TimeTick>
+<NodeArgs eType="Verification" icon="12" nRep="99" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Output "Device data"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Verification" icon="12" nRep="98" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Output "Device data"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="12" nRep="97" Source="Action1" SourceLine="118" >
+<Disp><![CDATA[Device data]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T62">
+<Obj plainTxt="False" ><![CDATA["Device data":SelectCell 1,"Device"]]></Obj>
+<Details plainTxt="False" ><![CDATA[SelectCell 1,"Device"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:41]]></Time>
+<TimeTick>1376461661</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="101" Source="Action1" SourceLine="120" >
+<Disp><![CDATA["Device data":SelectCell 1,"Device"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T63">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:41]]></Time>
+<TimeTick>1376461661</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="103" Source="Action1" SourceLine="121" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T64">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP":Select "General"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "General"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:44]]></Time>
+<TimeTick>1376461664</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="105" Source="Action1" SourceLine="122" >
+<Disp><![CDATA["TABSTRIP":Select "General"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T65">
+<Obj plainTxt="False" ><![CDATA[ManufSerialNo.]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiEdit]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:46]]></Time>
+<TimeTick>1376461666</TimeTick>
+<HtmlStep rID="T66">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "ManufSerialNo.": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:27:46</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<table border="0" cellpadding="3" cellspacing="1" width="100%" bgcolor="#666699">
+	<tr>
+		<td bgcolor="white">
+		<table border="0" cellpadding="3" cellspacing="0" width="100%">
+<tr><td  class="hl3">ManufSerialNo. Results&nbsp;</td></tr>
+<tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td height=1 class="tablehl">Property Name&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Captured Value&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Type&nbsp;&nbsp;</td>
+				<td height=1 class="tablehl">Name&nbsp;&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR><tr><th colspan=4 height=1 class="bg_darkblue"></th></tr>
+<TR>
+				<td class="text">value&nbsp;</td>
+				<td class="text">A10X027820&nbsp;</td>
+				<td class="text">DataTable&nbsp;</td>
+				<td class="text">ManufSerialNo._value_out&nbsp;</td>
+</TR>
+			<TR><th colspan=4 height=1 class="bg_gray_eee"></th></TR>
+		</table>
+		</td>
+	</tr>
+</table>
+</body></html>]]></HTML>
+<TimeTick>1376461666</TimeTick>
+<NodeArgs eType="Verification" icon="8" nRep="107" Source="Action1" SourceLine="123" >
+<Disp><![CDATA[Output "ManufSerialNo."]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="8" nRep="106" Source="Action1" SourceLine="123" >
+<Disp><![CDATA[ManufSerialNo.]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T67">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:46]]></Time>
+<TimeTick>1376461666</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="109" Source="Action1" SourceLine="136" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T68">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:47]]></Time>
+<TimeTick>1376461667</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="111" Source="Action1" SourceLine="137" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T69">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:49]]></Time>
+<TimeTick>1376461669</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="113" Source="Action1" SourceLine="138" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T70">
+<Obj plainTxt="False" ><![CDATA[Maximize]]></Obj>
+<Details plainTxt="False" ><![CDATA[Maximize]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:51]]></Time>
+<TimeTick>1376461671</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="115" Source="Action1" SourceLine="145" >
+<Disp><![CDATA[Maximize]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T71">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/nse38"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/nse38"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:51]]></Time>
+<TimeTick>1376461671</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="117" Source="Action1" SourceLine="146" >
+<Disp><![CDATA["OKCode":Set "/nse38"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T72">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:51]]></Time>
+<TimeTick>1376461671</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="119" Source="Action1" SourceLine="147" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T73">
+<Obj plainTxt="False" ><![CDATA["Program":Set "zintf_unplanned_serv_ord_mdr"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "zintf_unplanned_serv_ord_mdr"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:53]]></Time>
+<TimeTick>1376461673</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="121" Source="Action1" SourceLine="148" >
+<Disp><![CDATA["Program":Set "zintf_unplanned_serv_ord_mdr"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T74">
+<Obj plainTxt="False" ><![CDATA[SendKey F8]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F8]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:53]]></Time>
+<TimeTick>1376461673</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="123" Source="Action1" SourceLine="149" >
+<Disp><![CDATA[SendKey F8]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T75">
+<Obj plainTxt="False" ><![CDATA["Comma Separated File":Set]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="125" Source="Action1" SourceLine="151" >
+<Disp><![CDATA["Comma Separated File":Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T76">
+<Obj plainTxt="False" ><![CDATA["System Header Status":Set "test"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "test"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="127" Source="Action1" SourceLine="152" >
+<Disp><![CDATA["System Header Status":Set "test"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T77">
+<Obj plainTxt="False" ><![CDATA[Maximize]]></Obj>
+<Details plainTxt="False" ><![CDATA[Maximize]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="129" Source="Action1" SourceLine="154" >
+<Disp><![CDATA[Maximize]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T78">
+<Obj plainTxt="False" ><![CDATA["System Header Status":Set "test"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "test"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="131" Source="Action1" SourceLine="155" >
+<Disp><![CDATA["System Header Status":Set "test"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T79">
+<Obj plainTxt="False" ><![CDATA["Comma Separated File":Set]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="14" nRep="133" Source="Action1" SourceLine="156" >
+<Disp><![CDATA["Comma Separated File":Set]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T80">
+<Obj plainTxt="False" ><![CDATA["File Name":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:54]]></Time>
+<TimeTick>1376461674</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="135" Source="Action1" SourceLine="157" >
+<Disp><![CDATA["File Name":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T81">
+<Obj plainTxt="False" ><![CDATA["File Name":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:55]]></Time>
+<TimeTick>1376461675</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="137" Source="Action1" SourceLine="159" >
+<Disp><![CDATA["File Name":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T82">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP_MDRTABS":Select "Technical Settings"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "Technical Settings"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:55]]></Time>
+<TimeTick>1376461675</TimeTick>
+<NodeArgs eType="Replay" icon="13" nRep="139" Source="Action1" SourceLine="162" >
+<Disp><![CDATA["TABSTRIP_MDRTABS":Select "Technical Settings"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T83">
+<Obj plainTxt="False" ><![CDATA["Label":Set "Test"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "Test"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:56]]></Time>
+<TimeTick>1376461676</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="141" Source="Action1" SourceLine="165" >
+<Disp><![CDATA["Label":Set "Test"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T84">
+<Obj plainTxt="False" ><![CDATA["Interval variant":Select "UNPLSRVORD : 100 intervals"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "UNPLSRVORD : 100 intervals"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:56]]></Time>
+<TimeTick>1376461676</TimeTick>
+<NodeArgs eType="Replay" icon="15" nRep="143" Source="Action1" SourceLine="166" >
+<Disp><![CDATA["Interval variant":Select "UNPLSRVORD : 100 intervals"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T85">
+<Obj plainTxt="False" ><![CDATA["Execute   (F8)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:27:56]]></Time>
+<TimeTick>1376461676</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="145" Source="Action1" SourceLine="169" >
+<Disp><![CDATA["Execute   (F8)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T86">
+<Obj plainTxt="False" ><![CDATA["Finished":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:14]]></Time>
+<TimeTick>1376461694</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="147" Source="Action1" SourceLine="173" >
+<Disp><![CDATA["Finished":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T87">
+<Obj plainTxt="False" ><![CDATA["Finished":SetCaretPos 3]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetCaretPos 3]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:14]]></Time>
+<TimeTick>1376461694</TimeTick>
+<NodeArgs eType="Replay" icon="16" nRep="149" Source="Action1" SourceLine="174" >
+<Disp><![CDATA["Finished":SetCaretPos 3]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T88">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:14]]></Time>
+<TimeTick>1376461694</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="151" Source="Action1" SourceLine="175" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T89">
+<Obj plainTxt="False" ><![CDATA["Transform":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:15]]></Time>
+<TimeTick>1376461695</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="153" Source="Action1" SourceLine="176" >
+<Disp><![CDATA["Transform":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T90">
+<Obj plainTxt="False" ><![CDATA[GridViewCtrl]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiGrid]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:17]]></Time>
+<TimeTick>1376461697</TimeTick>
+<HtmlStep rID="T91">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "GridViewCtrl_SO_Number": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:28:17</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Standard Output Value</span></body></html>]]></HTML>
+<TimeTick>1376461697</TimeTick>
+<HtmlStep rID="T92">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1">  "GridViewCtrl_SO_Number": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:28:17</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Results: Checked  1 cells;
+ Succeeded:	  1;
+Failed:	  0</span></body></html>]]></HTML>
+<TimeTick>1376461697</TimeTick>
+<NodeArgs eType="Verification" icon="17" nRep="156" Source="Action1" SourceLine="178" >
+<Disp><![CDATA[Output "GridViewCtrl_SO_Number"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Verification" icon="17" nRep="155" Source="Action1" SourceLine="178" >
+<Disp><![CDATA[Output "GridViewCtrl_SO_Number"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<HtmlStep rID="T93">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1"> Standard Output Value "GridViewCtrl_SO_Message": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:28:17</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Standard Output Value</span></body></html>]]></HTML>
+<TimeTick>1376461697</TimeTick>
+<HtmlStep rID="T94">
+<HTML><![CDATA[<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"/>
+<base href=""/>
+<link rel="stylesheet" href="Results.css">
+</head>
+<body bgcolor="#ffffff" leftmargin="20" marginwidth="20" topmargin="10" marginheight="10" vlink="#9966cc">
+<table border="0" cellpadding="0" cellspacing="0" width="100%">
+	<tr><td height="1" class="bg_midblue"></td></tr>
+	<tr><td height="30"><span class="hl1">  "GridViewCtrl_SO_Message": </span><span class="DoneHigh">Done</span></td></tr>
+	<tr><td height="2" class="bg_darkblue"></td></tr>
+	<tr><td height="10"></td></tr>
+	<tr><td><span class="text"><b>Date and Time:</b> 14/08/2013 - 07:28:17</span></td></tr>
+		
+	<tr><td height="15"></td></tr>
+</table>
+<!--Until here code from report media-->
+<table border="0" cellpadding="0" cellspacing="0" width="100%" id=TABLE2><tr height="1"><td height="1" class="bg_gray_ccc"></td></tr><tr><td height="5"></td></tr></table><table>
+	<tr><td height="30"><span class="hl2"> Details</span></td></tr><tr><td height="5"></td></tr>
+</table>
+<span class="text">Results: Checked  1 cells;
+ Succeeded:	  1;
+Failed:	  0</span></body></html>]]></HTML>
+<TimeTick>1376461697</TimeTick>
+<NodeArgs eType="Verification" icon="17" nRep="158" Source="Action1" SourceLine="181" >
+<Disp><![CDATA[Output "GridViewCtrl_SO_Message"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Verification" icon="17" nRep="157" Source="Action1" SourceLine="181" >
+<Disp><![CDATA[Output "GridViewCtrl_SO_Message"]]></Disp>
+</NodeArgs>
+</HtmlStep>
+<NodeArgs eType="Context" icon="17" nRep="154" Source="Action1" SourceLine="178" >
+<Disp><![CDATA[GridViewCtrl]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T95">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/niw32"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/niw32"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:19]]></Time>
+<TimeTick>1376461699</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="160" Source="Action1" SourceLine="201" >
+<Disp><![CDATA["OKCode":Set "/niw32"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T96">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:19]]></Time>
+<TimeTick>1376461699</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="162" Source="Action1" SourceLine="202" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T97">
+<Obj plainTxt="False" ><![CDATA["Order":Set ""]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set ""]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:21]]></Time>
+<TimeTick>1376461701</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="164" Source="Action1" SourceLine="203" >
+<Disp><![CDATA["Order":Set ""]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T98">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:21]]></Time>
+<TimeTick>1376461701</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="166" Source="Action1" SourceLine="207" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T99">
+<Obj plainTxt="False" ><![CDATA[TS_1100]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "TS_1100" (of class SAPGuiTabStrip). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:22]]></Time>
+<TimeTick>1376461702</TimeTick>
+<Step rID="T100">
+<Obj plainTxt="False" ><![CDATA[TS_1100]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Name = TS_1100<br>Mercury Class = SAPGuiTabStrip<br>SapGui numeric component type = 90<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:22]]></Time>
+<TimeTick>1376461702</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="169" status="Warning" nType="Description" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[TS_1100]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="13" nRep="168" status="Failed" nType="Run Error" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[TS_1100]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="14" status="Failed" Source="Action1" SourceLine="77" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="13" status="Failed" Source="Action1" SourceLine="77" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T101">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;TS_1100&quot; (of class SAPGuiTabStrip). Verify that this object's properties match an object currently displayed in your application.<BR>Line (209): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiTabStrip(&quot;TS_1100&quot;).Select &quot;Operations&quot;&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:22]]></Time>
+<TimeTick>1376461702</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="170" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T102">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:23]]></Time>
+<TimeTick>1376461703</TimeTick>
+<Step rID="T103">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:23]]></Time>
+<TimeTick>1376461703</TimeTick>
+<Step rID="T104">
+<Obj plainTxt="False" ><![CDATA[SAPLCOVGTCTRL_3010]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "SAPLCOVGTCTRL_3010" (of class SAPGuiTable). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:23]]></Time>
+<TimeTick>1376461703</TimeTick>
+<Step rID="T105">
+<Obj plainTxt="False" ><![CDATA[SAPLCOVGTCTRL_3010]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Name = SAPLCOVGTCTRL_3010<br>Mercury Class = SAPGuiTable<br>SapGui numeric component type = 80<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:23]]></Time>
+<TimeTick>1376461703</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="175" status="Warning" nType="Description" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[SAPLCOVGTCTRL_3010]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="12" nRep="174" status="Failed" nType="Run Error" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[SAPLCOVGTCTRL_3010]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="173" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="172" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T106">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;SAPLCOVGTCTRL_3010&quot; (of class SAPGuiTable). Verify that this object's properties match an object currently displayed in your application.<BR>Line (210): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiTable(&quot;SAPLCOVGTCTRL_3010&quot;).SelectRow (k)&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:23]]></Time>
+<TimeTick>1376461703</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="176" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T107">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T108">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T109">
+<Obj plainTxt="False" ><![CDATA[Opertn. status]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Opertn. status" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T110">
+<Obj plainTxt="False" ><![CDATA[Opertn. status]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Opertn. status<br>Name = BTN_STAV<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="181" status="Warning" nType="Description" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Opertn. status]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="180" status="Failed" nType="Run Error" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Opertn. status]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="179" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="178" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T111">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Opertn. status&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (211): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Opertn. status&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="182" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T112">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T113">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T114">
+<Obj plainTxt="False" ><![CDATA[Previous Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="187" status="Warning" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T115">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<Step rID="T116">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="189" status="Warning" nType="Description" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="188" status="Failed" nType="Run Error" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="186" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="185" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T117">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (213): &quot;If SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).GetROProperty(&quot;enabled&quot;) = true Then&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:27]]></Time>
+<TimeTick>1376461707</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="190" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T118">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<Step rID="T119">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<Step rID="T120">
+<Obj plainTxt="False" ><![CDATA[Previous Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="195" status="Warning" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T121">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<Step rID="T122">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="197" status="Warning" nType="Description" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="196" status="Failed" nType="Run Error" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="194" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="193" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T123">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (214): &quot;Do while SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).GetROProperty(&quot;enabled&quot;) = true&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:28]]></Time>
+<TimeTick>1376461708</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="198" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T124">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:29]]></Time>
+<TimeTick>1376461709</TimeTick>
+<Step rID="T125">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:29]]></Time>
+<TimeTick>1376461709</TimeTick>
+<Step rID="T126">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:29]]></Time>
+<TimeTick>1376461709</TimeTick>
+<Step rID="T127">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:29]]></Time>
+<TimeTick>1376461709</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="203" status="Warning" nType="Description" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="202" status="Failed" nType="Run Error" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="201" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="200" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T128">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (215): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:29]]></Time>
+<TimeTick>1376461709</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="204" status="Failed" Source="Action1" SourceLine="214" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T129">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<Step rID="T130">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<Step rID="T131">
+<Obj plainTxt="False" ><![CDATA[Stat.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="208" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[Stat.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T132">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Next Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<Step rID="T133">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Next Page<br>Name = ADOWN<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="211" status="Warning" nType="Description" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="210" status="Failed" nType="Run Error" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="207" status="Failed" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="206" status="Failed" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T134">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Next Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (239): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Next Page&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:33]]></Time>
+<TimeTick>1376461713</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="212" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T135">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<Step rID="T136">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<Step rID="T137">
+<Obj plainTxt="False" ><![CDATA[Next Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="217" status="Warning" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T138">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Next Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<Step rID="T139">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Next Page<br>Name = ADOWN<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="219" status="Warning" nType="Description" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="218" status="Failed" nType="Run Error" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="216" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="215" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T140">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Next Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (243): &quot;Loop until SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Next Page&quot;).GetROProperty(&quot;enabled&quot;) =false&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:34]]></Time>
+<TimeTick>1376461714</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="220" status="Failed" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T141">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:35]]></Time>
+<TimeTick>1376461715</TimeTick>
+<Step rID="T142">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:35]]></Time>
+<TimeTick>1376461715</TimeTick>
+<Step rID="T143">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:35]]></Time>
+<TimeTick>1376461715</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="224" Source="Action1" SourceLine="242" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T144">
+<Obj plainTxt="False" ><![CDATA["Save   (Ctrl+S)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:38]]></Time>
+<TimeTick>1376461718</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="226" Source="Action1" SourceLine="246" >
+<Disp><![CDATA["Save   (Ctrl+S)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T145">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:39]]></Time>
+<TimeTick>1376461719</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="228" Source="Action1" SourceLine="207" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T146">
+<Obj plainTxt="False" ><![CDATA[TS_1100]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "TS_1100" (of class SAPGuiTabStrip). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:40]]></Time>
+<TimeTick>1376461720</TimeTick>
+<Step rID="T147">
+<Obj plainTxt="False" ><![CDATA[TS_1100]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Name = TS_1100<br>Mercury Class = SAPGuiTabStrip<br>SapGui numeric component type = 90<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:40]]></Time>
+<TimeTick>1376461720</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="231" status="Warning" nType="Description" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[TS_1100]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="13" nRep="230" status="Failed" nType="Run Error" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[TS_1100]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="223" status="Failed" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="222" status="Failed" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T148">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;TS_1100&quot; (of class SAPGuiTabStrip). Verify that this object's properties match an object currently displayed in your application.<BR>Line (209): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiTabStrip(&quot;TS_1100&quot;).Select &quot;Operations&quot;&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:40]]></Time>
+<TimeTick>1376461720</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="232" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T149">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:41]]></Time>
+<TimeTick>1376461721</TimeTick>
+<Step rID="T150">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:41]]></Time>
+<TimeTick>1376461721</TimeTick>
+<Step rID="T151">
+<Obj plainTxt="False" ><![CDATA[SAPLCOVGTCTRL_3010]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "SAPLCOVGTCTRL_3010" (of class SAPGuiTable). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:41]]></Time>
+<TimeTick>1376461721</TimeTick>
+<Step rID="T152">
+<Obj plainTxt="False" ><![CDATA[SAPLCOVGTCTRL_3010]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Name = SAPLCOVGTCTRL_3010<br>Mercury Class = SAPGuiTable<br>SapGui numeric component type = 80<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:41]]></Time>
+<TimeTick>1376461721</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="237" status="Warning" nType="Description" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[SAPLCOVGTCTRL_3010]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="12" nRep="236" status="Failed" nType="Run Error" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[SAPLCOVGTCTRL_3010]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="235" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="234" status="Failed" Source="Action1" SourceLine="208" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T153">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;SAPLCOVGTCTRL_3010&quot; (of class SAPGuiTable). Verify that this object's properties match an object currently displayed in your application.<BR>Line (210): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiTable(&quot;SAPLCOVGTCTRL_3010&quot;).SelectRow (k)&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:41]]></Time>
+<TimeTick>1376461721</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="238" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T154">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T155">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T156">
+<Obj plainTxt="False" ><![CDATA[Opertn. status]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Opertn. status" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T157">
+<Obj plainTxt="False" ><![CDATA[Opertn. status]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Opertn. status<br>Name = BTN_STAV<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="243" status="Warning" nType="Description" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Opertn. status]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="242" status="Failed" nType="Run Error" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Opertn. status]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="241" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="240" status="Failed" Source="Action1" SourceLine="209" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T158">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Opertn. status&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (211): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Opertn. status&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="244" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T159">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T160">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T161">
+<Obj plainTxt="False" ><![CDATA[Previous Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="249" status="Warning" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T162">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<Step rID="T163">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="251" status="Warning" nType="Description" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="250" status="Failed" nType="Run Error" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="248" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="247" status="Failed" Source="Action1" SourceLine="210" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T164">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (213): &quot;If SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).GetROProperty(&quot;enabled&quot;) = true Then&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:43]]></Time>
+<TimeTick>1376461723</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="252" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T165">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<Step rID="T166">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<Step rID="T167">
+<Obj plainTxt="False" ><![CDATA[Previous Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="257" status="Warning" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T168">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<Step rID="T169">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="259" status="Warning" nType="Description" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="258" status="Failed" nType="Run Error" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="256" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="255" status="Failed" Source="Action1" SourceLine="212" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T170">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (214): &quot;Do while SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).GetROProperty(&quot;enabled&quot;) = true&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:44]]></Time>
+<TimeTick>1376461724</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="260" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T171">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:45]]></Time>
+<TimeTick>1376461725</TimeTick>
+<Step rID="T172">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:45]]></Time>
+<TimeTick>1376461725</TimeTick>
+<Step rID="T173">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Previous Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:45]]></Time>
+<TimeTick>1376461725</TimeTick>
+<Step rID="T174">
+<Obj plainTxt="False" ><![CDATA[Previous Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Previous Page<br>Name = AUP<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:45]]></Time>
+<TimeTick>1376461725</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="265" status="Warning" nType="Description" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="264" status="Failed" nType="Run Error" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Previous Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="263" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="262" status="Failed" Source="Action1" SourceLine="213" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T175">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Previous Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (215): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Previous Page&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:45]]></Time>
+<TimeTick>1376461725</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="266" status="Failed" Source="Action1" SourceLine="214" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T176">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<Step rID="T177">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<Step rID="T178">
+<Obj plainTxt="False" ><![CDATA[Stat.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object does not exist"]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="270" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[Stat.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T179">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Next Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<Step rID="T180">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Next Page<br>Name = ADOWN<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="273" status="Warning" nType="Description" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="272" status="Failed" nType="Run Error" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="269" status="Failed" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="268" status="Failed" Source="Action1" SourceLine="222" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T181">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Next Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (239): &quot;SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Next Page&quot;).Click&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:47]]></Time>
+<TimeTick>1376461727</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="274" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T182">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<Step rID="T183">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<Step rID="T184">
+<Obj plainTxt="False" ><![CDATA[Next Page.GetROProperty "enabled"]]></Obj>
+<Details plainTxt="False" ><![CDATA[]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="279" status="Warning" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page.GetROProperty "enabled"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T185">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object "Next Page" (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<Step rID="T186">
+<Obj plainTxt="False" ><![CDATA[Next Page]]></Obj>
+<Details plainTxt="False" ><![CDATA[Object's physical description:<br>Type = GuiButton<br>tooltip = Next Page<br>Name = ADOWN<br>miccommentproperty = <br>Mercury Class = SAPGuiButton<br>SapGui numeric component type = 40<br>]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="281" status="Warning" nType="Description" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Replay" icon="9" nRep="280" status="Failed" nType="Run Error" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Next Page]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="278" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="277" status="Failed" Source="Action1" SourceLine="238" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T187">
+<Obj plainTxt="False" ><![CDATA[Run Error]]></Obj>
+<Details plainTxt="False" ><![CDATA[Cannot identify the object &quot;Next Page&quot; (of class SAPGuiButton). Verify that this object's properties match an object currently displayed in your application.<BR>Line (243): &quot;Loop until SAPGuiSession(&quot;Session&quot;).SAPGuiWindow(&quot;GuiWindow&quot;).SAPGuiButton(&quot;Next Page&quot;).GetROProperty(&quot;enabled&quot;) =false&quot;. ]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<NodeArgs eType="Replay" icon="18" nRep="282" status="Failed" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[Run Error]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T188">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<Step rID="T189">
+<Obj plainTxt="False" ><![CDATA[GuiWindow]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<Step rID="T190">
+<Obj plainTxt="False" ><![CDATA["Back   (F3)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:48]]></Time>
+<TimeTick>1376461728</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="286" Source="Action1" SourceLine="242" >
+<Disp><![CDATA["Back   (F3)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T191">
+<Obj plainTxt="False" ><![CDATA["Save   (Ctrl+S)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[14/08/2013 - 07:28:49]]></Time>
+<TimeTick>1376461729</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="288" Source="Action1" SourceLine="246" >
+<Disp><![CDATA["Save   (Ctrl+S)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="285" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[GuiWindow]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="284" Source="Action1" SourceLine="242" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="14/08/2013 - 07:26:10" eTime="14/08/2013 - 07:28:57" passed="1" failed="32" warnings="22" ></Summary>
+<NodeArgs eType="StartAction" icon="3" nRep="7" status="Failed" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<Summary sTime="14/08/2013 - 07:26:02" eTime="14/08/2013 - 07:28:58" passed="1" failed="32" warnings="22" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" status="Failed" >
+<Disp><![CDATA[Test SO Creation Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>
