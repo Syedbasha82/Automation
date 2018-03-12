@@ -1,0 +1,36 @@
+<map>
+<entry>
+<string>banu</string>
+	<CustomerDetails>
+		<Customer_ID>11111</Customer_ID>
+		<UCRN>111111000000</UCRN>
+		<Oam_Email_Address>banu@bgdigitaltest.co.uk</Oam_Email_Address>
+		<Password>password12</Password>
+		<Security_Question>place of birth</Security_Question>
+		<Security_Answer>4HQTjUWwSUlmuFqy4x+nugaE9Ds=</Security_Answer>
+		<Login_Try_Count>0</Login_Try_Count>
+		<Security_Try_Count>0</Security_Try_Count>
+		<Email_Validated_Flag>Y</Email_Validated_Flag>
+		<Profile_Status>Active</Profile_Status>
+		<OneTime_Password_Flag>N</OneTime_Password_Flag>
+		<LAST_LOGIN_TIMESTAMP>13-DEC-11 18.01.58.000000000</LAST_LOGIN_TIMESTAMP>
+		<PASSWORD_CHANGE_TIMESTAMP>02-NOV-11 11.36.38.000000000</PASSWORD_CHANGE_TIMESTAMP>
+		<UNSUCCESSFUL_LOGIN_TIMESTAMP>24-NOV-11 16.24.02.000000000</UNSUCCESSFUL_LOGIN_TIMESTAMP>
+		<VALIDATION_KEY>null</VALIDATION_KEY>
+		<FREEZE_REASON>null</FREEZE_REASON>
+		<FREEZE_ACCOUNT>N</FREEZE_ACCOUNT>
+		<FIRST_NAME>Banu</FIRST_NAME>
+		<LAST_NAME>Rajendran</LAST_NAME>
+		<TITLE>Miss</TITLE>
+		<REGISTER_DATE>11-OCT-10 13.01.07.497560000</REGISTER_DATE>
+		<NUM_OF_LOGINS>0</NUM_OF_LOGINS>
+		<CUST_DISCUSSION_RQD>null</CUST_DISCUSSION_RQD>
+		<CUST_DISCUSSION_LEAD_TIMESTAMP>null</CUST_DISCUSSION_LEAD_TIMESTAMP>
+		<DATA_CHECK_DONE_FLAG>Y</DATA_CHECK_DONE_FLAG>
+		<TREATMENT_REFRESH_TIMESTAMP>null</TREATMENT_REFRESH_TIMESTAMP>
+		<CUSTOMER_LEVEL>M</CUSTOMER_LEVEL>
+		<REG_TYPE>null</REG_TYPE>
+		<REG_COMP_DATE>null</REG_COMP_DATE>		
+	</CustomerDetails>
+</entry>
+</map>

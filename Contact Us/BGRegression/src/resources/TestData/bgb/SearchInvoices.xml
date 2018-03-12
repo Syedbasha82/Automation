@@ -1,0 +1,13 @@
+<map>
+    <entry>
+        <string>Valid</string>
+        <Invoice>
+            <searchCriteria>Account number</searchCriteria>
+            <searchText>11622</searchText>
+            <fromDate>10/04/2011</fromDate>
+            <toDate>09/01/2012</toDate>
+            <email>bunnykins@carrotpatch.com</email>
+            <password>password12</password>
+        </Invoice>
+    </entry>
+</map>  

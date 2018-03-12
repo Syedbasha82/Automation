@@ -1,0 +1,258 @@
+<map>
+    <entry>
+        <string>Gas/Electricity enquiries,Direct Debit/Payment scheme</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Direct Debit</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Tariff/prices</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Check which tariff I'm on</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Bill enquiry/Meter reading</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Finding out how much you owe</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Refunds</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>My account's in credit and I'd like a refund</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Update my email/telephone number</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I'm having trouble paying my bill</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity enquiries,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Upgrade my agreement</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I need to update my HomeCare</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Amend or cancel an existing appointment</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I'd like to know how I change the time or date of the breakdown appointment</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Billing and payment enquiries</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I need to update my HomeCare</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Book an engineer or annual service</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I have a breakdown and want to arrange for an engineer to visit.</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Query on recent visit</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I have a breakdown and want to arrange for an engineer to visit.</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Annual Service</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Homecare/Engineer enquiries,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I only took out my HomeCare</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Sales appointment/Quotation queries</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Installation appointments</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Other</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Moving home or changing names(s)</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I am moving home</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>I want to join/have recently joined</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I want to know more about joining British Gas</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Gas Prepayment</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>What do I do if I've misplaced my Gas Card?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Electricity Prepayment</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>I want my Pay As You Go meter changing to a normal billing meter</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Duel Fuel Prepayment</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>I want my pay as you go meter changed to a normal billing meter, what do I do</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Pay As You Go Energy,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Registering /Logging in/Resetting my password</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Submit your meter read</overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Submitting a meter read online</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Submit your meter read</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Making a payment / viewing my bill online</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Submit your payment online</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,I cannot register</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I want to register for an online account</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,A fault with my mobile app</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>online account password</overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Reset my password</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Re-setting your online account password</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Change my personal details</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Change your email address</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I unlock my online account?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+</map>

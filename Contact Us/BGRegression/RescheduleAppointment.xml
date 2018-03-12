@@ -1,0 +1,13 @@
+<suite name="UpgradeToSmartMeter" verbose="10">
+	<test name="OAB_Digital_Func_001">
+		<classes>
+			<class
+
+				name="bg.framework.app.functional.test.selfServe.RescheduleAppointmentTest">
+				<methods>
+					<include name="rescheduleAppointmentTest_Dual_OAM_Email_TC_001" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

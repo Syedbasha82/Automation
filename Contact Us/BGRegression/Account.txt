@@ -1,0 +1,16 @@
+GasAccount : 
+Account Number : 851000000426
+UCRN Number : 300000002520
+Email id : goodwill@bgdigitaltest.co.uk
+ElectricityAccount : 
+Account Number : 851000000425
+UCRN Number : 001022820397
+Email id : vaishnavagabriel@bgdigitaltest.co.uk
+JIAccount : 
+Account Number : 850026550791
+UCRN Number : 001004387715
+Email id : vinothkumar.gurunnathan@cognizant.com
+DualAccount : 
+Account Number : 851000000428
+UCRN Number : 001016666906
+Email id : springroll@bgdigitaltest.co.uk

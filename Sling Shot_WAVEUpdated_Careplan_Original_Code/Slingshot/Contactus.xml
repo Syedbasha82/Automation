@@ -1,0 +1,11 @@
+<suite name="Contactus" verbose="10">
+    <test name="Contactus">
+	<echo message="Inside Contactus common.bg-url is ${common.bg-url}" />
+        <groups>
+            <run><include name="Contactus" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test.selfServe"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,100 @@
+<map>
+    <entry>
+        <string>CrmDetails</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>muthuss1</username>
+            <password>muthuss1</password>
+            <searchby>password12</searchby>
+            <referencenumber>3600002024</referencenumber>           
+        </CrmUserProfile>
+    </entry>  
+      
+    <entry>
+        <string>SlingshotCrmDetails</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>kesavanc</username>
+            <password>welcome2</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>2001357422</accountId>           
+        </CrmUserProfile>
+    </entry>
+    
+    <entry>
+        <string>SlingshotCrmDetailsSuperuser</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>s0000k3</username>
+            <password>welcome4</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600525826</accountId>           
+        </CrmUserProfile>
+    </entry>
+    
+     <entry>
+        <string>SlingshotCrmDetailsFA</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>s0000k3</username>
+            <password>welcome4</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600548447</accountId>           
+        </CrmUserProfile>
+    </entry>
+    
+     <entry>
+        <string>SlingshotCrmDetailsRBP</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>s0000k3</username>
+            <password>welcome6</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600560300</accountId>           
+        </CrmUserProfile>
+    </entry>
+    
+     <entry>
+        <string>SlingshotCrmDetailsRB</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>s0000k3</username>
+            <password>welcome6</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600520630</accountId>           
+        </CrmUserProfile>
+    </entry>
+    <entry>
+        <string>CrmDetailsforpaperbilling</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>anandhaa</username>
+            <password>welcome6</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600536705</accountId>     
+            <PBstatus>Printed Invoice</PBstatus>      
+        </CrmUserProfile>
+    </entry>
+    
+    <entry>
+        <string>CrmDetailsforGetAQuote</string>
+        <CrmUserProfile>
+            <client>100</client>
+            <language>English</language>
+            <username>anandhaa</username>
+            <password>welcome6</password>
+            <searchby>Find Business Partner</searchby>
+            <accountId>600533829</accountId>     
+            <PBstatus>Printed Invoice</PBstatus>      
+        </CrmUserProfile>
+    </entry>
+    
+    
+</map>

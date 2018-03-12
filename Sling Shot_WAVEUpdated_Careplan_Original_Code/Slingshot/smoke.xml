@@ -1,0 +1,11 @@
+<suite name="Smoke" verbose="10">
+    <test name="Smoke">
+        <groups>
+            <run><include name="Smoke" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test"/>
+            <package name="bg.framework.app.functional.test.BGR"/>
+        </packages>
+    </test>
+</suite>

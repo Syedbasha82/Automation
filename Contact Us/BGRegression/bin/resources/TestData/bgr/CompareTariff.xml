@@ -1,0 +1,15 @@
+<map>
+<entry>
+<string>TariffNames</string>
+<CompareTariff>
+<tariff1>HomeEnergy Fixed Sep 2018</tariff1>  
+<pay11>Direct debit - VDD</pay11>
+<pay12>Cash or Cheque</pay12>
+<pay13></pay13>
+<tariff2></tariff2>
+<pay21></pay21>
+<pay22></pay22>
+<pay23></pay23>
+</CompareTariff>
+</entry>
+</map>

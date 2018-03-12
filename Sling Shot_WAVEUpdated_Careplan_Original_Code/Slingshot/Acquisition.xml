@@ -1,0 +1,16 @@
+<suite name="Acquisition">
+    <test name="Acquisition">
+      <classes>	
+ 	  <class name="bg.framework.app.functional.test.Slingshot.CarePlanTest">
+	        <methods>
+	        
+	        	          			<include name="multipleProductsE2EWithLGSR_RestOfUK_YES"/>
+	        	          			
+	        	          			
+	        	          			
+	        	          			
+	        </methods>
+	  </class>          
+        </classes>
+      </test>
+</suite>

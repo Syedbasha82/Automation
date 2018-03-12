@@ -1,0 +1,44 @@
+<suite name="UpgradeToSmartMeter" verbose="10">
+	<test name="OAB_Digital_Func_008">
+		<classes>
+			<class
+				name="bg.framework.app.functional.test.selfServe.UpgradeToSmartMeterTest">
+				<methods>
+					<!-- <include name="upgradeToSmartMeterTest_Electricity_Non_OAM_Email_TC_013" 
+						/> -->
+					<include name="upgradeToSmartMeterTest_Dual_OAM_Email_TC_008" />
+				</methods>
+
+			</class>
+			
+		</classes>
+	</test>
+	<test name="OAB_Digital_Func_001">
+		<classes>
+			
+			<class
+				name="bg.framework.app.functional.test.selfServe.RescheduleAppointmentTest">
+
+				<methods>
+					<include name="rescheduleAppointmentTest_Dual_OAM_Email_TC_001" />
+				</methods>
+
+			</class>
+			
+		</classes>
+	</test>
+	<test name="OAB_Digital_Func_004">
+		<classes>
+			
+			<class
+				name="bg.framework.app.functional.test.selfServe.CancelAnAppointmentTest">
+
+				<methods>
+					<include name="cancelAnAppointment_Dual_OAM_Email_TC_004" />
+
+				</methods>
+
+			</class>
+		</classes>
+	</test>
+</suite>

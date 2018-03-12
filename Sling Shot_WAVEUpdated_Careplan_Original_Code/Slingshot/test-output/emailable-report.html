@@ -1,0 +1,120 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><title>TestNG Report</title><style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}</style></head><body><table><tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr><tr><th colspan="7">Acquisition</th></tr><tr><td><a href="#t0">Acquisition</a></td><td class="num">0</td><td class="num attn">1</td><td class="num">0</td><td class="num">49,371</td><td></td><td></td></tr></table><table><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Acquisition</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Acquisition &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="2">bg.framework.app.functional.test.Slingshot.CarePlanTest</td><td><a href="#m0">reportWrapUp</a></td><td rowspan="1">1497969085558</td><td rowspan="1">0</td></tr><tr class="failedeven"><td><a href="#m1">setUp</a></td><td rowspan="1">1497969036193</td><td rowspan="1">0</td></tr><tr><th colspan="4">Acquisition &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">bg.framework.app.functional.test.Slingshot.CarePlanTest</td><td><a href="#m2">multipleProductsE2EWithLGSR_RestOfUK_YES</a></td><td rowspan="1">1497969085558</td><td rowspan="1">0</td></tr></tbody></table><h2>Acquisition</h2><h3 id="m0">bg.framework.app.functional.test.Slingshot.CarePlanTest#reportWrapUp</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.NullPointerException
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:203)
+	at java.io.FileOutputStream.&lt;init&gt;(FileOutputStream.java:133)
+	at java.io.FileWriter.&lt;init&gt;(FileWriter.java:78)
+	at bg.framework.app.functional.util.Report.finalWrapUp(Report.java:338)
+	at bg.framework.app.functional.test.common.TestBase.reportWrapUp(TestBase.java:215)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m1">bg.framework.app.functional.test.Slingshot.CarePlanTest#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>public void bg.framework.app.functional.test.Slingshot.CarePlanTest.multipleProductsE2EWithLGSR_RestOfUK_YES() throws java.lang.Exception</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.WebDriverException: Failed to connect to binary FirefoxBinary(C:\Program Files\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+497969041151	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.7
+1497969041152	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1497969041155	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1497969041166	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1497969041183	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\531644\AppData\Local\Temp\anonymous9006121532788029949webdriver-profile\extensions.json
+1497969041184	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1497969041187	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1497969041197	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1497969041199	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1497969041199	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1497969041199	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Starting provider: GMPProvider
+1497969041236	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1497969041237	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1497969041237	addons.manager	DEBUG	Starting provider: PluginProvider
+1497969041237	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1497969041237	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1497969041238	addons.manager	DEBUG	Completed startup sequence
+1497969041509	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1497969041509	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1497969041510	addons.xpi-utils	DEBUG	Successfully read XPI database
+1497969041518	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1497969041518	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1497969041518	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1497969041743	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1497969041743	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1497969041743	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1497969051677	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1497969051677	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1497969051678	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.7
+1497969051679	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+[Child 3656] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1497969052290	addons.manager	DEBUG	shutdown
+1497969052291	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1497969052292	addons.xpi	DEBUG	shutdown
+1497969052293	addons.xpi-utils	DEBUG	shutdown
+1497969052294	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1497969052295	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1497969052298	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1497969052298	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1497969052299	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1497969052302	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1497969052305	addons.manager	DEBUG	Async provider shutdown done
+
+Build info: version: &apos;2.41.0&apos;, revision: &apos;3192d8a&apos;, time: &apos;2014-03-27 17:18:15&apos;
+System info: host: &apos;PC354964&apos;, ip: &apos;10.27.101.88&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_131&apos;
+Driver info: driver.version: FirefoxDriver
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:130)
+	at org.openqa.selenium.firefox.FirefoxDriver.startClient(FirefoxDriver.java:246)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:114)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:193)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:186)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:182)
+	at org.openqa.selenium.firefox.FirefoxDriver.&lt;init&gt;(FirefoxDriver.java:99)
+	at bg.framework.common.functional.WebDriverFactory.getDriver(WebDriverFactory.java:42)
+	at bg.framework.common.functional.WebDriverProvider.makeDriver(WebDriverProvider.java:19)
+	at bg.framework.common.functional.WebDriverProvider.getCurrentDriver(WebDriverProvider.java:24)
+	at bg.framework.app.functional.test.common.TestBase.setUp(TestBase.java:31)
+Caused by: org.openqa.selenium.firefox.NotConnectedException: Unable to connect to host 127.0.0.1 on port 7055 after 45000 ms. Firefox console output:
+497969041151	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.7
+1497969041152	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1497969041155	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1497969041166	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1497969041183	addons.xpi-utils	DEBUG	Starting async load of XPI database C:\Users\531644\AppData\Local\Temp\anonymous9006121532788029949webdriver-profile\extensions.json
+1497969041184	addons.xpi	DEBUG	Registering manifest for C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1497969041187	addons.xpi	DEBUG	Loading bootstrap scope from C:\Program Files\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1497969041197	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1497969041199	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1497969041199	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1497969041199	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1497969041199	addons.manager	DEBUG	Starting provider: GMPProvider
+1497969041236	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1497969041237	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1497969041237	addons.manager	DEBUG	Starting provider: PluginProvider
+1497969041237	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1497969041237	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1497969041238	addons.manager	DEBUG	Completed startup sequence
+1497969041509	addons.xpi-utils	DEBUG	Async JSON file read took 0 MS
+1497969041509	addons.xpi-utils	DEBUG	Finished async read of XPI database, parsing...
+1497969041510	addons.xpi-utils	DEBUG	Successfully read XPI database
+1497969041518	addons.manager	DEBUG	Starting provider: &lt;unnamed-provider&gt;
+1497969041518	addons.manager	DEBUG	Registering shutdown blocker for &lt;unnamed-provider&gt;
+1497969041518	addons.manager	DEBUG	Provider finished startup: &lt;unnamed-provider&gt;
+*** Blocklist::_loadBlocklistFromFile: blocklist is disabled
+1497969041743	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1497969041743	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1497969041743	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1497969051677	addons.xpi	DEBUG	Calling bootstrap method shutdown on webcompat@mozilla.org version 1.0
+1497969051677	addons.xpi	DEBUG	Calling bootstrap method shutdown on firefox@getpocket.com version 1.0.5
+1497969051678	addons.xpi	DEBUG	Calling bootstrap method shutdown on e10srollout@mozilla.org version 1.7
+1497969051679	addons.xpi	DEBUG	Calling bootstrap method shutdown on aushelper@mozilla.org version 1.0
+[Child 3656] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1497969052290	addons.manager	DEBUG	shutdown
+1497969052291	addons.manager	DEBUG	Calling shutdown blocker for XPIProvider
+1497969052292	addons.xpi	DEBUG	shutdown
+1497969052293	addons.xpi-utils	DEBUG	shutdown
+1497969052294	addons.manager	DEBUG	Calling shutdown blocker for LightweightThemeManager
+1497969052295	addons.manager	DEBUG	Calling shutdown blocker for GMPProvider
+1497969052298	addons.manager	DEBUG	Calling shutdown blocker for PluginProvider
+1497969052298	addons.manager	DEBUG	Calling shutdown blocker for &lt;unnamed-provider&gt;
+1497969052299	addons.manager	DEBUG	Calling shutdown blocker for PreviousExperimentProvider
+1497969052302	addons.xpi	DEBUG	Notifying XPI shutdown observers
+1497969052305	addons.manager	DEBUG	Async provider shutdown done
+
+	at org.openqa.selenium.firefox.internal.NewProfileExtensionConnection.start(NewProfileExtensionConnection.java:118)
+	... 35 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p><h3 id="m2">bg.framework.app.functional.test.Slingshot.CarePlanTest#multipleProductsE2EWithLGSR_RestOfUK_YES</h3><table class="result"></table><p class="totop"><a href="#summary">back to summary</a></p></body></html>

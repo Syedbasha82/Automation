@@ -1,0 +1,10 @@
+<suite name="CQ Stub View Suite" verbose="10">
+    <test name="CQStubView">
+        <groups>
+            <run><include name="CQStubView" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test"/>
+        </packages>
+    </test>
+</suite>

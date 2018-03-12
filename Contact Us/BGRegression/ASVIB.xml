@@ -1,0 +1,12 @@
+<suite name="Regression" verbose="10">
+    <test name="Regression">
+<echo message="Inside regression common.bg-url is ${common.bg-url}" />
+        <groups>
+            <run><exclude name="Regression" /></run>            
+            <run><include name="ASVIB" /></run>            
+        </groups>
+        <packages>           
+            <package name="bg.framework.app.functional.test.reFactoring"/>
+        </packages>
+    </test>
+</suite>

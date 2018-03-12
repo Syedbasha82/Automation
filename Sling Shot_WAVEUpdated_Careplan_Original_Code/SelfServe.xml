@@ -1,0 +1,33 @@
+<suite name="SelfServe" verbose="10">
+    <test name="SelfServe">
+        <groups>
+           <run><exclude name="Smoke" /></run>
+            <run><exclude name="Login" /></run>
+            <run><include name="HomeMove" /></run>
+            <run><exclude name="Complex" /></run>
+            <run><exclude name="Qtp" /></run>
+            <run><exclude name="Refactoring" /></run>
+            <run><exclude name="AccountSummary" /></run>
+            <run><exclude name="PBFlag" /></run>
+            <run><exclude name="BillHistory" /></run>
+            <run><exclude name="BGRRegistration" /></run>
+            <run><exclude name="Nectar" /></run>
+            <run><exclude name="RequestPaymentCard" /></run>
+            <run><exclude name="SubmitMeterRead" /></run>
+            <run><exclude name="AccountOverview" /></run>
+            <run><exclude name="Contactus" /></run>
+            <run><exclude name="HelpAndAdvice" /></run>
+            <run><exclude name="ForgotEmail" /></run>
+            <run><exclude name="ForgotPassword" /></run>
+            <run><exclude name="ASVIB" /></run>
+            <run><exclude name="MessageCentre" /></run>
+            <run><exclude name="EmergenyPostCode" /></run>
+            <run><exclude name="MakeAPayment" /></run>
+            <run><exclude name="ManagePersonalDetails" /></run>
+        </groups>
+        <packages>            
+        <package name="bg.framework.app.functional.test.selfServe"/>
+        
+        </packages>
+    </test>
+</suite>

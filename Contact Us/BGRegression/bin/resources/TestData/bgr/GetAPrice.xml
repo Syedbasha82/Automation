@@ -1,0 +1,238 @@
+<map>
+    <entry>
+        <string>anonymous</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>digital_sele594@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Mobile</phoneType>
+            <fuelType>Gas</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>British Gas</gasSupplier>
+            <gasTariff>Standard</gasTariff>
+            <gasPayment>Monthly Direct Debit</gasPayment>
+            <gasPreferredPayment>Cash/Debit/Credit Card</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>British Gas</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Quarterly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>Dual</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>digital_sele594@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Dual</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>British Gas</gasSupplier>
+            <gasTariff>Clear and Simple</gasTariff>
+            <gasPayment>Cash/Debit/Credit Card</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>British Gas</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Cash/Debit/Credit Card</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>Gas</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>digital_sele594@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Gas</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>British Gas</gasSupplier>
+            <gasTariff>Fixed Price June 2013</gasTariff>
+            <gasPayment>Quarterly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Monthly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>Electricity</string>
+        <GetAPrice>
+            <firstName>M</firstName>
+            <lastName>SIMONS</lastName>
+            <title>Mrs</title>
+            <email>testss3@bg.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Electricity</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>001022908612</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>EDF Energy</gasSupplier>
+            <gasTariff>Standard (Variable)</gasTariff>
+            <gasPayment>Monthly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>British Gas</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Cash/Debit/Credit Card</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>OAMGasAccount</string>
+        <GetAPrice>
+            <email>bear@bgdigitaltest.co.uk</email>
+            <fuelType>Elec</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasSupplier>Sainsbury's Energy</gasSupplier>
+            <gasTariff>Standard</gasTariff>
+            <gasPayment>Monthly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend></elecSpend>
+            <elecSpendType></elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms>2 bedroom property</elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <elecPayment>Monthly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Fixed Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>anonymouselecloop1</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>digital_sele594@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Electricity</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>Sainsbury's Energy</gasSupplier>
+            <gasTariff>Clear and Simple</gasTariff>
+            <gasPayment>Quarterly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Quarterly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>   
+        <string>anonymouselecloop2</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>digital_sele594@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Electricity</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <dualtype>yes</dualtype>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasMeter>Credit Meter</gasMeter>
+            <gasSupplier>Sainsbury's Energy</gasSupplier>
+            <gasTariff>Clear and Simple</gasTariff>
+            <gasPayment>Quarterly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend>400</elecSpend>
+            <elecSpendType>Annually</elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms></elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <economy>Yes</economy>
+            <elecPayment>Cash/Debit/Credit Card</elecPayment>
+            <elecPreferredPayment>Monthly Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>  
+</map>

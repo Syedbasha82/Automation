@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Acquisition" duration-ms="2007442" started-at="2017-11-17T10:02:04Z" finished-at="2017-11-17T10:35:32Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="ContactUsTest.verifyAnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="verifyAnonymousJourney" class="bg.framework.app.functional.test.selfServe.ContactUsTest"/>
+      </group> <!-- Smoke -->
+      <group name="Contactus">
+        <method signature="ContactUsTest.verifyAnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="verifyAnonymousJourney" class="bg.framework.app.functional.test.selfServe.ContactUsTest"/>
+      </group> <!-- Contactus -->
+    </groups>
+    <test name="Acquisition" duration-ms="2007442" started-at="2017-11-17T10:02:04Z" finished-at="2017-11-17T10:35:32Z">
+      <class name="bg.framework.app.functional.test.selfServe.ContactUsTest">
+        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="CreateTestLogPath" is-config="true" duration-ms="59" started-at="2017-11-17T15:32:04Z" finished-at="2017-11-17T15:32:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTestLogPath -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="setUp" is-config="true" duration-ms="23312" started-at="2017-11-17T15:32:04Z" finished-at="2017-11-17T15:32:27Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void bg.framework.app.functional.test.selfServe.ContactUsTest.verifyAnonymousJourney()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyAnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="verifyAnonymousJourney" duration-ms="1974012" started-at="2017-11-17T15:32:27Z" finished-at="2017-11-17T16:05:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyAnonymousJourney -->
+        <test-method status="PASS" signature="reportWrapUp()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="reportWrapUp" is-config="true" duration-ms="10089" started-at="2017-11-17T16:05:21Z" finished-at="2017-11-17T16:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bg.framework.app.functional.test.selfServe.ContactUsTest@48140564]" name="tearDown" is-config="true" duration-ms="0" started-at="2017-11-17T16:05:32Z" finished-at="2017-11-17T16:05:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bg.framework.app.functional.test.selfServe.ContactUsTest -->
+    </test> <!-- Acquisition -->
+  </suite> <!-- Acquisition -->
+</testng-results>

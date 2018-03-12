@@ -1,0 +1,60 @@
+<map>
+    <entry>
+        <string>anonymous</string>
+        <GetAPrice>
+            <firstName>bear</firstName>
+            <lastName>Pooh</lastName>
+            <title>Mr</title>
+            <email>bear@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <mobileNumber>0787985824</mobileNumber>
+            <phoneType>Home</phoneType>
+            <fuelType>Electricity</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasSupplier>Sainsbury's Energy</gasSupplier>
+            <gasTariff>Standard</gasTariff>
+            <gasPayment>Monthly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend></elecSpend>
+            <elecSpendType></elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms>2 bedroom property</elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <elecPayment>Monthly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Fixed Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+    <entry>
+        <string>OAMGasAccount</string>
+        <GetAPrice>
+            <email>bear@bgdigitaltest.co.uk</email>
+            <fuelType>Elec</fuelType>
+            <postcode>sw9 9lw</postcode>
+            <ucrn>300000000370</ucrn>
+            <gasSpend>500</gasSpend>
+            <gasSpendType>Annually</gasSpendType>
+            <gasAnnConsump></gasAnnConsump>
+            <gasBedrooms></gasBedrooms>
+            <gasSupplier>Sainsbury's Energy</gasSupplier>
+            <gasTariff>Standard</gasTariff>
+            <gasPayment>Monthly Direct Debit</gasPayment>
+            <gasPreferredPayment>Monthly Fixed Direct Debit</gasPreferredPayment>
+            <elecSpend></elecSpend>
+            <elecSpendType></elecSpendType>
+            <elecAnnConsump></elecAnnConsump>
+            <elecBedrooms>2 bedroom property</elecBedrooms>
+            <elecMeter>Credit Meter</elecMeter>
+            <elecSupplier>Sainsbury's Energy</elecSupplier>
+            <elecTariff>Standard</elecTariff>
+            <elecPayment>Monthly Direct Debit</elecPayment>
+            <elecPreferredPayment>Monthly Fixed Direct Debit</elecPreferredPayment>
+        </GetAPrice>
+    </entry>
+</map>

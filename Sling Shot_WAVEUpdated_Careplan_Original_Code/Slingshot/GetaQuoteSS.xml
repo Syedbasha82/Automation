@@ -1,0 +1,11 @@
+<suite name="GetaQuoteSS" verbose="10">
+    <test name="GetaQuoteSS">
+	<echo message="Inside regression common.bg-url is ${common.bg-url}" />
+        <groups>
+            <run><include name="GetaQuoteSS" /></run>
+        </groups>
+        <packages>
+                        <package name="bg.framework.app.functional.test.bgb"/>
+        </packages>
+    </test>
+</suite>

@@ -1,0 +1,261 @@
+<map>
+    <entry>
+        <string>HomeMoveTestData</string>
+        <HomeMove>
+           
+            <postCode>SE23 1LN</postCode>
+            <billPostCode>SE23 1LN</billPostCode>
+            <forwardingPostCode>SE23 1LN</forwardingPostCode>
+            <postCode2>RM38XB</postCode2>
+            <postCode3>tw18 3he</postCode3>
+            <address>58, Brockley Rise, LONDON, SE23 1LN</address>
+            <address2>60, Brockley Rise, LONDON, SE23 1LN</address2>
+            <address3>Concard, 60-64, Brockley Rise, LONDON, SE23 1LN</address3>
+            <address4>The Chandos, 56, Brockley Rise, LONDON, SE23 1LN</address4>
+            <billingAddress>66, Brockley Rise, LONDON, SE23 1LN</billingAddress>
+            <forwardingAddress>68, Brockley Rise, LONDON, SE23 1LN</forwardingAddress>
+            <monthsLived>1</monthsLived>
+            <yearsLived>3 or more</yearsLived>
+            <yearsLived2>2</yearsLived2>
+            <YearsLived3>1</YearsLived3>>
+         
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payDay>7</payDay>
+            <paymentType>MonthlyDD</paymentType>
+            
+            <elecMeterType>Single rate credit</elecMeterType>
+            <elecMeterReading>1234</elecMeterReading>
+            <elecNightReading>1234</elecNightReading>
+            <gasMeterType>Credit</gasMeterType>
+            <gasMeterReading>1234</gasMeterReading>
+            
+            
+            <title>Mr</title>
+            <firstName>dhiru</firstName>
+            <middleName>rag</middleName>
+            <surName>mano</surName>
+            <contactNo>0123456789</contactNo>
+            <contactType>Mobile</contactType>
+            <dobDay>16</dobDay>
+            <dobMonth>March</dobMonth>
+            <dobYear>1985</dobYear>
+            <eMail>asd@asd.com</eMail>
+            
+            <cardName>Dhiru</cardName>
+            <issueNumber>12</issueNumber>
+            <startYear>2007</startYear>
+            <startMonth>March</startMonth>
+            <expiryMonth>March</expiryMonth>
+            <expiryYear>2019</expiryYear>
+            
+            <cardNumber>4012001038488884</cardNumber>
+            <cardType>Maestro</cardType>
+            
+            
+            <bankAccountNumber>01234567</bankAccountNumber>
+           
+           <accHolderName>Dhiru</accHolderName>
+           <accountNumber>850000031384</accountNumber>
+           
+           <houseNumber>1230</houseNumber>
+           <houseName>Arak</houseName>
+           <flatNumber>12</flatNumber>
+           <addressLine1>Brockley</addressLine1>
+           <addressLine2>rise</addressLine2>
+           <town>Berks</town>
+           <town2>Berwick</town2>
+           <country>Berkshire</country>
+           <personMovingOut>Brown</personMovingOut>
+           <membershipNumber1>11262961A482013</membershipNumber1>
+           <membershipNumber2>22161276L234156</membershipNumber2>
+           <accountToClose>850000235986</accountToClose>
+           <accountToClose2>850009078559</accountToClose2>
+        </HomeMove>
+     </entry>
+       
+       
+       
+        <entry>
+        <string>HomeMoveOutTestData</string>
+        <HomeMove>
+           
+            <postCode>WN3 5JD</postCode>
+            <billPostCode>SE23 1LN</billPostCode>
+            <forwardingPostCode>SE23 1LN</forwardingPostCode>
+            <postCode2>SE23 1LN</postCode2>
+            <postCode3>tw18 3he</postCode3>
+            <address>36, Kipling Avenue, WIGAN, Lancashire, WN3 5JD</address>
+            <address2>60, Brockley Rise, LONDON, SE23 1LN</address2>
+            <address3>Concard, 60-64, Brockley Rise, LONDON, SE23 1LN</address3>
+            <address4>The Chandos, 56, Brockley Rise, LONDON, SE23 1LN</address4>
+            <billingAddress>66, Brockley Rise, LONDON, SE23 1LN</billingAddress>
+            <forwardingAddress>68, Brockley Rise, LONDON, SE23 1LN</forwardingAddress>
+            <monthsLived>1</monthsLived>
+            <yearsLived>3 or more</yearsLived>
+            <yearsLived2>2</yearsLived2>
+            <YearsLived3>1</YearsLived3>>
+         
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payDay>7</payDay>
+            <paymentType>MonthlyDD</paymentType>
+            
+            <elecMeterType>Single rate credit</elecMeterType>
+            <elecMeterReading>1234</elecMeterReading>
+            <elecNightReading>1234</elecNightReading>
+            <gasMeterType>Credit</gasMeterType>
+            <gasMeterReading>1234</gasMeterReading>
+            
+            
+            <title>Mrs</title>
+            <firstName>Patricia</firstName>
+            <middleName>rag</middleName>
+            <surName>Dobson</surName>
+            <contactNo>01942820761</contactNo>
+            <contactType>Home</contactType>
+            <dobDay>4</dobDay>
+            <dobMonth>June</dobMonth>
+            <dobYear>1943</dobYear>
+            <eMail>tester1@bgdigitaltest.co.uk</eMail>
+            
+            <cardName>Dhiru</cardName>
+            <issueNumber>12</issueNumber>
+            <startYear>2007</startYear>
+            <startMonth>March</startMonth>
+            <expiryMonth>March</expiryMonth>
+            <expiryYear>2019</expiryYear>
+            
+            <cardNumber>4012001038488884</cardNumber>
+            <cardType>Maestro</cardType>
+            
+            
+            <bankAccountNumber>01234567</bankAccountNumber>
+           
+           <accHolderName>Dhiru</accHolderName>
+           <accountNumber>850000027437</accountNumber>
+           
+           <houseNumber>1230</houseNumber>
+           <houseName>Arak</houseName>
+           <flatNumber>12</flatNumber>
+           <addressLine1>Brockley</addressLine1>
+           <addressLine2>rise</addressLine2>
+           <town>Berks</town>
+           <town2>Berwick</town2>
+           <country>Berkshire</country>
+           <personMovingOut>Brown</personMovingOut>
+           <membershipNumber1>11262961A482013</membershipNumber1>
+           <membershipNumber2>22161276L234156</membershipNumber2>
+           <accountToClose>850000235986</accountToClose>
+           <accountToClose2>850009078559</accountToClose2>
+        </HomeMove>
+    </entry>
+    <entry>
+        <string>HomeMoveOutDualTestData</string>
+        <HomeMove>
+           
+            <postCode>BL5 2JZ</postCode>
+            <forwardingPostCode>SE23 1LN</forwardingPostCode>
+            <billPostCode>SE23 1LN</billPostCode>
+            <postCode2>SE23 1LN</postCode2>
+            <postCode3>tw18 3he</postCode3>
+            <address>276, Leigh Road, Westhoughton, BOLTON, Lancashire, BL5 2JZ</address>
+            <address2>60, Brockley Rise, LONDON, SE23 1LN</address2>
+            <address3>Concard, 60-64, Brockley Rise, LONDON, SE23 1LN</address3>
+            <address4>The Chandos, 56, Brockley Rise, LONDON, SE23 1LN</address4>
+            <billingAddress>66, Brockley Rise, LONDON, SE23 1LN</billingAddress>
+            <forwardingAddress>68, Brockley Rise, LONDON, SE23 1LN</forwardingAddress>
+            <monthsLived>1</monthsLived>
+            <yearsLived>3 or more</yearsLived>
+            <yearsLived2>2</yearsLived2>
+            <YearsLived3>1</YearsLived3>>
+         
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payDay>7</payDay>
+            <paymentType>MonthlyDD</paymentType>
+            
+            <elecMeterType>Single rate credit</elecMeterType>
+            <elecMeterReading>1234</elecMeterReading>
+            <elecNightReading>1234</elecNightReading>
+            <gasMeterType>Credit</gasMeterType>
+            <gasMeterReading>1234</gasMeterReading>
+            
+            
+            <title>Mr</title>
+            <firstName>P</firstName>
+            <middleName>rag</middleName>
+            <surName>Hassitt</surName>
+            <contactNo>01942810599</contactNo>
+            <contactType>Home</contactType>
+            <dobDay>12</dobDay>
+            <dobMonth>March</dobMonth>
+            <dobYear>1968</dobYear>
+            <eMail>energyshop@test.com</eMail>
+            
+            <cardName>Dhiru</cardName>
+            <issueNumber>12</issueNumber>
+            <startYear>2007</startYear>
+            <startMonth>March</startMonth>
+            <expiryMonth>March</expiryMonth>
+            <expiryYear>2019</expiryYear>
+            
+            <cardNumber>4012001038488884</cardNumber>
+            <cardType>Maestro</cardType>
+            
+            
+            <bankAccountNumber>01234567</bankAccountNumber>
+           
+           <accHolderName>Dhiru</accHolderName>
+           <accountNumber>850000011720</accountNumber>
+           
+           <houseNumber>1230</houseNumber>
+           
+           <houseName>ASD</houseName>
+           <flatNumber>12</flatNumber>
+           <addressLine1>Brockley</addressLine1>
+           <addressLine2>rise</addressLine2>
+           <town>Berks</town>
+           <town2>Berwick</town2>
+           <country>Berkshire</country>
+           <personMovingOut>Brown</personMovingOut>
+           <membershipNumber1>11262961A482013</membershipNumber1>
+           <membershipNumber2>22161276L234156</membershipNumber2>
+           <accountToClose>850000235986</accountToClose>
+           <accountToClose2>850009078559</accountToClose2>
+        </HomeMove>
+    </entry>
+    
+    
+    <entry>
+    <string>HomeMoveLandLordTestData</string>
+    <HomeMove>
+    
+    	<companyName>kkandco</companyName>
+    	
+    	<title>Mr</title>
+        <firstName>Paul</firstName>
+        <surName>Hassitt</surName>
+    	<address>276, Leigh Road, Westhoughton, BOLTON, Lancashire, BL5 2JZ</address>
+        <address2>60, Brockley Rise, LONDON, SE23 1LN</address2>
+        <address3>Concard, 60-64, Brockley Rise, LONDON, SE23 1LN</address3>
+    	<postCode>SE23 1LN</postCode>
+    	<eMail>energyshop@test.com</eMail>
+    	<contactNo>0123456789</contactNo>
+    
+    
+    	<supplyAddress1>Brockley</supplyAddress1>
+    	<supplyAddress2>Leigh</supplyAddress2>
+    	<supplyAddress3>Concard</supplyAddress3>
+    
+    	<accountNumber>850000011720</accountNumber>
+    	<gasMeterReading>12345</gasMeterReading>
+    	<elecMeterReading>12346</elecMeterReading>
+        <elecNightReading>12347</elecNightReading>
+    </HomeMove>
+   
+    </entry>
+    </map>

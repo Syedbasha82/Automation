@@ -1,0 +1,3 @@
+﻿
+Browser("Log in to your account").Page("Certificate Error: Navigation").Link("Continue to this website").Click @@ hightlight id_;_Browser("Log in to your account").Page("Certificate Error: Navigation").Link("Continue to this website")_;_script infofile_;_ZIP::ssf4.xml_;_
+Browser("Log in to your account").Page("Log in to your account_2").WebEdit("password").SetSecure "51821a4448a4cc2bb9c9d95c7bfedad68f1e314cf9a0e18d02ce" @@ hightlight id_;_Browser("Log in to your account").Page("Log in to your account 2").WebEdit("password")_;_script infofile_;_ZIP::ssf5.xml_;_

@@ -1,0 +1,12 @@
+<suite name="PriceFinder" verbose="10">
+    <test name="PriceFinder">
+	<echo message="Inside PriceFinder common.bg-url is ${common.bg-url}" />
+        <groups>
+            <run><include name="PriceFinder" /></run>
+            <run><exclude name="Fusion" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test.sales"/>
+        </packages>
+    </test>
+</suite>

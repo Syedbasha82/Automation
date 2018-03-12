@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_131"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/htmlparser/filterbuilder.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/htmlparser/htmllexer.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/htmlparser/htmlparser.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/htmlparser/sitecapturer.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/htmlparser/thumbelina.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-codec-1.8.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-lang-2.6-javadoc.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-lang-2.6-sources.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/cssparser-0.9.11.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/guava-15.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/htmlunit-2.13.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/htmlunit-core-js-2.13.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/httpclient-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/httpcore-4.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/httpmime-4.3.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/json-20080701.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/nekohtml-1.9.19.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/operadriver-1.5.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/phantomjsdriver-1.1.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/testng-6.8.5.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/libs/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/selenium-java-2.41.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/selenium-2.41.0/selenium-java-2.41.0-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/bsh.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/comfyj-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/jexplorer-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/jniwrap-3.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/joda-time-2.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/jsch-0.1.45.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/junit.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/mshtml.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/nekohtml.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/PDFOne.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/reportng-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/serializer.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/slf4j-jdk14-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/spring-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/testng-5.14.10.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/watij.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/watijcom.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/winpack-3.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="D:/BGB WorkSpace/Sling Shot_WAVEUpdated_Careplan_Original_Code/Slingshot/lib/xstream-1.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

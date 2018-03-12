@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Acquisition]">
+  <test name="Acquisition(failed)">
+    <classes>
+      <class name="bg.framework.app.functional.test.Slingshot.CarePlanTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="reportWrapUp"/>
+          <include name="multipleProductsE2EWithLGSR_RestOfUK_YES"/>
+          <include name="CreateTestLogPath"/>
+        </methods>
+      </class> <!-- bg.framework.app.functional.test.Slingshot.CarePlanTest -->
+    </classes>
+  </test> <!-- Acquisition(failed) -->
+</suite> <!-- Failed suite [Acquisition] -->

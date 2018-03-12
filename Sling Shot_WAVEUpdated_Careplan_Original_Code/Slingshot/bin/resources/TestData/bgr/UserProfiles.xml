@@ -1,0 +1,3030 @@
+<map>
+	<entry>
+		<string>MuMvUserAccessDetails</string>
+		<UserProfile>
+			<email>khaisarpasha.muhammed@centrica.com</email>
+			<password>password12</password>
+			<accNumber>600548430</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BgbGasAccount</string>
+		<UserProfile>
+			<password>password12</password>
+			<newemail>DryRun@bg.com</newemail>
+			<newpassword>password12</newpassword>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>0123456789</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>0123456789</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>0123456789</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<accNumber>600439072</accNumber>
+			<invoiceNumber>190861751</invoiceNumber>
+			<postCode>LE4 1ET</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BgbSlingshotCustomer</string>
+		<UserProfile>
+			<email>MItestdata2@cts.com</email>
+			<password>password12</password>
+			<ucrn>300016091537</ucrn>
+			<firstName>DAVID</firstName>
+			<lastName>MCLEAN</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>01234567890</phoneNumber>
+			<phoneType></phoneType>
+			<mobileNumber>01234567890</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber></workNumber>
+			<acceptTerms></acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<elecAccount>850001478540</elecAccount>
+			<gasAccount></gasAccount>
+			<bgsAccount></bgsAccount>
+			<accNumber>850001478540</accNumber>
+			<addr>se23 1ln</addr>
+		</UserProfile>
+	</entry>
+	<!-- <entry> <string>BgbRegistration</string> <UserProfile> <email>sma123@cognizant.com</email> 
+		<password>password12</password> <newemail>DryRun@</newemail> <newpassword>temp1234</newpassword> 
+		<bpnumber>2000918530</bpnumber> <firstName>Harry</firstName> <lastName>Peter</lastName> 
+		<title>Mr</title> <phoneNumber>0123456789</phoneNumber> <mobileNumber>0123456789</mobileNumber> 
+		<accNumber>600326152</accNumber> <invoiceNumber>190861751</invoiceNumber> 
+		<billAddr>DH9 6DD</billAddr> <siteAddr>DH9 6DD</siteAddr> <postCode>UB7 8JL</postCode> 
+		<feedbackoption>1</feedbackoption> <feedbacktext>Option has been selected 
+		at :</feedbacktext> </UserProfile> </entry> -->
+
+	<entry>
+		<string>BgbRegistration1</string>
+		<UserProfile>
+
+			<email>renewals_newdata01@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<newemail>superman123</newemail>
+			<newpassword>password12</newpassword>
+			<bpnumber>2001642295</bpnumber>
+			<firstName>Testing</firstName>
+			<lastName>Test</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>0123456789</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber></mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>0123456789</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<accNumber>600762440</accNumber>
+			<invoiceNumber></invoiceNumber>
+			<postCode>KT13 9JQ</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BgbRegistration</string>
+		<UserProfile>
+			<email>RegistrationPapersgd@gmail.com</email>
+			<password>password12</password>
+			<newemail>DryRun448@cts.com</newemail>
+			<newpassword>temp1234</newpassword>
+			<bpnumber>2001259476</bpnumber>
+			<firstName>Registration</firstName>
+			<lastName>Paperless</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>0123456789</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>0123456789</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>0123456789</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<accNumber>600512887</accNumber>
+			<invoiceNumber>191371633</invoiceNumber>
+			<postCode>G2 1BA</postCode>
+			<billAddr>BD4 7UA</billAddr>
+			<siteAddr>BD4 7UA</siteAddr>
+			<feedbackoption>1</feedbackoption>
+			<feedbacktext>Option has been selected at :</feedbacktext>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BgbCareplan</string>
+		<UserProfile>
+			<email>shoban.manohar@britishgas.co.uk</email>
+			<password>password12</password>
+			<firstName>tester</firstName>
+			<lastName>test</lastName>
+			<title>Mr</title>
+			<businessname>Zeeshan</businessname>
+			<phoneNumber>0123455551</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>0123455551</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>0123456779</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<accNumber>600512887</accNumber>
+			<invoiceNumber>191371633</invoiceNumber>
+			<postCode>KT1 1AA</postCode>
+			<feedbackoption>1</feedbackoption>
+			<feedbacktext>Option has been selected at :</feedbacktext>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BgbCareplanUk</string>
+		<UserProfile>
+			<email>careplan_pricing@britishgas.co.uk</email>
+			<firstName>Test</firstName>
+			<lastName>Tester</lastName>
+			<title>Mr</title>
+			<businessname>Zeeshan</businessname>
+			<phoneNumber>012345678912</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>07123456 789</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>012345678945</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<accNumber>600512887</accNumber>
+			<invoiceNumber>191371633</invoiceNumber>
+			<postCode>M11 2NP</postCode>
+			<feedbackoption>1</feedbackoption>
+			<feedbacktext>Option has been selected at :</feedbacktext>
+		</UserProfile>
+	</entry>
+	<!-- <entry> <string>SetDirectDebit</string> <UserProfile> <email>SetDirectDebit@cognizant.com</email> 
+		<password>password12</password> <accNumber>600333028</accNumber> <bpnumber>2001353482</bpnumber> 
+		<firstName>Michael</firstName> <lastName>S</lastName> <title>Mr</title> <acceptTerms>Y</acceptTerms> 
+		<invoiceNumber>702289429</invoiceNumber> <postCode>WA1 1NL</postCode> </UserProfile> 
+		</entry> -->
+	<entry>
+		<string>SetDirectDebitDiffAccountTypes</string>
+		<UserProfile>
+			<email>SetDirectDebitDiffAccountTypes@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600298187-600333028</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>DdLinkAndSummary</string>
+		<UserProfile>
+			<email>DdLinkAndSummary@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600333029</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>DdBackToAccount</string>
+		<UserProfile>
+			<email>DdBackToAccount@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600333029</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvTestdataforRB</string>
+		<UserProfile>
+			<email>msurya.m@cognizant.com</email>
+			<newemail>oneuserchange126@bgb.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001510513</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>newf</viewname>
+			<Editview>changeffwwnfamee</Editview>
+			<accNumber>600504909</accNumber>
+			<UserType>Reads and Bills</UserType>
+
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AmendData28Days</string>
+		<UserProfile>
+			<email>AmendData28Days@britishgas.co.uk</email>
+			<password>password12</password>
+			<accNumber>600258612</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AmendDirectDebit</string>
+		<UserProfile>
+			<email>AmendDirectDebit@britishgas.co.uk</email>
+			<password>password12</password>
+			<accNumber>600254899</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AmendDirectDebitForError</string>
+		<UserProfile>
+			<email>AmendDirectDebitForError@britishgas.co.uk</email>
+			<password>password12</password>
+			<accNumber>600254899</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>DdInvalidAnd24hrsError</string>
+		<UserProfile>
+			<email>DdInvalidAnd24hrsError@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600335768</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AmendInvalidAnd24hrsError</string>
+		<UserProfile>
+			<email>AmendInvalidAnd24hrsError@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600297964</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>DdThankYouPage</string>
+		<UserProfile>
+			<email>DdThankYouPage@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600297964</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<acceptTerms>Y</acceptTerms>
+			<invoiceNumber>702289429</invoiceNumber>
+			<postCode>WA1 1NL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BGBLessthanFifteenAccounts</string>
+		<UserProfile>
+			<email>ohmkumar_80@hotmail.com</email>
+			<password>password12</password>
+			<accNumber>600297717</accNumber>
+			<bpnumber>2000855683</bpnumber>
+			<firstName>Abc</firstName>
+			<lastName>Cde</lastName>
+			<title>Professor</title>
+			<postCode>UB7 8JL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BGBMorethanFifteenAccountsBP2</string>
+		<UserProfile>
+			<email>morethan15@bg.com</email>
+			<password>password12</password>
+			<accNumber>600528821</accNumber>
+			<bpnumber>2000757072</bpnumber>
+			<firstName>Dan</firstName>
+			<lastName>Bird</lastName>
+			<title>Mr</title>
+			<postCode>S71 3HR</postCode>
+			<billAddr>S71 3HR</billAddr>
+			<siteAddr>S71 3HR</siteAddr>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BGBInactiveAccounts</string>
+		<UserProfile>
+			<email>565625@5656.com</email>
+			<password>password12</password>
+			<accNumber>600330018 </accNumber>
+			<bpnumber>2000918530</bpnumber>
+			<firstName>Abc</firstName>
+			<lastName>Cde</lastName>
+			<title>Professor</title>
+			<postCode>S71 3HR</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MSOnlineCustomer</string>
+		<UserProfile>
+			<email>aymeric.delattre@saptestexch.local</email>
+			<password>password12</password>
+			<newemail>DryRun@</newemail>
+			<newpassword>password12</newpassword>
+			<bpnumber>2001353482</bpnumber>
+			<firstName>Michael</firstName>
+			<lastName>S</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>0123456789</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>0123456789</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<workNumber>0123456789</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<elecAccount>850023079460</elecAccount>
+			<gasAccount>850000577474</gasAccount>
+			<bgsAccount>smart01@bgtest.co.uk</bgsAccount>
+			<accNumber>600298187</accNumber>
+			<addr>se23 1ln</addr>
+			<invoiceNumber>131365103</invoiceNumber>
+			<postCode>CM5 0GA</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>
+			SmrLoggedInJourney
+		</string>
+		<SMRAccountDetails>
+			<title>Mr</title>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<email>viewbill5@bgb.com</email>
+			<password>password12</password>
+			<accountNumber>600075468</accountNumber>
+			<accountType>Gas</accountType>
+			<afterSubmitMeterRead></afterSubmitMeterRead>
+			<actualReadOn>02 Dec 2012</actualReadOn>
+			<previousBalance></previousBalance>
+			<lastMeterReadGas>4000</lastMeterReadGas>
+			<lastMeterReadElectricity></lastMeterReadElectricity>
+			<meterSerialNumberGas>2391765</meterSerialNumberGas>
+
+
+			<meterSerialNumberElectricity></meterSerialNumberElectricity>
+			<mpan>9087140410</mpan>
+			<mprn>9087140410</mprn>
+		</SMRAccountDetails>
+	</entry>
+	<entry>
+		<string>SetDirectDebit</string>
+		<DirectDebit>
+			<email>viewbill5@bgb.com</email>
+			<password>password12</password>
+			<accNumber>600075468</accNumber>
+			<accountholdername>carnigie</accountholdername>
+			<sortcode1>30</sortcode1>
+			<sortcode2>93</sortcode2>
+			<sortcode3>91</sortcode3>
+			<bankaccountnumber>00242798</bankaccountnumber>
+		</DirectDebit>
+	</entry>
+	<entry>
+		<string>tetris-contactUs</string>
+		<UserProfile>
+			<title>Ms</title>
+			<firstName>ganthi</firstName>
+			<lastName>mani</lastName>
+			<companyName>cts</companyName>
+			<accNumber>600485895</accNumber>
+			<bpnumber>2001353482</bpnumber>
+			<email>gopinath.muthukrishnan@cognizant.com</email>
+			<phoneNumber>02089781234</phoneNumber>
+			<postCode>e11 3bh</postCode>
+			<annualSpend>24234</annualSpend>
+			<registerationNumber>3244</registerationNumber>
+			<query>Energy Supply</query>
+			<country>Aberdeenshire</country>
+			<homeNumber>820</homeNumber>
+			<city>London</city>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Testdata1</string>
+		<UserProfile>
+			<accNumber>600638460</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>singleelec@bgdigitaltest.co.uk</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001734520</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata2</string>
+		<UserProfile>
+			<accNumber>600506465</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb2@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001517552</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata3</string>
+		<UserProfile>
+			<accNumber>600506408</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb3@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001517450</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata4</string>
+		<UserProfile>
+			<accNumber>600506518</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb4@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001517781</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata5</string>
+		<UserProfile>
+			<accNumber>600506554</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb5@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001518059</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata6</string>
+		<UserProfile>
+			<accNumber>600506557</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb6@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001518207</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata7</string>
+		<UserProfile>
+			<accNumber>600506591</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb7@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001518341</bpnumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Testdata8</string>
+		<UserProfile>
+			<accNumber>600506653</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb8@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001518647</bpnumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Testdata9</string>
+		<UserProfile>
+			<accNumber>600506560</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>ddbgb9@bg.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001518403</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata10</string>
+		<UserProfile>
+			<accNumber>600526608</accNumber>
+			<invoiceNumber>102391339</invoiceNumber>
+			<postCode>CM14 4DR</postCode>
+			<firstName>firstname</firstName>
+			<lastName>lastname</lastName>
+			<email>nonauto@ddgas.com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2001601394</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Standardusertestdata</string>
+		<UserProfile>
+			<email>username18@centrica.com</email>
+			<password>password12</password>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AddnewViewMorethan15Accts</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>morethansuperuser78@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001624702</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600548345</accNumber>
+			<UserType>Reads, Bills and Payments</UserType>
+			<viewname>mega5</viewname>
+			<Editview>updated56</Editview>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>SOANormalGasAccount</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001734902</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<title>Miss</title>
+			<accNumber>600849269</accNumber>
+			<postCode>KT18 5HF</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Morethan15Account</string>
+		<UserProfile>
+			<email>morethan15a@uat.com</email>
+			<password>password12</password>
+			<accNumber>600560372</accNumber>
+			<mprn>9213072808</mprn>
+		</UserProfile>
+	</entry>
+
+
+	<entry>
+		<string>MuMvManageView</string>
+		<UserProfile>
+			<email>anshu.singh@cognizant.com</email>
+			<newemail>userkartdvvvhdi@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001559653</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600545801</accNumber>
+			<UserType>Reads, Bills and Payments User</UserType>
+			<viewname>vvcccc</viewname>
+			<Editview>vssccccccssss</Editview>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BGBLessthanFiveAccounts</string>
+		<UserProfile>
+		                             <email>jj@bg.com</email>
+                                    <newemail>onetwothreepftr@centrica.com</newemail>
+                                    <password>password12</password>
+                                    <title>Mrs</title>
+                                    <bpnumber>2000049953</bpnumber>
+                                    <firstName>Erw</firstName>
+                                    <lastName>Efw</lastName>
+                                    <accNumber>601926656</accNumber>
+                                    <mobileNumber>01234567890</mobileNumber>
+
+		
+		
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BGBMorethanFifteenAccounts</string>
+		<UserProfile>
+		                             <email>morethan15@bgdigitaltest.co.uk</email>
+                                     <password>password12</password>
+                                    <title>Mr</title>
+                                    <bpnumber>2002659965</bpnumber>
+                                    <firstName>Arun</firstName>
+                                    <lastName>kumar</lastName>
+                                    <accNumber>600914248</accNumber>
+									<postCode>SG1 2PT</postCode>
+		
+		
+		</UserProfile>
+	</entry>
+	
+	<entry>
+		<string>Payments</string>
+		<UserProfile>
+			<email>sowmya.ravindranathan@cognizant.com</email>
+			<password>password12</password>
+			<accNumber>600768144</accNumber>
+			<billAddr>6, Chapel Hill, HAYLE, TR27 4JU</billAddr>
+			<postCode>TR27 4JU</postCode>
+			<amountToPay>5</amountToPay>
+			<cardtype>MasterCard</cardtype>
+			<cardHolderName>Saadhanaa</cardHolderName>
+			<cardNumber>5301250070000050</cardNumber>
+			<cardExpiryMonth>4</cardExpiryMonth>
+			<cardExpiryYear>2014</cardExpiryYear>
+			<cardCVV>772</cardCVV>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>AddnewViewMorethan15Acctsmanage</string>
+		<UserProfile>
+			<email>online1_20@bgb.com</email>
+			<newemail>newusersfld@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001687956</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600560357</accNumber>
+			<UserType>Reads, Bills and Payments User</UserType>
+			<viewname>neewdkkddd</viewname>
+			<Editview>sdfdfddooddd</Editview>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>SOANormalElecAccount</string>
+		<UserProfile>
+			<email>1meter_online@gas.com</email>
+			<password>password12</password>
+			<accNumber>600545801</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVTestDatachange</string>
+		<UserProfile>
+			<email>odb1@elec3meter.com</email>
+			<newemail>stduser@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001653101</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600544613</accNumber>
+			<viewname>karthikeya</viewname>
+			<Editview>keyyy</Editview>
+			<UserType>Reads, Bills and Payments User</UserType>
+			<postCode>Reads, Bills and Payments User</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>SOACollectiveElecAccount</string>
+		<UserProfile>
+			<email>setupgas@bgbgas.com</email>
+			<password>password12</password>
+			<bpnumber>2001734902</bpnumber>
+			<firstName>first</firstName>
+			<lastName>Barclays</lastName>
+			<title>Mr</title>
+			<accNumber>600000439</accNumber>
+			<postCode>TW4 5LE</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>SOACollectiveGasAccount</string>
+		<UserProfile>
+			<email>1meter_online@gas.com</email>
+			<password>password12</password>
+			<bpnumber></bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<title>Miss</title>
+			<accNumber>600545801</accNumber>
+			<postCode>CT10 2PP</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>SOAPagevalidation</string>
+		<UserProfile>
+			<email>1meter_online@gas.com</email>
+			<password>password12</password>
+			<bpnumber></bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<title>Miss</title>
+			<accNumber>600545801</accNumber>
+			<postCode>NE24 5TZ</postCode>
+		</UserProfile>
+	</entry>
+
+
+
+	<entry>
+		<string>AddnewViewMorethan15Accts1</string>
+		<UserProfile>
+			<email>55accounts@bgb.com</email>
+			<newemail>55accounts1@bgb.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001628798</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600549907</accNumber>
+			<UserType>Reads, Bills and Payments</UserType>
+			<viewname>mega57r77ff</viewname>
+			<Editview>updated5fr66f</Editview>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVTestDatabackcancel</string>
+		<UserProfile>
+			<email>collective3@3meter.com</email>
+			<newemail>sathyathedon12@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001556379</bpnumber>
+			<firstName>rock</firstName>
+			<lastName>star</lastName>
+			<accNumber>670019781</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVTestData1</string>
+		<UserProfile>
+			<email>greaterthan3meters@gas.com</email>
+			<newemail>qqqqqqqqq@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000873802</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>600304178</accNumber>
+			<viewname>dfff</viewname>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVTestData</string>
+
+		<UserProfile>
+			<email>naruto1@cartoon.com</email>
+			<newemail>narutotheman1@cartoon.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001624664</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600548375</accNumber>
+			<viewname>karthikeya</viewname>
+			<Editview>keyyy</Editview>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVTestData2</string>
+		<UserProfile>
+			<email>fifthuser@sling.com</email>
+			<newemail>successfulluser@cts.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001556269</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>600524534</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ConsumptionData</string>
+		<UserProfile>
+			<email>dual@quar.com</email>
+			<password>password12</password>
+			<accNumber>600227960</accNumber>
+			<bpnumber>2000326658</bpnumber>
+
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVTestDatas</string>
+		<UserProfile>
+			<email>maheswari.sattanathan@cognizant.com</email>
+			<newemail>newstduser77@gmail.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001853645</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName> Test</lastName>
+			<viewname>mynamefgsfview</viewname>
+			<Editview>editmynameview</Editview>
+			<accNumber>600236362</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMvPaperlessBilling</string>
+		<UserProfile>
+			<email>jothi@bg.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001650513</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>newview</viewname>
+			<Editview>editviews</Editview>
+			<accNumber>600548240</accNumber>
+			<UserType>Full access</UserType>
+
+		</UserProfile>
+	</entry>
+
+
+
+	<entry>
+		<string>MuMVTestDataspl</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<newemail>newmybdbd@bgb.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2002454677</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>newviewwnamefe</viewname>
+			<Editview>changeviewwnfamee</Editview>
+			<accNumber>600849269</accNumber>
+			<UserType>Full access</UserType>
+
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>ViewuserVerifynew</string>
+		<UserProfile>
+			<email>subu4@gmail.com</email>
+			<newemail>newusertesttnnnt@gmail.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001853645</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>dfff</lastName>
+			<viewname>dfdnnf</viewname>
+			<Editview>ddssnn</Editview>
+			<accNumber>600699253</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ViewuserVerify</string>
+		<UserProfile>
+			<email>viewbill1@gas.com</email>
+			<newemail>oneffff@multiple.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001642295</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>6000358868</accNumber>
+			<UserType>Full Access User</UserType>
+			<postCode>Reads, Bills and Payments User</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVTestData3</string>
+		<UserProfile>
+			<email>1metermob@gas.com</email>
+			<newemail>testdatatest@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001559653</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>600544955</accNumber>
+			<viewname>kart</viewname>
+			<UserType>Reads, Bills and Payments</UserType>
+			<postCode>Reads, Bills and Payments</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVTestData4</string>
+		<UserProfile>
+			<email>1metermob@gas.com</email>
+			<newemail>testdata1869@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001559653</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>kart</viewname>
+			<accNumber>600544955</accNumber>
+			<UserType>Full access</UserType>
+			<postCode>Full access</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMvAddnewSupeUser</string>
+		<UserProfile>
+			<email>1metermob@gas.com</email>
+			<newemail>gethugethu1@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>600038253</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVlessthanfifteenaccts</string>
+		<UserProfile>
+			<email>1meter_online@gas.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<accNumber>600545801</accNumber>
+			<UserType></UserType>
+			<postCode></postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMvAccessVerification</string>
+		<UserProfile>
+			<email>swatandcats1@cartoon.com</email>
+			<newemail>bluebeechild18@centrica.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001624637</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<accNumber>600548447</accNumber>
+			<viewname>karthikeya</viewname>
+			<Editview>keyyy</Editview>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVmorethan15accts</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>Testing135</viewname>
+			<accNumber>600038253</accNumber>
+			<UserType></UserType>
+			<postCode></postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvAddnewStdUser</string>
+		<UserProfile>
+			<email>1meter_online@gas.com</email>
+			<newemail>semada@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001624702</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600545801</accNumber>
+			<UserType></UserType>
+			<postCode></postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvMaxStduserValidation</string>
+		<UserProfile>
+			<email>superuser@new.com</email>
+			<newemail>semasemazc@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType></UserType>
+			<postCode></postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvstdbackandcancel</string>
+		<UserProfile>
+			<email>coll1soa@bgb.com</email>
+			<newemail>test12@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvtesttest</string>
+		<UserProfile>
+			<email>RenukaDevi.Chanumolu@cognizant.com</email>
+			<newemail>semasemazc@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvstdUserNavigation</string>
+		<UserProfile>
+			<email>odb1@elec.com</email>
+			<newemail>ssdfffd@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvsuperUserNavigation</string>
+		<UserProfile>
+			<email>coll1soa@bgb.com</email>
+			<newemail>test15@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvUserAllAccoutns</string>
+		<UserProfile>
+			<email>coll1soa@bgb.com</email>
+			<newemail>testerodoo@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvmorethan15Accts1</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>oneattempt@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>karthi</firstName>
+			<lastName>keyan</lastName>
+			<accNumber>670023131</accNumber>
+			<UserType></UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvAddnewviewOverlay</string>
+		<UserProfile>
+			<email>1metermob@gas.com</email>
+			<newemail>fdfdfdf@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvAddnewviewOverlay1</string>
+		<UserProfile>
+			<email>hemasundar2@cognizant.com</email>
+			<newemail>semasedow@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>charlies</firstName>
+			<lastName>lasts</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVSuperUserPrepopulatedUserdetails</string>
+		<UserProfile>
+			<email>username3@centrica.com</email>
+			<newemail>semaseqwewj@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001624550</bpnumber>
+			<firstName>chaplinds</firstName>
+			<lastName>chellapad</lastName>
+			<accNumber>600548461</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVStdUserPrepopulatedUserdetails</string>
+		<UserProfile>
+			<email>2accounts@superuser.com</email>
+			<newemail>semadopogok@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000041137</bpnumber>
+			<firstName>chaplind</firstName>
+			<lastName>chellapad</lastName>
+			<accNumber>600548257</accNumber>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvTestdataforFA</string>
+		<UserProfile>
+			<email>morethan3@elec.com</email>
+			<newemail>newnamekart@dd.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001734902</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>newvied</viewname>
+			<Editview>changedmee</Editview>
+			<accNumber>600682225</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvTestdataforFAA</string>
+		<UserProfile>
+			<email>subu4@gmail.com</email>
+			<newemail>newusertesttnnt@gmail.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001853645</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>dfff</lastName>
+			<viewname>dnnfdf</viewname>
+			<Editview>ddnnss</Editview>
+			<accNumber>600699253</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVStdUserSpecificPrepopulatedUserdetails</string>
+		<UserProfile>
+			<email>2accounts@superuser.com</email>
+			<newemail>dsdsdsd@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001559653</bpnumber>
+			<firstName>rose</firstName>
+			<lastName>jasmine</lastName>
+			<accNumber>600544955</accNumber>
+			<viewname>Testing135</viewname>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMVmorethan5superuser</string>
+		<UserProfile>
+			<email>1metermob@gas.com</email>
+			<newemail>gddfdfd@gas.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001559653</bpnumber>
+			<firstName>rose</firstName>
+			<lastName>jasmine</lastName>
+			<accNumber>600038253</accNumber>
+			<viewname>Testing135</viewname>
+			<UserType>Reads and Bills</UserType>
+			<postCode>Reads and Bills</postCode>
+		</UserProfile>
+	</entry>
+
+	<!-- sundar xml -->
+
+	<entry>
+		<string>DeleteAndReactivate</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>hemasundar@centrica.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+
+	<entry>
+		<string>InactiveAccount</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>centrica11@hemasundar.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>DeactivateLik</string>
+		<UserProfile>
+			<email>poorani.not@cognizant.com</email>
+			<newemail>poorani.not@cognizant.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ReactivateAndVerify</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>centrica6@hemasundar.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ReactivateMaxAccount</string>
+		<UserProfile>
+			<email>hemasundar2@cognizant.com</email>
+			<newemail>hemasundar3@cognizant.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ViewAndEdit</string>
+		<UserProfile>
+			<email></email>
+			<password>password12</password>
+			<accNumber></accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>DeactivateAndAddNew</string>
+		<UserProfile>
+			<email>hemasundar2@cognizant.com</email>
+			<newemail>hemasundar4@cognizant.com</newemail>
+			<title>Mr</title>
+			<firstName>Arun</firstName>
+			<lastName>Ramaneshwar</lastName>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+			<UserType>Full access</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>DeactivateLik</string>
+		<UserProfile>
+			<email>poorani.not@cognizant.com</email>
+			<newemail>poorani.not@cognizant.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ReactivateAndVerify</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>centrica6@hemasundar.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ReactivateMaxAccount</string>
+		<UserProfile>
+			<email>hemasundar2@cognizant.com</email>
+			<newemail>hemasundar3@cognizant.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>SixthSuperUser</string>
+		<UserProfile>
+			<email>hemasundar2@cognizant.com </email>
+			<newemail>hemasundar8@cognizant.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>StandardUser</string>
+		<UserProfile>
+			<email>duplicate@bgdigitaltest.co.uk</email>
+			<newemail>sathyathedon1@centrica.com</newemail>
+			<password>password12</password>
+			<accNumber>600588820</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ManageViewupto15Acounts</string>
+		<UserProfile>
+			<email>poorani.not@cognizant.com</email>
+			<password>password12</password>
+			<newemail>pavithra.s4@cognizant.com</newemail>
+			<accNumber></accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ViewStandardUser</string>
+		<UserProfile>
+			<email>hemasundar_superuser@centrica.com</email>
+			<newemail>centrica19@hemasundar.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>UserType1</string>
+		<UserProfile>
+			<email>morethan15new@superuser.com</email>
+			<newemail>sathyathedon11@centrica.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>ViewStandardUser</string>
+		<UserProfile>
+			<email>hemasundar_superuser@centrica.com</email>
+			<newemail>centrica19@hemasundar.com</newemail>
+			<password>password12</password>
+			<accNumber>600548257</accNumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>VerifyMobileNumber</string>
+		<UserProfile>
+			<email>welcome21@centrica.com</email>
+			<password>password12</password>
+			<newemail></newemail>
+			<newpassword>password12</newpassword>
+			<bpnumber></bpnumber>
+			<firstName></firstName>
+			<lastName></lastName>
+			<title></title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber></phoneNumber>
+			<phoneType></phoneType>
+			<mobileNumber></mobileNumber>
+			<homeNumber></homeNumber>
+			<workNumber></workNumber>
+			<acceptTerms></acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<accNumber></accNumber>
+			<invoiceNumber></invoiceNumber>
+			<postCode></postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>UpdateEmail</string>
+		<UserProfile>
+			<email>welcome21@centrica.com</email>
+			<password>password12</password>
+			<newemail>welcome22@centrica.com</newemail>
+			<newpassword>password12</newpassword>
+			<mobileNumber>123456789</mobileNumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>BGBbilling</string>
+		<UserProfile>
+			<email>collective3@3meter.com</email>
+			<password>password12</password>
+			<accNumber>600374703</accNumber>
+			<bpnumber>2001286123</bpnumber>
+			<firstName>Andrew</firstName>
+			<lastName>Smith</lastName>
+			<title>Mr</title>
+			<postCode>LE11 3YE</postCode>
+			<billAddr>Billing address: 49, Cowpen Road, Etal House,Blyth, NE24
+				5TZ
+			</billAddr>
+			<billingAddr>Billing address: 49, Cowpen Road, Etal House,Blyth, NE24
+				5TZ
+			</billingAddr>
+			<siteAddr>WC2H 7AJ</siteAddr>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>ContactUs</string>
+		<UserProfile>
+			<email>business_1@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<newemail>DryRun@bg.com</newemail>
+			<newpassword>temp1234</newpassword>
+			<bpnumber>2001642080</bpnumber>
+			<firstName>Test</firstName>
+			<lastName>Testing</lastName>
+			<title>Mr</title>
+			<securityQuestion></securityQuestion>
+			<securityAnswer></securityAnswer>
+			<phoneNumber>0123456789</phoneNumber>
+			<phoneType>Work</phoneType>
+			<mobileNumber>0123456789</mobileNumber>
+			<homeNumber>64</homeNumber>
+			<businessname>Grey Factory</businessname>
+			<workNumber>0123456789</workNumber>
+			<acceptTerms>Y</acceptTerms>
+			<nectarValue></nectarValue>
+			<nectarNumber></nectarNumber>
+			<accNumber>600005982</accNumber>
+			<billAddr>Site address: High Road, UNIT B4,B5 B6, Whitehaven, CA28
+				9AN</billAddr>
+			<invoiceNumber>703059330</invoiceNumber>
+			<postCode>NG9 2PQ</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Testdata51</string>
+		<UserProfile>
+			<accNumber>600180747</accNumber>
+			<invoiceNumber>131742231</invoiceNumber>
+			<postCode>B68 9SZ</postCode>
+			<firstName>FNFiftyOne</firstName>
+			<lastName>LNFiftyOne</lastName>
+			<email>FiftyOne@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000265530</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata52</string>
+		<UserProfile>
+			<accNumber>600166131</accNumber>
+			<invoiceNumber>131742249</invoiceNumber>
+			<postCode>WV3 0JH</postCode>
+			<firstName>FNFiftyTwo</firstName>
+			<lastName>LNFiftyTwo</lastName>
+			<email>FiftyTwo@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000269640</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata53</string>
+		<UserProfile>
+			<accNumber>600091771</accNumber>
+			<invoiceNumber>131742250</invoiceNumber>
+			<postCode>LE5 0NT</postCode>
+			<firstName>FNFiftyThree</firstName>
+			<lastName>LNFiftyThree</lastName>
+			<email>FiftyThree@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000269653</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata54</string>
+		<UserProfile>
+			<accNumber>600097016</accNumber>
+			<invoiceNumber>131742252</invoiceNumber>
+			<postCode>NG4 1FP</postCode>
+			<firstName>FNFiftyFour</firstName>
+			<lastName>LNFiftyFour</lastName>
+			<email>FiftyFour@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000269784</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata55</string>
+		<UserProfile>
+			<accNumber>600123085</accNumber>
+			<invoiceNumber>131742253</invoiceNumber>
+			<postCode>ST15 8AJ</postCode>
+			<firstName>FNFiftyFive</firstName>
+			<lastName>LNFiftyFive</lastName>
+			<email>FiftyFive@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000269971</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata56</string>
+		<UserProfile>
+			<accNumber>600152455</accNumber>
+			<invoiceNumber>131742237</invoiceNumber>
+			<postCode>M22 4JQ</postCode>
+			<firstName>FNFiftySix</firstName>
+			<lastName>LNFiftySix</lastName>
+			<email>FiftySix@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000266272</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata57</string>
+		<UserProfile>
+			<accNumber>600237990</accNumber>
+			<invoiceNumber>131742246</invoiceNumber>
+			<postCode>FY6 7NH</postCode>
+			<firstName>FNFiftySeven</firstName>
+			<lastName>LNFiftySeven</lastName>
+			<email>FiftySeven@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000268719</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata58</string>
+		<UserProfile>
+			<accNumber>600238099</accNumber>
+			<invoiceNumber>131742247</invoiceNumber>
+			<postCode>DL15 8QH</postCode>
+			<firstName>FNFiftyEight</firstName>
+			<lastName>LNFiftyEight</lastName>
+			<email>FiftyEight@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000268937</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata59</string>
+		<UserProfile>
+			<accNumber>600170940</accNumber>
+			<invoiceNumber>131742239</invoiceNumber>
+			<postCode>CM1 1HZ</postCode>
+			<firstName>FNFiftyNine</firstName>
+			<lastName>LNFiftyNine</lastName>
+			<email>FiftyNine@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000267385</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata60</string>
+		<UserProfile>
+			<accNumber>600142358</accNumber>
+			<invoiceNumber>131742240</invoiceNumber>
+			<postCode>CM1 1LG</postCode>
+			<firstName>FNSixty</firstName>
+			<lastName>LNSixty</lastName>
+			<email>Sixty@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000267458</bpnumber>
+		</UserProfile>
+	</entry>
+
+
+	<entry>
+		<string>Testdata61</string>
+		<UserProfile>
+			<accNumber>600145425</accNumber>
+			<invoiceNumber>131742241</invoiceNumber>
+			<postCode>CM3 4TH</postCode>
+			<firstName>FNSixtyOne</firstName>
+			<lastName>LNSixtyOne</lastName>
+			<email>SixtyOne@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000267538</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata62</string>
+		<UserProfile>
+			<accNumber>600079694</accNumber>
+			<invoiceNumber>131742261</invoiceNumber>
+			<postCode>B60 3DJ</postCode>
+			<firstName>FNSixtyTwo</firstName>
+			<lastName>LNSixtyTwo</lastName>
+			<email>SixtyTwo@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000271979</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata63</string>
+		<UserProfile>
+			<accNumber>600224902</accNumber>
+			<invoiceNumber>131742256</invoiceNumber>
+			<postCode>W3 6LJ</postCode>
+			<firstName>FNSixtyThree</firstName>
+			<lastName>LNSixtyThree</lastName>
+			<email>SixtyThree@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000271210</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata64</string>
+		<UserProfile>
+			<accNumber>600212572</accNumber>
+			<invoiceNumber>131742257</invoiceNumber>
+			<postCode>HA9 0AS</postCode>
+			<firstName>FNSixtyFour</firstName>
+			<lastName>LNSixtyFour</lastName>
+			<email>SixtyFour@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000271240</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata65</string>
+		<UserProfile>
+			<accNumber>600092689</accNumber>
+			<invoiceNumber>131742259</invoiceNumber>
+			<postCode>W5 3PJ</postCode>
+			<firstName>FNSixtyFive</firstName>
+			<lastName>LNSixtyFive</lastName>
+			<email>SixtyFive@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000271432</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata66</string>
+		<UserProfile>
+			<accNumber>600245517</accNumber>
+			<invoiceNumber>131742244</invoiceNumber>
+			<postCode>PA4 0AA</postCode>
+			<firstName>FNSixtySix</firstName>
+			<lastName>LNSixtySix</lastName>
+			<email>SixtySix@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000268469</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata67</string>
+		<UserProfile>
+			<accNumber>600207179</accNumber>
+			<invoiceNumber>131742245</invoiceNumber>
+			<postCode>EH22 2BP</postCode>
+			<firstName>FNSixtySeven</firstName>
+			<lastName>LNSixtySeven</lastName>
+			<email>SixtySeven@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000268544</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata68</string>
+		<UserProfile>
+			<accNumber>600078667</accNumber>
+			<invoiceNumber>131742265</invoiceNumber>
+			<postCode>NG4 1JB</postCode>
+			<firstName>FNSixtyEight</firstName>
+			<lastName>LNSixtyEight</lastName>
+			<email>SixtyEight@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272640</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata69</string>
+		<UserProfile>
+			<accNumber>600098793</accNumber>
+			<invoiceNumber>131742266</invoiceNumber>
+			<postCode>M22 4HH</postCode>
+			<firstName>FNSixtyNine</firstName>
+			<lastName>LNSixtyNine</lastName>
+			<email>SixtyNine@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272678</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata70</string>
+		<UserProfile>
+			<accNumber>600221437</accNumber>
+			<invoiceNumber>131742270</invoiceNumber>
+			<postCode>S6 1HB</postCode>
+			<firstName>FNSeventy</firstName>
+			<lastName>LNSeventy</lastName>
+			<email>Seventy@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000274954</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata71</string>
+		<UserProfile>
+			<accNumber>600170293</accNumber>
+			<invoiceNumber>131742248</invoiceNumber>
+			<postCode>L2 4SJ</postCode>
+			<firstName>FNSeventyOne</firstName>
+			<lastName>LNSeventyOne</lastName>
+			<email>SeventyOne@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000269284</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata72</string>
+		<UserProfile>
+			<accNumber>600090510</accNumber>
+			<invoiceNumber>131742262</invoiceNumber>
+			<postCode>CM17 9QL</postCode>
+			<firstName>FNSeventyTwo</firstName>
+			<lastName>LNSeventyTwo</lastName>
+			<email>SeventyTwo@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272154</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata73</string>
+		<UserProfile>
+			<accNumber>600129475</accNumber>
+			<invoiceNumber>131742263</invoiceNumber>
+			<postCode>CM1 1SS</postCode>
+			<firstName>FNSeventyThree</firstName>
+			<lastName>LNSeventyThree</lastName>
+			<email>SeventyThree@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272510</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata74</string>
+		<UserProfile>
+			<accNumber>600207468</accNumber>
+			<invoiceNumber>131742264</invoiceNumber>
+			<postCode>LU6 1NX</postCode>
+			<firstName>FNSeventyFour</firstName>
+			<lastName>LNSeventyFour</lastName>
+			<email>SeventyFour@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272511</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata75</string>
+		<UserProfile>
+			<accNumber>600207543</accNumber>
+			<invoiceNumber>131742271</invoiceNumber>
+			<postCode>MK3 5FN</postCode>
+			<firstName>FNSeventyFive</firstName>
+			<lastName>LNSeventyFive</lastName>
+			<email>SeventyFive@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000275594</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata76</string>
+		<UserProfile>
+			<accNumber>600150079</accNumber>
+			<invoiceNumber>131742272</invoiceNumber>
+			<postCode>CM1 2RH</postCode>
+			<firstName>FNSeventySix</firstName>
+			<lastName>LNSeventySix</lastName>
+			<email>SeventySix@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000275668</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata77</string>
+		<UserProfile>
+			<accNumber>600185315</accNumber>
+			<invoiceNumber>131742273</invoiceNumber>
+			<postCode>B60 2JL</postCode>
+			<firstName>FNSeventySeven</firstName>
+			<lastName>LNSeventySeven</lastName>
+			<email>SeventySeven@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000276079</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata78</string>
+		<UserProfile>
+			<accNumber>600106145</accNumber>
+			<invoiceNumber>131742267</invoiceNumber>
+			<postCode>S6 2BL</postCode>
+			<firstName>FNSeventyEight</firstName>
+			<lastName>LNSeventyEight</lastName>
+			<email>SeventyEight@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000272977</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata79</string>
+		<UserProfile>
+			<accNumber>600183736</accNumber>
+			<invoiceNumber>131742268</invoiceNumber>
+			<postCode>EH10 6JY</postCode>
+			<firstName>FNSeventyNine</firstName>
+			<lastName>LNSeventyNine</lastName>
+			<email>SeventyNine@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000273290</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata80</string>
+		<UserProfile>
+			<accNumber>600084927</accNumber>
+			<invoiceNumber>131742269</invoiceNumber>
+			<postCode>DG9 7JF</postCode>
+			<firstName>FNEighty</firstName>
+			<lastName>LNEighty</lastName>
+			<email>Eighty@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000273526</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata81</string>
+		<UserProfile>
+			<accNumber>600237701</accNumber>
+			<invoiceNumber>131742280</invoiceNumber>
+			<postCode>WR2 6EX</postCode>
+			<firstName>FNEightyOne</firstName>
+			<lastName>LNEightyOne</lastName>
+			<email>EightyOne@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277633</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata82</string>
+		<UserProfile>
+			<accNumber>600224636</accNumber>
+			<invoiceNumber>131742281</invoiceNumber>
+			<postCode>DN15 7NH</postCode>
+			<firstName>FNEightyTwo</firstName>
+			<lastName>LNEightyTwo</lastName>
+			<email>EightyTwo@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277647</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata83</string>
+		<UserProfile>
+			<accNumber>600192683</accNumber>
+			<invoiceNumber>131742283</invoiceNumber>
+			<postCode>LE11 3GR</postCode>
+			<firstName>FNEightyThree</firstName>
+			<lastName>LNEightyThree</lastName>
+			<email>EightyThree@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277752</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata84</string>
+		<UserProfile>
+			<accNumber>600088152</accNumber>
+			<invoiceNumber>131742282</invoiceNumber>
+			<postCode>LE11 3GR</postCode>
+			<firstName>FNEightyFour</firstName>
+			<lastName>LNEightyFour</lastName>
+			<email>EightyFour@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277752</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata85</string>
+		<UserProfile>
+			<accNumber>600119206</accNumber>
+			<invoiceNumber>131742285</invoiceNumber>
+			<postCode>S9 5NF</postCode>
+			<firstName>FNEightyFive</firstName>
+			<lastName>LNEightyFive</lastName>
+			<email>EightyFive@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000278676</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata86</string>
+		<UserProfile>
+			<accNumber>600221352</accNumber>
+			<invoiceNumber>131742286</invoiceNumber>
+			<postCode>PE25 2AT</postCode>
+			<firstName>FNEightySix</firstName>
+			<lastName>LNEightySix</lastName>
+			<email>EightySix@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000278821</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata87</string>
+		<UserProfile>
+			<accNumber>600182987</accNumber>
+			<invoiceNumber>131742275</invoiceNumber>
+			<postCode>LA23 2LB</postCode>
+			<firstName>FNEightySeven</firstName>
+			<lastName>LNEightySeven</lastName>
+			<email>EightySeven@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000276672</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata88</string>
+		<UserProfile>
+			<accNumber>600116359</accNumber>
+			<invoiceNumber>131742276</invoiceNumber>
+			<postCode>M22 4ET</postCode>
+			<firstName>FNEightyEight</firstName>
+			<lastName>LNEightyEight</lastName>
+			<email>EightyEight@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277032</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata89</string>
+		<UserProfile>
+			<accNumber>600117479</accNumber>
+			<invoiceNumber>131742277</invoiceNumber>
+			<postCode>LA23 3HE</postCode>
+			<firstName>FNEightyNine</firstName>
+			<lastName>LNEightyNine</lastName>
+			<email>EightyNine@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277059</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata90</string>
+		<UserProfile>
+			<accNumber>600198356</accNumber>
+			<invoiceNumber>131742278</invoiceNumber>
+			<postCode>M28 3AT</postCode>
+			<firstName>FNNinety</firstName>
+			<lastName>LNNinety</lastName>
+			<email>Ninety@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277090</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata91</string>
+		<UserProfile>
+			<accNumber>600195743</accNumber>
+			<invoiceNumber>131742274</invoiceNumber>
+			<postCode>NR19 1DJ</postCode>
+			<firstName>FNNinetyOne</firstName>
+			<lastName>LNNinetyOne</lastName>
+			<email>NinetyOne@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000276244</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata92</string>
+		<UserProfile>
+			<accNumber>600118135</accNumber>
+			<invoiceNumber>131742288</invoiceNumber>
+			<postCode>CM17 9RD</postCode>
+			<firstName>FNNinetyTwo</firstName>
+			<lastName>LNNinetyTwo</lastName>
+			<email>NinetyTwo@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000279676</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata93</string>
+		<UserProfile>
+			<accNumber>600160906</accNumber>
+			<invoiceNumber>131742284</invoiceNumber>
+			<postCode>G53 7HT</postCode>
+			<firstName>FNNinetyThree</firstName>
+			<lastName>LNNinetyThree</lastName>
+			<email>NinetyThree@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000278427</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata94</string>
+		<UserProfile>
+			<accNumber>600126726</accNumber>
+			<invoiceNumber>131742292</invoiceNumber>
+			<postCode>EH22 2NQ</postCode>
+			<firstName>FNNinetyFour</firstName>
+			<lastName>LNNinetyFour</lastName>
+			<email>NinetyFour@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000280609</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata95</string>
+		<UserProfile>
+			<accNumber>600130336</accNumber>
+			<invoiceNumber>131742287</invoiceNumber>
+			<postCode>HU12 8BN</postCode>
+			<firstName>FNNinetyFive</firstName>
+			<lastName>LNNinetyFive</lastName>
+			<email>NinetyFive@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000279114</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata96</string>
+		<UserProfile>
+			<accNumber>600245732</accNumber>
+			<invoiceNumber>131742299</invoiceNumber>
+			<postCode>YO11 1XX</postCode>
+			<firstName>FNNinetySix</firstName>
+			<lastName>LNNinetySix</lastName>
+			<email>NinetySix@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000282872</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata97</string>
+		<UserProfile>
+			<accNumber>600078681</accNumber>
+			<invoiceNumber>131742300</invoiceNumber>
+			<postCode>NG4 1JE</postCode>
+			<firstName>FNNinetySeven</firstName>
+			<lastName>LNNinetySeven</lastName>
+			<email>NinetySeven@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000283047</bpnumber>
+		</UserProfile>
+	</entry>
+
+
+	<entry>
+		<string>Testdata98</string>
+		<UserProfile>
+			<accNumber>600199452</accNumber>
+			<invoiceNumber>131742279</invoiceNumber>
+			<postCode>DL15 8JG</postCode>
+			<firstName>FNNinetyEight</firstName>
+			<lastName>LNNinetyEight</lastName>
+			<email>NinetyEight@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000277560</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata99</string>
+		<UserProfile>
+			<accNumber>600222755</accNumber>
+			<invoiceNumber>131742294</invoiceNumber>
+			<postCode>M20 2QF</postCode>
+			<firstName>FNNinetyNine</firstName>
+			<lastName>LNNinetyNine</lastName>
+			<email>NinetyNine@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000281725</bpnumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Testdata100</string>
+		<UserProfile>
+			<accNumber>600135338</accNumber>
+			<invoiceNumber>131742289</invoiceNumber>
+			<postCode>NR11 6BW</postCode>
+			<firstName>FNOneHundred</firstName>
+			<lastName>LNOneHundred</lastName>
+			<email>OneHundred@BGBWPThreeBROne.Com</email>
+			<title>Mr</title>
+			<password>password12</password>
+			<bpnumber>2000280095</bpnumber>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MuMVforpaperbilling</string>
+		<UserProfile>
+			<email>june22@bg.com</email>
+			<newemail>paperbilling@multiple.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001628798</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600533829</accNumber>
+			<UserType>Full Access User</UserType>
+
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Loginandpassword</string>
+		<UserProfile>
+			<email>VINOTH.SUBRAMANIAM@cognizant.com</email>
+			<newemail>temp1@bgb.com</newemail>
+			<password>password12</password>
+			<newpassword>password12</newpassword>
+			<title>Mr</title>
+			<bpnumber>2001005017</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600545571</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Loginandpassword1</string>
+		<UserProfile>
+			<email>sangeethapriya.m@cognizant.com</email>
+			<newemail>temp1@bgb.com</newemail>
+			<password>password12</password>
+			<newpassword>password12</newpassword>
+			<title>Mr</title>
+			<bpnumber>2001644520</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600537876</accNumber>
+			<phoneNumber>02074046969,0123456789</phoneNumber>
+			<mobileNumber>02074046969,0123456789</mobileNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>SwitchtoglobalPaperless</string>
+		<UserProfile>
+			<email>setupgas@bgbgas.com</email>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>Sdfsdf</firstName>
+			<lastName>Gffsdg</lastName>
+			<businessname>pmohon</businessname>
+			<newemail>intersellero238@Gmail.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Ms</title>
+			<accNumber>600000439</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>25</buildingname>
+			<postCode>B77 3JH</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>SwitchtoglobalPaper</string>
+		<UserProfile>
+			<email>dataforsowmya@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>firshte</firstName>
+			<lastName>lasthe</lastName>
+			<businessname>pmohon</businessname>
+			<newemail>intersellero234@Gmail.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600028980</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>25</buildingname>
+			<postCode>B77 3JH</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Switchtopaperlessacctspecifics</string>
+		<UserProfile>
+			<email>setupgas@bgbgas.com</email>
+			<password>password12</password>
+			<newemail>jaihind20@bgb.com</newemail>
+			<title>Ms</title>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>Sdfsdf</firstName>
+			<lastName>Gffsdg</lastName>
+			<viewname>mynamisview</viewname>
+			<Editview>iameditedview</Editview>
+			<accNumber>600000439</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>MuMvAddnewuserEnhancement</string>
+		<UserProfile>
+			<email>setupdata6@bgdigitaltest.com</email>
+			<password>password12</password>
+			<newemail>testdataforragulg@bg.com</newemail>
+			<title>Mr</title>
+			<bpnumber>2001851146</bpnumber>
+			<firstName>Charlie</firstName>
+			<lastName>Last</lastName>
+			<viewname>ViewForNew</viewname>
+			<Editview>iameditedview</Editview>
+			<accNumber>600506560</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>paperswitchspecific</string>
+		<UserProfile>
+			<email>gas@123.com</email>
+			<password>password12</password>
+			<newemail>karthiemailchanged444@bgb.com</newemail>
+			<title>Mr</title>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>chardlie</firstName>
+			<lastName>lastd</lastName>
+			<viewname>oncevdbi2ewname</viewname>
+			<Editview>editeddbv2iewname</Editview>
+			<accNumber>600494003</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Switchtopaperlessacctspecificsdata</string>
+		<UserProfile>
+			<email>testdataforvamsi@bg.com</email>
+			<password>password12</password>
+			<newemail>karthimyname@bg.com</newemail>
+			<title>Mr</title>
+			<bpnumber>2002511871</bpnumber>
+			<firstName>chardlie</firstName>
+			<lastName>lastd</lastName>
+			<viewname>oncevdbi2ewname</viewname>
+			<Editview>editeddbv2iewname</Editview>
+			<accNumber>600546573</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>morethan15AcctsSwitchtopaperlessacctspecifics</string>
+		<UserProfile>
+			<email>morethan15@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001551816</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600914248</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>Switchtopaperlacctspecifics</string>
+		<UserProfile>
+			<email>changefd@bgb.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001648047</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600545850</accNumber>
+			<UserType>Full Access User</UserType>
+			<pbstatus>PrintedInvoice</pbstatus>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>collectivePaperlessBilling</string>
+		<UserProfile>
+			<email>gas@vddbgb1.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2000003397</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600848457</accNumber>
+			<UserType>Full Access User</UserType>
+			<feedbackoption>3</feedbackoption>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>corporatepaperlessbilling</string>
+		<UserProfile>
+			<email>corpuser12356d222222@bgb.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2002509087</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600520401</accNumber>
+			<UserType>Full Access User</UserType>
+			<feedbackoption>3</feedbackoption>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>EnterprisePaperlessBilling</string>
+		<UserProfile>
+			<email>dataforsowmya@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600028980</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>PaperlessBilling</string>
+		<UserProfile>
+			<email>yessssssssss2@gmail.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001644705</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600544528</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>PaperlessBilling1</string>
+		<UserProfile>
+			<email>yessssssssss689034@gmail.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2001646041</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>600545591</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>EDIPaperlessBilling</string>
+		<UserProfile>
+			<email>testdata15@bgb.com</email>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2002455259</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewname</viewname>
+			<Editview>editedviewname</Editview>
+			<accNumber>670018926</accNumber>
+			<UserType>Full Access User</UserType>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>MumvvvvvPaperlessBilling</string>
+		<UserProfile>
+			<email>temp15@bgb.com</email>
+			<newemail>mynameiskhan17@gmail.com</newemail>
+			<password>password12</password>
+			<title>Mr</title>
+			<bpnumber>2002471428</bpnumber>
+			<firstName>charlie</firstName>
+			<lastName>last</lastName>
+			<viewname>onceviewndame</viewname>
+			<Editview>editedviedwname</Editview>
+			<accNumber>600545850</accNumber>
+			<UserType>Full access</UserType>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Paperlessbillingregistration</string>
+		<UserProfile>
+			<email>testuserpaper@gmai.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<title>Miss</title>
+			<accNumber>600538159</accNumber>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>G44 3DZ</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>nonpaperbilling</string>
+		<UserProfile>
+			<email>dontuserthisdata1@bg.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>first</firstName>
+			<lastName>last</lastName>
+			<title>Miss</title>
+			<accNumber>600108287</accNumber>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>G44 3DZ</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>getaquoteforgas</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>firstgg</firstName>
+			<lastName>lasggt</lastName>
+			<businessname>ppppgggpp</businessname>
+			<newemail>abcgggfodfff@Gmail.com</newemail>
+			<phoneNumber>012512632563</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600849269</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>32</buildingname>
+			<postCode>AB11 5BB</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>getaquoteforelec</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>firstgg</firstName>
+			<lastName>lasggt</lastName>
+			<businessname>ppppgggpp</businessname>
+			<newemail>abcgggfodfff@Gmail.com</newemail>
+			<phoneNumber>012512632563</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600849269</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>3</buildingname>
+			<postCode>B15 3HA</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>AnonymousGAQelec</string>
+		<UserProfile>
+			<email>ragul.murugesgsh@cognizant.com</email>
+			<password>password12</password>
+			<bpnumber>2001519502</bpnumber>
+			<firstName>Ragul</firstName>
+			<lastName>Murugesh</lastName>
+			<businessname>RagulMurugesh</businessname>
+			<newemail>ragul.mdfkj@cognizant.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600013847</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>25</buildingname>
+			<postCode>IV30 4PN</postCode>
+			<mpan>123456781200033565390</mpan>
+            <mprn>3236397108</mprn>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>AnonymousGAQgas</string>
+		<UserProfile>
+			<email>dataforsowmya@bgdigitaltest.co.uk</email>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>firsftt</firstName>
+			<lastName>lasttgf</lastName>
+			<businessname>dutydata</businessname>
+			<newemail>nodataneed1@gmail.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600523925</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<buildingname>2</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>NG9 2PL</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AnonymousGAQGasLargerunit</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>firstman</firstName>
+			<lastName>secondman</lastName>
+			<businessname>thirdbusiness</businessname>
+			<newemail>onemailrrrg@bgb.com</newemail>
+			<phoneNumber>002563256126</phoneNumber>
+			<title>Mr</title>
+			<consumptionunit>20000000000000000000</consumptionunit>
+			<accNumber>600849269</accNumber>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>32</buildingname>
+			<postCode>AB11 5BB</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AnonymousGAQElecLargerunit</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>firstman</firstName>
+			<lastName>secondman</lastName>
+			<businessname>thirdbusiness</businessname>
+			<newemail>onemailrrr@bgb.com</newemail>
+			<phoneNumber>002563256126</phoneNumber>
+			<title>Mr</title>
+			<consumptionunit>20000000000000000000</consumptionunit>
+			<accNumber>600849269</accNumber>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>3</buildingname>
+			<postCode>B15 3HA</postCode>
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>GAQloggedUserforElec</string>
+		<UserProfile>
+			<email>testdataforvamsi@bg.com</email>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>firshte</firstName>
+			<lastName>lasthe</lastName>
+			<businessname>loggedbussiness</businessname>
+			<newemail>newloggeduserf@bgb.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600588820</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<invoiceNumber>703515234</invoiceNumber>
+			<buildingname>3</buildingname>
+			<postCode>AB11 5BB</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>GAQloggedUserforGas</string>
+		<UserProfile>
+			<email>setupdata6@bgdigitaltest.com</email>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<firstName>firshte</firstName>
+			<lastName>lasthe</lastName>
+			<businessname>dutydata</businessname>
+			<newemail>dutydata243f@gmail.com</newemail>
+			<phoneNumber>01256301252</phoneNumber>
+			<title>Miss</title>
+			<accNumber>600506560</accNumber>
+			<consumptionunit>2000</consumptionunit>
+			<buildingname>2</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>Ng9 2aw</postCode>
+			 
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AnonymousGAQmaximum</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four1@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>KT18 5HF</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AnonymousDeenergized</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four1@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<buildingname>12</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>SW17 8RP</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Anonymousbaddatavalidation</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kartdd</firstName>
+			<lastName>keydddy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four41@rp3.com</newemail>
+			<phoneNumber>01222111111</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<buildingname>12</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>SW17 8RP</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>anonymousmorefuelfound</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four1@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<buildingname>13</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>AB10 1AW</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>Anmonymoushalfhourlymeter</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four1@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<buildingname>68</buildingname>
+			<invoiceNumber>703515234</invoiceNumber>
+			<postCode>BH15 1LD</postCode>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>AnonymousincompletesiteElec</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four21@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<consumptionunit>2020</consumptionunit>
+			<buildingname>25</buildingname>
+			<postCode>B77 3JH</postCode>
+			<invoiceNumber>703515234</invoiceNumber>
+
+		</UserProfile>
+	</entry>
+
+	<entry>
+		<string>AnonymousincompletesiteGas</string>
+		<UserProfile>
+			<email>four@rp3.com</email>
+			<password>password12</password>
+			<bpnumber>2001645039</bpnumber>
+			<firstName>kart</firstName>
+			<lastName>keyy</lastName>
+			<businessname>ration card</businessname>
+			<newemail>four1@rp3.com</newemail>
+			<phoneNumber>01256012531</phoneNumber>
+			<title>Mr</title>
+			<accNumber>600849269</accNumber>
+			<consumptionunit>2020</consumptionunit>
+			<buildingname>32</buildingname>
+			<postCode>AB11 5BB</postCode>
+			<invoiceNumber>703515234</invoiceNumber>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BusinessMovesLoggedIn</string>
+		<UserProfile>
+			<email>sriranjani.sambasivam@cognizant.com</email>
+			<accNumber>600506518</accNumber>
+			<firstName>FNDDTwentyEight</firstName>
+			<lastName>LNDDTwentyEight</lastName>
+			<postCode>NG9 2HQ</postCode>
+			<password>password12</password>
+			<bpnumber>2001590980</bpnumber>
+			<phoneNumber>0987654321</phoneNumber>
+			<companyName>bgb</companyName>
+			<feedbackoption>2</feedbackoption>
+			<feedbacktext>test</feedbacktext>
+		</UserProfile>
+	</entry>
+	<entry>
+		<string>BusinessMovesAnonymous</string>
+		<UserProfile>
+		<email>vishrutha.swamynathan@cognizant.com</email>
+		<title>Mr</title>
+		<firstName>Arun</firstName>
+		<lastName>Ramaneshwar</lastName>
+		<mobileNumber>01234500000</mobileNumber>
+		<accNumber>600548257</accNumber>
+		<companyName>Peter</companyName>
+		<postCode>WA10 1BU</postCode>
+		<homeNumber>8</homeNumber>
+		<street>8</street>
+		<city></city>
+		<country></country>
+		<feedbackoption>1</feedbackoption>
+		<feedbacktext>Option has been selected at :</feedbacktext>
+	</UserProfile>
+	</entry>
+	<entry>
+		<string>Renewals</string>
+		<UserProfile>
+			<email>renewal@data.com</email>
+			<title>Mr</title>
+			<firstName>Ffffffff</firstName>
+			<password>password12</password>
+			<lastName>Fhhhhhhhhhhhhh</lastName>
+			<mobileNumber>01234500000</mobileNumber>
+			<accNumber>601077094</accNumber>
+			<companyName>Peter</companyName>
+			<postCode>KA7 1UQ</postCode>
+			<homeNumber>19</homeNumber>
+		</UserProfile>
+	</entry>
+<entry>
+              <string>ConnectionsAndMetering</string>
+              <UserProfile>
+                     <email>sriranjani.sambasivam@cognizant.com</email>
+                     <password>password12</password>
+                     <newemail>DryRun@</newemail>
+                     <newpassword>temp1234</newpassword>
+                     <bpnumber>2001651315</bpnumber>
+                     <firstName>Test</firstName>
+                     <lastName>Test</lastName>
+                     <title>Mr</title>
+                     <securityQuestion></securityQuestion>
+                     <securityAnswer></securityAnswer>
+                     <phoneNumber>0123456789</phoneNumber>
+                     <phoneType>Work</phoneType>
+                     <mobileNumber>0123456789</mobileNumber>
+                     <homeNumber>64</homeNumber>
+                     <workNumber>0123456789</workNumber>
+                     <acceptTerms>Y</acceptTerms>
+                     <nectarValue></nectarValue>
+                     <nectarNumber></nectarNumber>
+                     <accNumber>600506518</accNumber>
+                     <companyName>BritishGas</companyName>
+                     <billAddr>Site address: 207, Stratford Road, BIRMINGHAM, B11 1QT</billAddr>
+                     <invoiceNumber>703059330</invoiceNumber>
+                     <postCode>B11 1QT</postCode>
+                     <feedbackoption>2</feedbackoption>
+            <feedbacktext>Test</feedbacktext>
+              </UserProfile>
+       </entry>
+<entry>
+              <string>BrokerRegistartion</string>
+              <UserProfile>
+                     <email>Bavithra.R@cognizant.com</email>
+                     <title>Mr</title>
+                     <firstName>Lewis</firstName>
+                     <lastName>Buxton</lastName>
+                     <postCode>N17 0JN</postCode>
+                     <password>password12</password>
+                     <bpnumber>2000055560</bpnumber>
+              </UserProfile>
+       </entry>
+       <entry>
+              <string>PSABroker</string>
+              <UserProfile>
+                     <email>anushadevi.m@cognizant.com</email>
+                     <title>Ms</title>
+                     <firstName>Tracey</firstName>
+                     <lastName>Obrien</lastName>
+                     <postCode>OX28 4BL</postCode>
+                     <password>password12</password>
+                     <bpnumber>2001649713</bpnumber>
+              </UserProfile>
+       </entry>
+       <entry>
+              <string>PSABroker1</string>
+              <UserProfile>
+                     <email>regitraiontest1@bgb.com</email>
+                     <title>Ms</title>
+                     <firstName>Tracey</firstName>
+                     <lastName>Obrien</lastName>
+                     <postCode>OX28 4BL</postCode>
+                     <password>password12</password>
+                     <bpnumber>2000955119</bpnumber>
+              </UserProfile>
+       </entry>
+
+</map>    

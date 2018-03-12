@@ -1,0 +1,318 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="India Standard Time">
+<General productName="QuickTest Professional" productVer="11.00" os="Windows 7" host="PC206379"><DocLocation><![CDATA[C:\Users\292238\Desktop\TetrisProject\Slingshot\src\bg\framework\app\functional\util\qtpScripts\Test4]]></DocLocation></General>
+<Doc rID="T1"   productName= "QuickTest Professional"  >
+<DName><![CDATA[Test4]]></DName>
+<Res><![CDATA[Res15]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table">
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:35]]></Time>
+<TimeTick>1385993675</TimeTick>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[SAP Easy Access  -  User]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:35]]></Time>
+<TimeTick>1385993675</TimeTick>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[Maximize]]></Obj>
+<Details plainTxt="False" ><![CDATA[Maximize]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:35]]></Time>
+<TimeTick>1385993675</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="11" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Maximize]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/n fpl9"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/n fpl9"]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:35]]></Time>
+<TimeTick>1385993675</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="13" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["OKCode":Set "/n fpl9"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:35]]></Time>
+<TimeTick>1385993675</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="15" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="10" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SAP Easy Access  -  User]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[Account Display: InitScrn]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:36]]></Time>
+<TimeTick>1385993676</TimeTick>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA["Business partn.":Set "2001624575"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "2001624575"]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:36]]></Time>
+<TimeTick>1385993676</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="18" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Business partn.":Set "2001624575"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:36]]></Time>
+<TimeTick>1385993676</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="20" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="17" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Account Display: InitScrn]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA[Account Display: Basic]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:40]]></Time>
+<TimeTick>1385993680</TimeTick>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[SendKey CTRL_SHIFT_F4]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey CTRL_SHIFT_F4]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:40]]></Time>
+<TimeTick>1385993680</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="23" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey CTRL_SHIFT_F4]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="22" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Account Display: Basic]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[Change settings]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:41]]></Time>
+<TimeTick>1385993681</TimeTick>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA["Display ALV Grid List":Set "ON"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "ON"]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:41]]></Time>
+<TimeTick>1385993681</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="26" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Display ALV Grid List":Set "ON"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA["Display ALV Grid List":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:41]]></Time>
+<TimeTick>1385993681</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="28" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Display ALV Grid List":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA["Continue   (Enter)":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:41]]></Time>
+<TimeTick>1385993681</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="30" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Continue   (Enter)":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="25" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Change settings]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[Account Display: Basic_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:42]]></Time>
+<TimeTick>1385993682</TimeTick>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP01":Select "Chronology"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "Chronology"]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:42]]></Time>
+<TimeTick>1385993682</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="33" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["TABSTRIP01":Select "Chronology"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA["Chronological Display":RowCount]]></Obj>
+<Details plainTxt="False" ><![CDATA[RowCount]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:43]]></Time>
+<TimeTick>1385993683</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="35" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Chronological Display":RowCount]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA["Chronological Display":GetCellData 3,"Amount"]]></Obj>
+<Details plainTxt="False" ><![CDATA[GetCellData 3,"Amount"]]></Details>
+<Time><![CDATA[12/2/2013 - 19:44:44]]></Time>
+<TimeTick>1385993684</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="37" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Chronological Display":GetCellData 3,"Amount"]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="32" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Account Display: Basic_2]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="9" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="12/2/2013 - 19:44:31" eTime="12/2/2013 - 19:44:45" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="4" nRep="7" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="6" >
+<Disp><![CDATA[Test4 Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Summary sTime="12/2/2013 - 19:44:29" eTime="12/2/2013 - 19:44:45" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" >
+<Disp><![CDATA[Test Test4 Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

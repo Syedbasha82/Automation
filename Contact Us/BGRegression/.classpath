@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/jdk1.8.0_141"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/bsh.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/bsh-1.3.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/cglib-nodep-2.1_3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/com.sun.rowset.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/comfyj-2.4.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-codec-1.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-collections-3.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-exec-1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-io-2.2.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-jxpath-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/commons-logging-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/cssparser-0.9.9.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/filterbuilder.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/guava-14.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/hamcrest-core-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/hamcrest-library-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/htmllexer.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/htmlparser.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/htmlunit-2.12.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/htmlunit-core-js-2.12.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/httpclient-4.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/httpcore-4.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/httpmime-4.2.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/ini4j-0.5.2.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jcommander-1.29.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jetty-websocket-8.1.8.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jexplorer-1.9.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jna-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jna-platform-3.4.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jniwrap-3.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/jsch-0.1.45.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/json-20080701.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/junit.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/junit-dep-4.11.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/mshtml.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/nekohtml.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/nekohtml-1.9.17.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/netty-3.5.7.Final.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/ojdbc14.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/operadriver-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/PDFOne.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/phantomjsdriver-1.0.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/protobuf-java-2.4.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/reportng-1.1.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/resolver.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/sac-1.3.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/saxon-8.7.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/SaxonLiaison.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/selenium-java-2.24.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/selenium-java-2.24.1-srcs.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/selenium-server-standalone-2.33.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/serializer.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/serializer-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/sitecapturer.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/slf4j-api-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/slf4j-jdk14-1.6.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/spring-2.5.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/sqljdbc4.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/testng-6.0.1-nobsh-noguice.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/testng-6.8.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/thumbelina.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/velocity-dep-1.4.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/watij.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/watijcom.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/webbit-0.4.8-SNAPSHOT.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/winpack-3.6.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xalan.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xalan-2.7.1.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xercesImpl.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xercesImpl-2.10.0.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xml-apis.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xml-apis-1.4.01.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xpp3_min-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="D:/BGR WorkSpace/Workspace/Workspace/BGRegression/lib/xstream-1.3.1.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>

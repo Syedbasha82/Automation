@@ -1,0 +1,11 @@
+<suite name="Services" verbose="10">
+    <test name="RegresBGBMS">
+        <groups>
+            <run><include name="Services" /></run>
+            <run><exclude name="Regression" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test.services"/>
+        </packages>
+    </test>
+</suite>
