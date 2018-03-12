@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Acquisition" duration-ms="250467" started-at="2018-02-13T09:56:09Z" finished-at="2018-02-13T10:00:20Z">
+    <groups>
+      <group name="Slingshot">
+        <method signature="ConnectionsandMeteringTest.verifyRequestCallBackLoggedIn()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="verifyRequestCallBackLoggedIn" class="bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest"/>
+      </group> <!-- Slingshot -->
+      <group name="RP3Smoke">
+        <method signature="ConnectionsandMeteringTest.verifyRequestCallBackLoggedIn()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="verifyRequestCallBackLoggedIn" class="bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest"/>
+      </group> <!-- RP3Smoke -->
+      <group name="BGBRegistration">
+        <method signature="ConnectionsandMeteringTest.verifyRequestCallBackLoggedIn()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="verifyRequestCallBackLoggedIn" class="bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest"/>
+      </group> <!-- BGBRegistration -->
+    </groups>
+    <test name="Acquisition" duration-ms="250467" started-at="2018-02-13T09:56:09Z" finished-at="2018-02-13T10:00:20Z">
+      <class name="bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest">
+        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="CreateTestLogPath" is-config="true" duration-ms="377" started-at="2018-02-13T09:56:09Z" finished-at="2018-02-13T09:56:09Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTestLogPath -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="setUp" is-config="true" duration-ms="58963" started-at="2018-02-13T09:56:09Z" finished-at="2018-02-13T09:57:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest.verifyRequestCallBackLoggedIn()]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="verifyRequestCallBackLoggedIn()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="verifyRequestCallBackLoggedIn" duration-ms="190930" started-at="2018-02-13T09:57:08Z" finished-at="2018-02-13T10:00:19Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyRequestCallBackLoggedIn -->
+        <test-method status="PASS" signature="runAfterClass1(org.testng.ITestResult)[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="runAfterClass1" is-config="true" duration-ms="571" started-at="2018-02-13T10:00:19Z" finished-at="2018-02-13T10:00:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyRequestCallBackLoggedIn status=SUCCESS method=ConnectionsandMeteringTest.verifyRequestCallBackLoggedIn()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runAfterClass1 -->
+        <test-method status="PASS" signature="reportWrapUp()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="reportWrapUp" is-config="true" duration-ms="2" started-at="2018-02-13T10:00:20Z" finished-at="2018-02-13T10:00:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest@6a5fc7f7]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-02-13T10:00:20Z" finished-at="2018-02-13T10:00:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bg.framework.app.functional.test.Slingshot.ConnectionsandMeteringTest -->
+    </test> <!-- Acquisition -->
+  </suite> <!-- Acquisition -->
+</testng-results>

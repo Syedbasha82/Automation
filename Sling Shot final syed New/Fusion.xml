@@ -1,0 +1,11 @@
+<suite name="Fusion" verbose="10">
+    <test name="Fusion">
+        <groups>
+            <run><include name="Fusion" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test"/>
+            <package name="bg.framework.app.functional.test.sales"/>
+        </packages>
+    </test>
+</suite>

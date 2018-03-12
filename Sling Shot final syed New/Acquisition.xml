@@ -1,0 +1,18 @@
+<suite name="Acquisition" verbose="10">
+    <test name="Acquisition">
+    <classes>
+       <class name="bg.framework.app.functional.test.Slingshot.ForgotPasswordTest"/> 
+       
+       <methods>
+      <include name="verifyForgetPasswordWithErrorLink"/>
+      </methods>  
+       <class name="bg.framework.app.functional.test.Slingshot.ForgotEmailTest"/> 
+       
+       <methods>
+      <include name="verifyEmailLinkInErrorMessage"/>
+      </methods>         
+      
+      	        </classes>
+        
+    </test>
+</suite>
