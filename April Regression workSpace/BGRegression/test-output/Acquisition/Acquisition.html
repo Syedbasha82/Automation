@@ -1,0 +1,865 @@
+<html>
+<head>
+<title>TestNG:  Acquisition</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Acquisition</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/8/0</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Feb 12 13:32:27 IST 2018</td>
+</tr>
+<tr><td>Total time:</td><td>1021 seconds (1021845 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithBoilerCover()'><b>verifyAnonymousLondonLandlordPackagePricingWithBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace292641216", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace292641216'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 34 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>50</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithoutBoilerCover()'><b>verifyAnonymousLondonLandlordPackagePricingWithoutBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace27362884", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace27362884'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 35 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousLondonLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:89)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>50</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithBoilerCover()'><b>verifyAnonymousNationalLandlordPackagePricingWithBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace2108763062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2108763062'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 54 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:106)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>49</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithoutBoilerCover()'><b>verifyAnonymousNationalLandlordPackagePricingWithoutBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace837108062", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace837108062'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 47 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyAnonymousNationalLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:73)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>63</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithBoilerCover()'><b>verifyOAMLondonLandlordPackagePricingWithBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;loginForm-email&apos;]&quot;}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: UIDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at bg.framework.common.functional.UIDriver.findElement(UIDriver.java:56)
+	at bg.framework.common.functional.UIOperation.Enterinput(UIOperation.java:652)
+	at bg.framework.app.functional.page.common.LegacyLoginPage.loginUser(LegacyLoginPage.java:29)
+	at bg.framework.app.functional.action.common.LoginAction.login(LoginAction.java:34)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1399701152", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1399701152'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//*[@id=&apos;loginForm-email&apos;]&quot;}
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: UIDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.GeneratedConstructorAccessor15.newInstance(Unknown Source)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:242)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:327)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:343)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:234)
+	at bg.framework.common.functional.UIDriver.findElement(UIDriver.java:56)
+	at bg.framework.common.functional.UIOperation.Enterinput(UIOperation.java:652)
+	at bg.framework.app.functional.page.common.LegacyLoginPage.loginUser(LegacyLoginPage.java:29)
+	at bg.framework.app.functional.action.common.LoginAction.login(LoginAction.java:34)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:335)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>56</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithoutBoilerCover()'><b>verifyOAMLondonLandlordPackagePricingWithoutBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:294)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace403174823", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace403174823'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 950)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMLondonLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:294)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>119</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithBoilerCover()'><b>verifyOAMNationalLandlordPackagePricingWithBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 983)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:316)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace177140066", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace177140066'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 983)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 40 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithBoilerCover(LandlordTestNew.java:316)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>124</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+<tr>
+<td title='bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithoutBoilerCover()'><b>verifyOAMNationalLandlordPackagePricingWithoutBoilerCover</b><br>Test class: bg.framework.app.functional.test.services.LandlordTestNew</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div><a href='#' onClick='toggleBox("stack-trace633240419", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace633240419'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (175, 952)
+  (Session info: chrome=62.0.3202.62)
+  (Driver info: chromedriver=2.29.461591 (62ebf098771772160f391d75e589dc567915b233),platform=Windows NT 6.1.7601 SP1 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 33 milliseconds
+Build info: version: &apos;2.24.1&apos;, revision: &apos;17205&apos;, time: &apos;2012-06-19 16:53:24&apos;
+System info: os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_121&apos;
+Driver info: driver.version: RemoteWebDriver
+Session ID: 5d04387c39f1d754fcb64f2d7b97f588
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:188)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:145)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:472)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:244)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:77)
+	at bg.framework.common.control.ButtonControl.setValue(ButtonControl.java:13)
+	at bg.framework.common.functional.UIOperation.clickWithXpath(UIOperation.java:201)
+	at bg.framework.app.functional.page.common.BasePage.verifyAndClickWithXpath(BasePage.java:313)
+	at bg.framework.app.functional.page.services.LandlordPageNew.enterPostcodeDetails(LandlordPageNew.java:204)
+	at bg.framework.app.functional.action.services.LandlordActionNew.enterPostcodeDetails(LandlordActionNew.java:26)
+	at bg.framework.app.functional.test.services.LandlordTestNew.verifyOAMNationalLandlordPackagePricingWithoutBoilerCover(LandlordTestNew.java:271)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:80)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1198)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1123)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.TestNG.privateMain(TestNG.java:1338)
+	at org.testng.TestNG.main(TestNG.java:1307)
+</pre></div></td>
+<td>136</td>
+<td>bg.framework.app.functional.test.services.LandlordTestNew@43a25848</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,14 @@
+BGR_DCMT TST - ETE05: JQC - ISU
+sings164
+welcome123
+BGR_DCMT TST - ETE11: JQH - ISU
+mathuric
+welcome1234
+BGR_DCMT TST - ETE16: JQM - ISU
+pathakt1
+tripti008
+end
+//first 3 line should contains as:
+1st line : environemnt name
+2nd line : username
+3rd line : password.

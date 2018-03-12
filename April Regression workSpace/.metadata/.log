@@ -1,0 +1,2445 @@
+!SESSION 2017-12-14 17:52:46.630 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+This is a continuation of log file D:\BGR WorkSpace\April Regression workSpace\.metadata\.bak_0.log
+Created Time: 2017-12-14 17:53:16.822
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.822
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.822
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.837
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.837
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.853
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-14 17:53:16.853
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-14 17:53:29.147
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-14 17:53:29.152
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-12-18 12:40:55.457 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-12-18 12:41:05.854
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.926
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.926
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.926
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.926
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.942
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-18 12:41:09.942
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-18 12:41:24.104
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-18 12:41:24.104
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-12-20 12:16:51.144 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-12-20 12:17:06.542
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.343
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.343
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.343
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.343
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.359
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-20 12:17:14.359
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-20 12:17:21.815
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-20 12:17:21.815
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-12-22 17:12:38.331 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-12-22 17:13:12.216
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.404
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.435
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.435
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.435
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.497
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-22 17:13:20.497
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-22 17:13:50.599
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-22 17:13:50.661
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2017-12-28 12:18:12.937 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\BGR WorkSpace\April Regression workSpace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2017-12-28 12:18:26.234
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.223
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.223
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.223
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.223
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.239
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2017-12-28 12:18:35.239
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-28 12:18:43.943
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2017-12-28 12:18:43.943
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-02 15:41:10.804 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-02 15:41:21.786
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.450
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.450
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.450
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.450
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.481
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-02 15:41:29.481
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-02 15:41:38.125
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-02 15:41:38.125
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-05 16:01:15.157 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-05 16:01:31.511
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.213
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.223
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.223
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.223
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.233
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-05 16:01:56.233
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-05 16:02:06.802
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-05 16:02:06.812
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-09 20:47:21.835 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.core.resources 2 10035 2018-01-09 20:47:28.668
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-09 20:47:30.107
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.242
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.242
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.242
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.242
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.257
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-09 20:47:35.257
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-09 20:47:55.382
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-09 20:47:55.382
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-10 10:10:05.983 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-10 10:10:26.921
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.885
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.885
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.885
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.885
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.901
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-10 10:10:31.901
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-10 10:10:41.824
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-10 10:10:41.839
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-10 10:20:40.436
+!MESSAGE JavaBuilder handling CoreException
+!STACK 1
+org.eclipse.core.runtime.CoreException: File not found: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\bg\framework\app\functional\page\reFactoring\ForgotEmailPage.class.
+	at org.eclipse.core.internal.filesystem.Policy.error(Policy.java:55)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:386)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsByteArray(Util.java:1133)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.writeClassFileCheck(IncrementalImageBuilder.java:889)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.writeClassFileContents(IncrementalImageBuilder.java:831)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:859)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:190)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:510)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:367)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.compile(IncrementalImageBuilder.java:330)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:304)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:135)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Caused by: java.io.FileNotFoundException: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\bg\framework\app\functional\page\reFactoring\ForgotEmailPage.class (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	... 26 more
+!SUBENTRY 1 org.eclipse.core.filesystem 4 271 2018-01-10 10:20:40.436
+!MESSAGE File not found: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\bg\framework\app\functional\page\reFactoring\ForgotEmailPage.class.
+!STACK 0
+java.io.FileNotFoundException: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\bg\framework\app\functional\page\reFactoring\ForgotEmailPage.class (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(Unknown Source)
+	at java.io.FileInputStream.<init>(Unknown Source)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.openInputStream(LocalFile.java:377)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.read(FileSystemResourceManager.java:797)
+	at org.eclipse.core.internal.resources.File.getContents(File.java:290)
+	at org.eclipse.jdt.internal.core.util.Util.getResourceContentsAsByteArray(Util.java:1133)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.writeClassFileCheck(IncrementalImageBuilder.java:889)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.writeClassFileContents(IncrementalImageBuilder.java:831)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.writeClassFile(AbstractImageBuilder.java:859)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.acceptResult(AbstractImageBuilder.java:190)
+	at org.eclipse.jdt.internal.compiler.Compiler.compile(Compiler.java:510)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:367)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.compile(IncrementalImageBuilder.java:330)
+	at org.eclipse.jdt.internal.core.builder.AbstractImageBuilder.compile(AbstractImageBuilder.java:304)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:135)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+!SESSION 2018-01-12 10:26:17.493 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product -data D:\BGR WorkSpace\April Regression workSpace -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-12 10:26:26.528
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.685
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.685
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.685
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.685
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.701
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-12 10:26:35.701
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-12 10:26:47.925
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-12 10:26:47.940
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-13 17:02:01.393 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-13 17:02:12.641
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.340
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.340
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.340
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.340
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.355
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-13 17:02:16.355
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-13 17:02:24.937
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-13 17:02:24.937
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-15 17:03:52.963
+!MESSAGE JavaBuilder handling CoreException while cleaning: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:324)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:324)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.110
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.111
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.clean(JavaBuilder.java:293)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:736)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:263)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:401)
+	at org.eclipse.core.internal.resources.Project$1.run(Project.java:618)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2313)
+	at org.eclipse.core.internal.resources.Project.internalBuild(Project.java:597)
+	at org.eclipse.core.internal.resources.Project.build(Project.java:114)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog.doClean(CleanDialog.java:324)
+	at org.eclipse.ui.internal.ide.dialogs.CleanDialog$1.runInWorkspace(CleanDialog.java:151)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.111
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.111
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.111
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.111
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.111
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-15 17:03:53.538
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.538
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.538
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:175)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-15 17:03:53.539
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.539
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.539
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\siebelInformation.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.539
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 17:03:53.539
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SESSION 2018-01-15 17:13:55.992 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-15 17:14:09.200
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:15.996
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:16.027
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:16.027
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:16.027
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:16.043
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 17:14:16.043
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 17:14:24.614
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 17:14:24.614
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-15 18:05:55.964
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-15 18:05:55.965
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-15 18:05:55.965
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-15 18:05:55.966
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:55.966
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-15 18:05:57.149
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-15 18:05:57.150
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-15 18:05:57.150
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\Energy Usage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-15 18:05:57.150
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SESSION 2018-01-15 18:09:59.515 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-15 18:10:07.205
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.499
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.499
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.499
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.499
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.515
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:10:10.530
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:10:16.131
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:10:16.131
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-15 18:25:54.836 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-15 18:26:03.837
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.274
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.290
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.290
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.290
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.290
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:26:05.290
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:26:09.830
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:26:09.830
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-15 18:50:29.122 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-15 18:50:35.284
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.592
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.592
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.592
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.592
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.607
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 18:50:39.607
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:50:46.315
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 18:50:46.346
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-01-15 21:09:40.434 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-01-15 21:09:47.505
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-01-15 21:09:57.129
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 21:10:05.896
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-01-15 21:10:05.898
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-16 10:24:06.184
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:684)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete 'D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties'.
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:684)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-16 10:24:06.226
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-16 10:24:06.226
+!MESSAGE Could not delete 'D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties'.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:131)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFile(ResourceTree.java:304)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFile(ResourceTree.java:785)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1979)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:684)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:546)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.findSourceFiles(IncrementalImageBuilder.java:497)
+	at org.eclipse.jdt.internal.core.builder.IncrementalImageBuilder.build(IncrementalImageBuilder.java:97)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildDeltas(JavaBuilder.java:267)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:195)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2018-01-16 10:24:06.226
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-16 10:24:06.226
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-16 10:25:44.250
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-16 10:25:44.250
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-16 10:25:44.250
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-16 10:25:44.251
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.251
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:25:44.252
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-16 10:28:49.605
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-16 10:28:49.605
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-16 10:28:49.605
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-16 10:28:49.606
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:28:49.606
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+
+!ENTRY org.eclipse.jdt.core 4 4 2018-01-16 10:30:56.483
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: BGRegression
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:816)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Could not delete '/BGRegression/bin/resources'.
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2018-01-16 10:30:56.483
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2018-01-16 10:30:56.483
+!MESSAGE Could not delete '/BGRegression/bin/resources'.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:351)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:352)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:798)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1983)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:803)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:115)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:47)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:256)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:180)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:734)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:206)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:246)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:299)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:42)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:302)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:358)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:381)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:143)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:54)
+Contains: Problems encountered while deleting files.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+Contains: Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SUBENTRY 3 org.eclipse.core.resources 4 273 2018-01-16 10:30:56.484
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking\ServiceOrderStatus.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab\booking.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\bgmo_oab.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\BGHomePage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common\LoginPage.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\common.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\AccountSummary.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring\PaymentHistory.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\ReFactoring.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe\BGAccountOverview.properties.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\selfServe.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr\UserProfiles.xml.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData\bgr.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources\TestData.
+!SUBENTRY 5 org.eclipse.core.filesystem 4 273 2018-01-16 10:30:56.484
+!MESSAGE Could not delete: D:\BGR WorkSpace\April Regression workSpace\BGRegression\bin\resources.
+!SESSION 2018-02-07 19:48:47.992 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-02-07 19:49:03.705
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.161
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.161
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.161
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.161
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.177
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-07 19:49:13.177
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-07 19:49:22.664
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-07 19:49:22.679
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-02-11 19:38:16.721 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-02-11 19:38:34.536
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.101
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.101
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.101
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.101
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.117
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-11 19:38:44.117
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-11 19:39:00.497
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-11 19:39:00.497
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-02-12 13:23:56.142 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-02-12 13:24:33.183
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.668
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.668
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.668
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.668
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.684
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-12 13:24:43.684
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-12 13:24:52.202
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-12 13:24:52.218
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+!SESSION 2018-02-13 05:04:18.929 -----------------------------------------------
+eclipse.buildId=4.4.2.M20150204-1700
+java.version=1.8.0_141
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.eclipse.e4.ui.workbench 4 0 2018-02-13 05:04:32.638
+!MESSAGE Unable to load class 'org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon' from bundle '695'
+!STACK 0
+java.lang.ClassNotFoundException: org.eclipse.ui.internal.ide.application.addons.ModelCleanupAddon cannot be found by org.eclipse.ui.ide.application_1.0.501.v20141111-1238
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClassInternal(BundleLoader.java:432)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:345)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:337)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:160)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:568)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.createFromBundle(ReflectionContributionFactory.java:102)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.doCreate(ReflectionContributionFactory.java:73)
+	at org.eclipse.e4.ui.internal.workbench.ReflectionContributionFactory.create(ReflectionContributionFactory.java:50)
+	at org.eclipse.e4.ui.internal.workbench.swt.E4Application.createE4Workbench(E4Application.java:294)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:601)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:332)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:579)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:135)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:648)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.845
+!MESSAGE System property http.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.861
+!MESSAGE System property http.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.861
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.861
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.876
+!MESSAGE System property https.proxyHost is not set but should be proxy.cognizant.com.
+
+!ENTRY org.eclipse.core.net 1 0 2018-02-13 05:04:39.876
+!MESSAGE System property https.proxyPort is not set but should be 6050.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-13 05:04:50.043
+!MESSAGE Warning: EGit couldn't detect the installation path "gitPrefix" of native Git. Hence EGit can't respect system level
+Git settings which might be configured in ${gitPrefix}/etc/gitconfig under the native Git installation directory.
+The most important of these settings is core.autocrlf. Git for Windows by default sets this parameter to true in
+this system level configuration. The Git installation location can be configured on the
+Team > Git > Configuration preference page's 'System Settings' tab.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.egit.ui 2 0 2018-02-13 05:04:50.043
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\531644'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.

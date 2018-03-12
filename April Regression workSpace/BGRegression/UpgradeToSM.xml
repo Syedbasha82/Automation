@@ -1,0 +1,14 @@
+<suite name="BG Regression" verbose="10">
+	<test name="UpgradeToSmartMeterTest">
+		<classes>
+			<class
+
+				name="bg.framework.app.functional.test.selfServe.UpgradeToSmartMeterTest">
+				<methods>
+					<!-- <include name="upgradeToSmartMeterTest_Electricity_Non_OAM_Email_TC_013" /> -->
+					<include name="upgradeToSmartMeterTest_Dual_OAM_Email_TC_008" />
+				</methods>
+			</class>
+		</classes>
+	</test>
+</suite>

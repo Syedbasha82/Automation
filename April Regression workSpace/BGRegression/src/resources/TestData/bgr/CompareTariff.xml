@@ -1,0 +1,47 @@
+<map>
+<entry>
+<string>TariffNames</string>
+<CompareTariff>
+<tariff1>Fix and Fall January 2017</tariff1>  
+<pay11>Direct debit - VDD</pay11>
+<pay12>Cash or Cheque</pay12>
+<pay13>Prepayment</pay13>
+<tariff2>Fix and Fall June 2016</tariff2>
+<pay21>Direct debit - VDD</pay21>
+<pay22>Cash or Cheque</pay22>
+<pay23>Prepayment</pay23>
+<tariff3>Fix and Fall March 2016</tariff3>
+<pay31>Direct debit - VDD</pay31>
+<pay32>Cash or Cheque</pay32>
+<pay33>Prepayment</pay33>
+<tariff4>Fix and Fall November 2016</tariff4>
+<pay41>Direct debit - VDD</pay41>
+<pay42>Cash or Cheque</pay42>
+<pay43></pay43>
+<tariff5>Fix and Reward April 2017</tariff5>
+<pay51>Direct debit - VDD</pay51>
+<pay52>Cash or Cheque</pay52>
+<pay53></pay53>
+<tariff6>Fix and Reward September 2017</tariff6>
+<pay61>Direct debit - VDD</pay61>
+<pay62>Cash or Cheque</pay62>
+<pay63></pay63>
+<tariff7>Fixed Price July 2018</tariff7>
+<pay71>Direct debit - VDD</pay71>
+<pay72>Cash or Cheque</pay72>
+<pay73>Prepayment</pay73>
+<tariff8>HomeEnergy Capped Jun 2017</tariff8>
+<pay81>Direct debit - VDD</pay81>
+<pay82>Cash or Cheque</pay82>
+<pay83></pay83>
+<tariff9>HomeEnergy Reward Jun 2017</tariff9>
+<pay91>Direct debit - VDD</pay91>
+<pay92>Cash or Cheque</pay92>
+<pay93></pay93>
+<tariff10>Standard</tariff10>
+<pay101>Direct debit - VDD</pay101>
+<pay102>Cash or Cheque</pay102>
+<pay103>Prepayment</pay103>
+</CompareTariff>
+</entry>
+</map>

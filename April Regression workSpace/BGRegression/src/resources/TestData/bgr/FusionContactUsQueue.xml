@@ -1,0 +1,213 @@
+<map>
+    <entry>
+        <string>Gas/Electricity Enquiries,Direct Debit/Payment scheme</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I pay by Direct Debit, and my account is in credit. Can I have a refund?</overlay>
+            <faqLink>True</faqLink>
+            <overlay2>Direct Debit</overlay2>
+             <faqLink2>False</faqLink2>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Tariff/prices</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I check which tariff I'm on?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Bill enquiry/Meter reading</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I haven’t received my bill</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Refunds</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I pay by Direct Debit, and my account is in credit. Can I have a refund?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Update my email/telephone number</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I change my email address?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How can I set up a Direct Debit?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Gas/Electricity Enquiries,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Sales appointment/Quotation queries</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>How long will the new boiler survey appointment last?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Installation appointments</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>What about the location of the boiler, radiators and pipes of my new installation?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Other</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay>What do I need to do or think about in preparation for my new boiler installation delivery?
+            </overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Boiler/Central heating installations,Make a complaint</string>
+        <ContactUsQueue>
+            <queue>Autocef</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Moving home or changing name/s</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>Moving Home - What you need to do</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>I want to join/recently joined</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I need to know who supplies my property</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Registering/Logging in/Resetting my password</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I submit a meter reading online?</overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Submitting a meter reading online</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I submit a meter reading online?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Making a payment/viewing my bill online</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,I cannot register</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I want to register for an online account</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Access / understand my online bill</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I can't remember my password</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,A fault with the website</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Changing my personal details</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How do I change my email address?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Website/Online account,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>I'm not receiving Sainsbury's Energy emails</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Solar power</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How does the electricity generated by a solar PV system return to the grid?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Home insulation</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay>How can I book an appointment for a free home insulation survey of my home?</overlay>
+            <faqLink>True</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Nectar,Account enquiry</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Nectar,Replacement card</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+    <entry>
+        <string>Nectar,Other</string>
+        <ContactUsQueue>
+            <queue>KANA</queue>
+            <overlay></overlay>
+            <faqLink>False</faqLink>
+        </ContactUsQueue>
+    </entry>
+</map>

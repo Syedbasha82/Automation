@@ -1,0 +1,63 @@
+<map>
+    <entry>
+        <string>AccountStatusActive</string>
+        <SelfServeRegistrationData>
+            <ucrn>001013481173</ucrn>
+            <firstName>gareth</firstName>
+            <lastName>roberts</lastName>
+            <title>Mr</title>
+            <email>selenium@bgtest.co.uk</email>
+            <confirmEmail>selenium@bgtest.co.uk</confirmEmail>
+            <password>password12</password>
+            <confirmPassword>password12</confirmPassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>Selenium</securityAnswer>
+            <phoneNumber>0207123456</phoneNumber>
+            <phoneType>Home</phoneType>
+            <acceptTerms>y</acceptTerms>
+            <nectar>No</nectar>
+            <nectarTerms>y</nectarTerms>
+        </SelfServeRegistrationData>
+    </entry>
+    <entry>
+        <string>GasOnlyAccount</string>
+        <SelfServeRegistrationData>
+            <ucrn>300010726901</ucrn>
+            <firstName>Abi</firstName>
+            <lastName>HILLIER</lastName>
+            <title>Mrs</title>
+            <email>abi@bgdigitaltest.co.uk</email>
+            <confirmEmail>abi@bgdigitaltest.co.uk</confirmEmail>
+            <password>password12</password>
+            <confirmPassword>password12</confirmPassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>Selenium</securityAnswer>
+            <phoneNumber>0207123456</phoneNumber>
+            <phoneType>Home</phoneType>
+            <acceptTerms>y</acceptTerms>
+            <nectar>No</nectar>
+            <nectarTerms>y</nectarTerms>
+        </SelfServeRegistrationData>
+    </entry>
+    <entry>
+        <string>ElecOnlyAccount</string>
+        <SelfServeRegistrationData>
+            <ucrn>001020803901</ucrn>
+            <elecAccount>850000076635</elecAccount>
+            <firstName>Jennifer</firstName>
+            <lastName>CASEY</lastName>
+            <title>Mrs</title>
+            <email>kunfupanda2@bgdigitaltest.co.uk</email>
+            <confirmEmail>kunfupanda2@bgdigitaltest.co.uk</confirmEmail>
+            <password>password12</password>
+            <confirmPassword>password12</confirmPassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>Selenium</securityAnswer>
+            <phoneNumber>0207123456</phoneNumber>
+            <phoneType>Home</phoneType>
+            <acceptTerms>y</acceptTerms>
+            <nectar>No</nectar>
+            <nectarTerms>y</nectarTerms>
+        </SelfServeRegistrationData>
+    </entry>
+</map>
