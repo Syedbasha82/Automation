@@ -1,0 +1,527 @@
+<map>
+	<entry>
+		<string>single</string>
+	<LandLord>
+		<fName></fName>
+		<surName></surName>
+		<title></title>
+		<companyName></companyName>
+		<email></email>
+		<accountNumber>00003554</accountNumber>
+		<telephone></telephone>
+		<mobile></mobile>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=4</packageCover>
+		<packageAmount>65.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<dueDate>12/05/2012</dueDate>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>.
+		<sortCode1>07</sortCode1>
+		<sortCode2>01</sortCode2>
+		<sortCode3>16</sortCode3>		
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>gas</string>
+	<LandLord>
+		<fName>TANYA</fName>
+		<surName>PEALING</surName>
+		<title>Mrs</title>
+		<companyName>company</companyName>
+		<email>ust_landlord001@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>00003554</accountNumber>
+		<telephone>02134567896</telephone>
+		<mobile>987456321</mobile>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=1</packageCover>		
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		<payDate>5th</payDate>
+		<sortCode1>07</sortCode1>
+		<sortCode2>01</sortCode2>
+		<sortCode3>16</sortCode3>
+		<cardType>Visa Debit</cardType>
+		<cardNumber>5301 2500 7000 0050</cardNumber>
+		<cardStartMonth>April</cardStartMonth>
+		<cardStartYear>2010</cardStartYear>
+		<cardExpiryMonth>September</cardExpiryMonth>
+		<cardExpiryYear>2012</cardExpiryYear>
+		<issueNumber>12</issueNumber>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>london</string>
+	<LandLord>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>tw18 3he</lpostCode>
+		<packageCover>index=4</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<dueDate>12/05/2012</dueDate>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>		
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>uk</string>
+	<LandLord>
+		<houseNumber></houseNumber>
+		<postCode>sn3 4jj</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=4</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<dueDate>12/05/2012</dueDate>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>		
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>invalid</string>
+	<LandLord>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>tw18 ji7</lpostCode>		
+		<packageAmount>75.00</packageAmount>
+		<packageCover>index=1</packageCover>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate>1243/22</dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>manual</string>
+	<LandLord>
+		<houseNumber></houseNumber>
+		<houseName>Meadow Gardens</houseName>
+		<address>Staines</address>
+		<postalTown>Middlesex</postalTown>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>tw18 ji7</lpostCode>
+		<packageCover>CP12</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate>12/05/2012</dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>Dual</string>
+	<LandLord>
+		<email>uat_landlord003@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=1</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>JI</string>
+	<LandLord>
+		<email>uat_landlord006@bgdigital.co.uk</email>		
+		<password>password12</password>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=1</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>SingleFuel</string>
+	<LandLord>
+		<email>uat_landlord013@bgdigital.co.uk</email>
+		<password>password12</password>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=3</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>DualBGS</string>
+	<LandLord>
+		<email>uat_landlord014@bgdigital.co.uk</email>
+		<password>password12</password>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=3</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>OAM</string>
+	<LandLord>
+		<fName>Connies</fName>
+		<surName>Lloyd</surName>
+		<email>uat_landlord001@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161354L234218</accountNumber>
+		<telephone>0207444656</telephone>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=3</packageCover>
+		<packageAmount>75.00</packageAmount>
+		<gasFire>55.00</gasFire>
+		<gasCooker>37.00</gasCooker>
+		<gasHob>37.00</gasHob>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>BookEng</string>
+	<LandLord>
+		<fName>P</fName>
+		<surName>GEARING</surName>
+		<email>prio_i@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161245L234131</accountNumber>
+		<telephone>0123456789</telephone>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>	
+		<cardType>Visa Debit</cardType>
+		<cardNumber>5301 2500 7000 0050</cardNumber>
+		<cardStartMonth>April</cardStartMonth>
+		<cardStartYear>2010</cardStartYear>
+		<cardExpiryMonth>September</cardExpiryMonth>
+		<cardExpiryYear>2012</cardExpiryYear>
+		<issueNumber>12</issueNumber>			
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>homecare</string>
+	<LandLord>
+		<fName>TANYA</fName>
+		<surName>PEALING</surName>
+		<title>Mrs</title>
+		<companyName>company</companyName>
+		<email>prio_c@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>00003554</accountNumber>
+		<telephone>02134567896</telephone>
+		<mobile>987456321</mobile>
+		<houseNumber></houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=2</packageCover>		
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+		<payDate>5th</payDate>
+		<sortCode1>07</sortCode1>
+		<sortCode2>01</sortCode2>
+		<sortCode3>16</sortCode3>
+		<cardType>Visa Debit</cardType>
+		<cardNumber>5301 2500 7000 0050</cardNumber>
+		<cardStartMonth>April</cardStartMonth>
+		<cardStartYear>2010</cardStartYear>
+		<cardExpiryMonth>September</cardExpiryMonth>
+		<cardExpiryYear>2012</cardExpiryYear>
+		<issueNumber>12</issueNumber>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>ViewDairy</string>
+	<LandLord>
+		<fName>P</fName>
+		<surName>GEARING</surName>
+		<email>uat0004@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161261L234144</accountNumber>
+		
+	</LandLord>	
+	</entry>
+	
+	<entry>
+		<string>HCII</string>
+	<LandLord>
+		<fName>P</fName>
+		<surName>GEARING</surName>
+		<email>lak_2@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161249L234134</accountNumber>
+		
+	</LandLord>	
+	</entry>
+	
+	<entry>
+		<string>HCIII</string>
+	<LandLord>
+		<fName>P</fName>
+		<surName>GEARING</surName>
+		<email>lak_1@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161245L234131</accountNumber>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>HCIV</string>
+	<LandLord>
+		<fName>P</fName>
+		<surName>GEARING</surName>
+		<email>lak_2@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<accountNumber>22161249L234134</accountNumber>
+		
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>credit</string>
+	<LandLord>
+		<fName>TANYA</fName>
+		<surName>PEALING</surName>
+		<title>Mrs</title>
+		<companyName>company</companyName>
+		<email>asir.jacobj@cognizant.com</email>
+		<telephone>02134567896</telephone>
+		<mobile>987456321</mobile>
+		<houseNumber>12</houseNumber>
+		<postCode>tw18 3he</postCode>
+		<lpostCode>sn3 4jj</lpostCode>
+		<packageCover>index=3</packageCover>
+		<cardType>Visa Debit</cardType>
+		<cardNumber>5301 2500 7000 0050</cardNumber>
+		<cardStartMonth>April</cardStartMonth>
+		<cardStartYear>2010</cardStartYear>
+		<cardExpiryMonth>September</cardExpiryMonth>
+		<cardExpiryYear>2012</cardExpiryYear>
+		<issueNumber>12</issueNumber>
+		<gasFireAdd>2</gasFireAdd>
+		<gasCookerAdd>1</gasCookerAdd>
+		<gasHobAdd>3</gasHobAdd>
+		<dueDate></dueDate>
+				
+	</LandLord>
+	</entry>
+	
+	<entry>
+		<string>registration</string>
+	<LandLord>
+		<fName>Yahoo</fName>
+		<surName>Yahoo</surName>
+		<title>Mr</title>
+		<email>asirjacob@bgdigitaltest.co.uk</email>
+		<password>password12</password>
+		<telephone>02134567896</telephone>
+		<accountNumber>22161343L234212</accountNumber>
+		
+	</LandLord>	
+	</entry>
+	
+	<entry>
+	<string>CP12</string>
+	<LandLord>
+	<packageAmount>65.00</packageAmount>
+		<gasFire>36.00</gasFire>
+		<gasCooker>24.00</gasCooker>
+		<gasHob>24.00</gasHob>		
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC100</string>
+	<LandLord>
+	<packageAmount>13.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>156.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC100L</string>
+	<LandLord>
+	<packageAmount>15.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>180.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC200</string>
+	<LandLord>
+	<packageAmount>17.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>204.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC200L</string>
+	<LandLord>
+	<packageAmount>19.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>228.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC300</string>
+	<LandLord>
+	<packageAmount>22.50</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>270.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC300L</string>
+	<LandLord>
+	<packageAmount>24.50</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>294.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC400</string>
+	<LandLord>
+	<packageAmount>27.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>324.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	<entry>
+	<string>HC400L</string>
+	<LandLord>
+	<packageAmount>29.00</packageAmount>
+		<gasFire>3.00</gasFire>
+		<gasCooker>2.00</gasCooker>
+		<gasHob>2.00</gasHob>
+		<annualDB>348.00</annualDB>
+		<annualFire>36.00</annualFire>
+		<annualCooker>24.00</annualCooker>
+		<annualHob>24.00</annualHob>
+	</LandLord>
+	</entry>
+	
+	
+	
+</map>

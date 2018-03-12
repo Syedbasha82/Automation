@@ -1,0 +1,573 @@
+package bg.framework.app.functional.test.reFactoring;
+
+import static bg.framework.app.functional.entities.FunctionalCategory.BGBRegistration;
+import static bg.framework.app.functional.entities.FunctionalCategory.Slingshot;
+import static bg.framework.app.functional.entities.FunctionalCategory.Smoke;
+import static bg.framework.app.functional.entities.FunctionalCategory.TariffList;
+
+import bg.framework.app.functional.test.common.TestBase;
+import bg.framework.app.functional.action.reFactoring.GetAquoteAction;
+import bg.framework.app.functional.util.Report;
+import bg.framework.app.functional.util.TestDataHelper;
+import bg.framework.app.functional.entities.UserProfile;
+import bg.framework.app.functional.action.common.LoginAction;
+import bg.framework.app.functional.entities.Slinshot.TariffList;
+import org.testng.annotations.Test;
+import bg.framework.app.functional.entities.Acquisition;
+import bg.framework.app.functional.entities.FunctionalCategory;
+import bg.framework.app.functional.entities.Slinshot.CompareTariff;
+
+
+public class GetAquoteTest extends TestBase {
+
+	
+/*private String[] postCodes = {
+         //   "KT17 3BH","BH7 6WD","CF10 6FG" , "BA3 7GH", "WF10 3NA","AL10 8UW" , "LE12 9LX", "BR1 7YJ", "L22 5QH","B10 9JU","DH2 7GH","BB2 7DF","AB14 7GH", "DG10 7FG"};
+		 "KT17 3BH","BH7 6WD"};
+
+//private String Tariff;
+*/
+
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void VerifyGetaQuotePricing_AnonymousJourney() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Anonymous Sign Up");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("GetAquote");
+     
+		try {
+			for (String x : FuelTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+		
+		//Report.updateTestLog("*******************" + postCode  + "**********************", "Pass");
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+					
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterPostCodeNew(CompareTariff,userProfile)
+		.VerifyFuelStatus(userProfile,CompareTariff);
+		 // }
+		}
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void BuyanTariff_AnonymousJourney() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Anonymous Sign Up");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("GetAquote");
+		Acquisition acquisition = new TestDataHelper().getAcquisitionData("LondonAcquisition");
+     
+		try {
+			for (String x : BuyTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+			
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+					
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterPostCodeNew(CompareTariff,userProfile)
+		.VerifyFuelStatus_Buy(CompareTariff, userProfile)
+		//.BuyTariff(CompareTariff, userProfile)
+		.PaymentDetail(acquisition);
+		  }
+		
+		Report.updateTestLog("*******************Tariff Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void VerifyGetaQuotePricing_LoginElectAccount() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Login Sign Up - Verify Gas Pricing");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+     
+		try {
+			for (String x : FuelTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+		
+		//for(String postCode : postCodes){
+		//Report.updateTestLog("*******************" + postCode  + "**********************", "Pass");
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+		new LoginAction()
+		.BgrnavigateToLogin()
+		.BgrLoginUser(userProfile);						
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterTelephoneNumber(userProfile)
+		.GasQuotePricing(CompareTariff);
+		
+		/*.enterPostCodeNew(userProfile,postCode)
+		.VerifyFuelStatus(CompareTariff);*/
+		  }
+		//}
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void BuyanGasTariff_forLoginElectAccount() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Login Sign Up - Buy Elect Pricing");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("ElectricityAccount");
+		Acquisition acquisition = new TestDataHelper().getAcquisitionData("LondonAcquisition");
+     
+		try {
+			for (String x : BuyTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+			
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+		new LoginAction()
+		.BgrnavigateToLogin()
+		.BgrLoginUser(userProfile);
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterTelephoneNumber(userProfile)
+		.BuyElectTariff(CompareTariff, userProfile)
+		
+		//.BuyTariff(CompareTariff, userProfile)
+		.PaymentDetail(acquisition);
+		  }
+		
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+
+     
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void VerifyGetaQuotePricing_LoginGasAccount() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Login Sign Up - Verify Elect Pricing");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+     
+		try {
+			for (String x : FuelTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+		
+		//for(String postCode : postCodes){
+		//Report.updateTestLog("*******************" + postCode  + "**********************", "Pass");
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+		new LoginAction()
+		.BgrnavigateToLogin()
+		.BgrLoginUser(userProfile);						
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterTelephoneNumber(userProfile)
+		.ElectQuotePricing(CompareTariff);
+		
+		/*.enterPostCodeNew(userProfile,postCode)
+		.VerifyFuelStatus(CompareTariff);*/
+		  }
+		//}
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+     
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void BuyanElectTariff_forLoginGasAccount() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Login Sign Up - Buy Elect Pricing");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("GasAccount");
+		Acquisition acquisition = new TestDataHelper().getAcquisitionData("LondonAcquisition");
+     
+		try {
+			for (String x : BuyTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+			
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+		new LoginAction()
+		.BgrnavigateToLogin()
+		.BgrLoginUser(userProfile);
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.enterTelephoneNumber(userProfile)
+		//.BuyElectTariff(CompareTariff, userProfile)
+		
+		//.VerifyFuelStatus_Buy(CompareTariff, userProfile)
+		.SingleFuelBuynow(CompareTariff, userProfile)
+		
+		//.BuyTariff(CompareTariff, userProfile)
+		.PaymentDetail(acquisition);
+		  }
+		
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+     
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+     
+     @SuppressWarnings("unchecked")
+     @Test(groups ={Slingshot,Smoke,BGBRegistration})
+	public void VerifyGetaQuotePricing_LoginDualAccount() throws Exception {
+		Report.createTestLogHeader("Get A Quoute", "Login Sign Up - Verify Elect Pricing");
+		UserProfile userProfile = new TestDataHelper().getUserProfile("DualAccount");
+     
+		try {
+			for (String x : FuelTariffList()) {
+				CompareTariff CompareTariff = new TestDataHelper().getCompareTariffProfile(x);
+		
+		//for(String postCode : postCodes){
+		//Report.updateTestLog("*******************" + postCode  + "**********************", "Pass");
+		Report.updateTestLog(" ***************** Tariff : " + x  + " ***************** ", "PASS");
+		new LoginAction()
+		.BgrnavigateToLogin()
+		.BgrLoginUser(userProfile);						
+		new GetAquoteAction()
+		.navigateToGetAquotepage()
+		.SelectNewProp(userProfile);
+		//.enterTelephoneNumber(userProfile)
+		//VerifyFuelStatus(userProfile,CompareTariff);
+		
+		/*.enterPostCodeNew(userProfile,postCode)
+		.VerifyFuelStatus(CompareTariff);*/
+		  }
+		//}
+		Report.updateTestLog("*******************Tariff Verification Completed  **********************" , "Pass");
+		
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+	}
+     
+	
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+	
+	private String[] FuelTariffList(){
+
+		String [] FuelList ={
+				
+				
+				"G Everything Online Jan 2019  1",
+				/*"G Everything Online Jan 2019  2",
+				"G Everything Online Jan 2019  3",
+				"G Everything Online Jan 2019  4",
+				"G Everything Online Jan 2019  5",
+				"G Everything Online Jan 2019  6",
+				"G Everything Online Jan 2019  7",
+				"G Everything Online Jan 2019  8",
+				"G Everything Online Jan 2019  9",
+				"G Everything Online Jan 2019  10",
+				"G Everything Online Jan 2019  11",
+				"G Everything Online Jan 2019  12",
+				"G Everything Online Jan 2019  13",
+				"G Everything Online Jan 2019  14",
+				"G Everything Online Jan 2019  15",
+				"G Everything Online Jan 2019  16",
+				"G Everything Online Jan 2019  17",
+				"G Everything Online Jan 2019  18",
+				"G Everything Online Jan 2019  19",
+				"G Everything Online Jan 2019  20",
+				"G Everything Online Jan 2019  21",
+				"G Everything Online Jan 2019  22",
+				"G Everything Online Jan 2019  23",
+				"G Everything Online Jan 2019  24",
+				"G Everything Online Jan 2019  25",
+				"G Everything Online Jan 2019  26",
+				"G Everything Online Jan 2019  27",
+				"G Everything Online Jan 2019  28",
+				"E Everything Online Jan 2019  1",
+				"E Everything Online Jan 2019  2",
+				"E Everything Online Jan 2019  3",
+				"E Everything Online Jan 2019  4",
+				"E Everything Online Jan 2019  5",
+				"E Everything Online Jan 2019  6",
+				"E Everything Online Jan 2019  7",
+				"E Everything Online Jan 2019  8",
+				"E Everything Online Jan 2019  9",
+				"E Everything Online Jan 2019  10",
+				"E Everything Online Jan 2019  11",
+				"E Everything Online Jan 2019  12",
+				"E Everything Online Jan 2019  13",
+				"E Everything Online Jan 2019  14",
+				"E Everything Online Jan 2019  15",
+				"E Everything Online Jan 2019  16",
+				"E Everything Online Jan 2019  17",
+				"E Everything Online Jan 2019  18",
+				"E Everything Online Jan 2019  19",
+				"E Everything Online Jan 2019  20",
+				"E Everything Online Jan 2019  21",
+				"E Everything Online Jan 2019  22",
+				"E Everything Online Jan 2019  23",
+				"E Everything Online Jan 2019  24",
+				"E Everything Online Jan 2019  25",
+				"E Everything Online Jan 2019  26",
+				"E Everything Online Jan 2019  27",
+				"E Everything Online Jan 2019  28"
+*/
+			
+
+
+		
+		};
+		return FuelList;
+	}
+	
+	private String[] BuyTariffList(){
+
+		String [] TariffList ={
+				
+				// *********** give only one Tariff which has the dual fuel Tariff Value Only  **********************
+				
+				"G HomeEnergy Secure Aug  1",
+				"G HomeEnergy Secure Aug  2",
+				"G HomeEnergy Secure Aug  3",
+				"G HomeEnergy Secure Aug  4",
+				"G HomeEnergy Secure Aug  5",
+				"G HomeEnergy Secure Aug  6",
+				"G HomeEnergy Secure Aug  7",
+				"G HomeEnergy Secure Aug  8",
+				"G HomeEnergy Secure Aug  9",
+				"G HomeEnergy Secure Aug  10",
+				"G HomeEnergy Secure Aug  11",
+				"G HomeEnergy Secure Aug  12",
+				"G HomeEnergy Secure Aug  13",
+				"G HomeEnergy Secure Aug  14",
+				"G HomeEnergy Secure Aug  15",
+				"G HomeEnergy Secure Aug  16",
+				"G HomeEnergy Secure Aug  17",
+				"G HomeEnergy Secure Aug  18",
+				"G HomeEnergy Secure Aug  19",
+				"G HomeEnergy Secure Aug  20",
+				"G HomeEnergy Secure Aug  21",
+				"G HomeEnergy Secure Aug  22",
+				"G HomeEnergy Secure Aug  23",
+				"G HomeEnergy Secure Aug  24",
+				"G HomeEnergy Secure Aug  25",
+				"G HomeEnergy Secure Aug  26",
+				"G HomeEnergy Secure Aug  27",
+				"G HomeEnergy Secure Aug  28",
+				"G HomeEnergy Secure Aug  29",
+				"G HomeEnergy Secure Aug  30",
+				"G HomeEnergy Secure Aug  31",
+				"G HomeEnergy Secure Aug  32",
+				"G HomeEnergy Secure Aug  33",
+				"G HomeEnergy Secure Aug  34",
+				"G HomeEnergy Secure Aug  35",
+				"G HomeEnergy Secure Aug  36",
+				"G HomeEnergy Secure Aug  37",
+				"G HomeEnergy Secure Aug  38",
+				"G HomeEnergy Secure Aug  39",
+				"G HomeEnergy Secure Aug  40",
+				"G HomeEnergy Secure Aug  41",
+				"G HomeEnergy Secure Aug  42",
+				"G HomeEnergy Secure Aug  43",
+				"G HomeEnergy Secure Aug  44",
+				"G HomeEnergy Secure Aug  45",
+				"G HomeEnergy Secure Aug  46",
+				"G HomeEnergy Secure Aug  47",
+				"G HomeEnergy Secure Aug  48",
+				"G HomeEnergy Secure Aug  49",
+				"G HomeEnergy Secure Aug  50",
+				"G HomeEnergy Secure Aug  51",
+				"G HomeEnergy Secure Aug  52",
+				"G HomeEnergy Secure Aug  53",
+				"G HomeEnergy Secure Aug  54",
+				"G HomeEnergy Secure Aug  55",
+				"G HomeEnergy Secure Aug  56",
+				"G HomeEnergy Secure Aug  57",
+				"G HomeEnergy Secure Aug  58",
+				"G HomeEnergy Secure Aug  59",
+				"G HomeEnergy Secure Aug  60",
+				"G HomeEnergy Secure Aug  61",
+				"G HomeEnergy Secure Aug  62",
+				"G HomeEnergy Secure Aug  63",
+				"G HomeEnergy Secure Aug  64",
+				"G HomeEnergy Secure Aug  65",
+				"G HomeEnergy Secure Aug  66",
+				"G HomeEnergy Secure Aug  67",
+				"G HomeEnergy Secure Aug  68",
+				"G HomeEnergy Secure Aug  69",
+				"G HomeEnergy Secure Aug  70",
+				"G HomeEnergy Secure Aug  71",
+				"G HomeEnergy Secure Aug  72",
+				"G HomeEnergy Secure Aug  73",
+				"G HomeEnergy Secure Aug  74",
+				"G HomeEnergy Secure Aug  75",
+				"G HomeEnergy Secure Aug  76",
+				"G HomeEnergy Secure Aug  77",
+				"G HomeEnergy Secure Aug  78",
+				"G HomeEnergy Secure Aug  79",
+				"G HomeEnergy Secure Aug  80",
+				"G HomeEnergy Secure Aug  81",
+				"G HomeEnergy Secure Aug  82",
+				"G HomeEnergy Secure Aug  83",
+				"G HomeEnergy Secure Aug  84",
+				"G HomeEnergy Secure Aug  85",
+				"G HomeEnergy Secure Aug  86",
+				"G HomeEnergy Secure Aug  87",
+				"G HomeEnergy Secure Aug  88",
+				"G HomeEnergy Secure Aug  89",
+				"G HomeEnergy Secure Aug  90",
+				"G HomeEnergy Secure Aug  91",
+				"G HomeEnergy Secure Aug  92",
+				"G HomeEnergy Secure Aug  93",
+				"G HomeEnergy Secure Aug  94",
+				"G HomeEnergy Secure Aug  95",
+				"G HomeEnergy Secure Aug  96",
+				"G HomeEnergy Secure Aug  97",
+				"G HomeEnergy Secure Aug  98",
+				"G HomeEnergy Secure Aug  99",
+				"G HomeEnergy Secure Aug  100",
+				"G HomeEnergy Secure Aug  101",
+				"G HomeEnergy Secure Aug  102",
+				"G HomeEnergy Secure Aug  103",
+				"G HomeEnergy Secure Aug  104",
+				"G HomeEnergy Secure Aug  105",
+				"G HomeEnergy Secure Aug  106",
+				"G HomeEnergy Secure Aug  107",
+				"G HomeEnergy Secure Aug  108",
+				"G HomeEnergy Secure Aug  109",
+				"G HomeEnergy Secure Aug  110",
+				"G HomeEnergy Secure Aug  111",
+				"G HomeEnergy Secure Aug  112",
+				"E HomeEnergy Secure Aug  1",
+				"E HomeEnergy Secure Aug  2",
+				"E HomeEnergy Secure Aug  3",
+				"E HomeEnergy Secure Aug  4",
+				"E HomeEnergy Secure Aug  5",
+				"E HomeEnergy Secure Aug  6",
+				"E HomeEnergy Secure Aug  7",
+				"E HomeEnergy Secure Aug  8",
+				"E HomeEnergy Secure Aug  9",
+				"E HomeEnergy Secure Aug  10",
+				"E HomeEnergy Secure Aug  11",
+				"E HomeEnergy Secure Aug  12",
+				"E HomeEnergy Secure Aug  13",
+				"E HomeEnergy Secure Aug  14",
+				"E HomeEnergy Secure Aug  15",
+				"E HomeEnergy Secure Aug  16",
+				"E HomeEnergy Secure Aug  17",
+				"E HomeEnergy Secure Aug  18",
+				"E HomeEnergy Secure Aug  19",
+				"E HomeEnergy Secure Aug  20",
+				"E HomeEnergy Secure Aug  21",
+				"E HomeEnergy Secure Aug  22",
+				"E HomeEnergy Secure Aug  23",
+				"E HomeEnergy Secure Aug  24",
+				"E HomeEnergy Secure Aug  25",
+				"E HomeEnergy Secure Aug  26",
+				"E HomeEnergy Secure Aug  27",
+				"E HomeEnergy Secure Aug  28",
+				"E HomeEnergy Secure Aug  29",
+				"E HomeEnergy Secure Aug  30",
+				"E HomeEnergy Secure Aug  31",
+				"E HomeEnergy Secure Aug  32",
+				"E HomeEnergy Secure Aug  33",
+				"E HomeEnergy Secure Aug  34",
+				"E HomeEnergy Secure Aug  35",
+				"E HomeEnergy Secure Aug  36",
+				"E HomeEnergy Secure Aug  37",
+				"E HomeEnergy Secure Aug  38",
+				"E HomeEnergy Secure Aug  39",
+				"E HomeEnergy Secure Aug  40",
+				"E HomeEnergy Secure Aug  41",
+				"E HomeEnergy Secure Aug  42",
+				"E HomeEnergy Secure Aug  43",
+				"E HomeEnergy Secure Aug  44",
+				"E HomeEnergy Secure Aug  45",
+				"E HomeEnergy Secure Aug  46",
+				"E HomeEnergy Secure Aug  47",
+				"E HomeEnergy Secure Aug  48",
+				"E HomeEnergy Secure Aug  49",
+				"E HomeEnergy Secure Aug  50",
+				"E HomeEnergy Secure Aug  51",
+				"E HomeEnergy Secure Aug  52",
+				"E HomeEnergy Secure Aug  53",
+				"E HomeEnergy Secure Aug  54",
+				"E HomeEnergy Secure Aug  55",
+				"E HomeEnergy Secure Aug  56",
+				"E HomeEnergy Secure Aug  57",
+				"E HomeEnergy Secure Aug  58",
+				"E HomeEnergy Secure Aug  59",
+				"E HomeEnergy Secure Aug  60",
+				"E HomeEnergy Secure Aug  61",
+				"E HomeEnergy Secure Aug  62",
+				"E HomeEnergy Secure Aug  63",
+				"E HomeEnergy Secure Aug  64",
+				"E HomeEnergy Secure Aug  65",
+				"E HomeEnergy Secure Aug  66",
+				"E HomeEnergy Secure Aug  67",
+				"E HomeEnergy Secure Aug  68",
+				"E HomeEnergy Secure Aug  69",
+				"E HomeEnergy Secure Aug  70",
+				"E HomeEnergy Secure Aug  71",
+				"E HomeEnergy Secure Aug  72",
+				"E HomeEnergy Secure Aug  73",
+				"E HomeEnergy Secure Aug  74",
+				"E HomeEnergy Secure Aug  75",
+				"E HomeEnergy Secure Aug  76",
+				"E HomeEnergy Secure Aug  77",
+				"E HomeEnergy Secure Aug  78",
+				"E HomeEnergy Secure Aug  79",
+				"E HomeEnergy Secure Aug  80",
+				"E HomeEnergy Secure Aug  81",
+				"E HomeEnergy Secure Aug  82",
+				"E HomeEnergy Secure Aug  83",
+				"E HomeEnergy Secure Aug  84",
+				"E HomeEnergy Secure Aug  85",
+				"E HomeEnergy Secure Aug  86",
+				"E HomeEnergy Secure Aug  87",
+				"E HomeEnergy Secure Aug  88",
+				"E HomeEnergy Secure Aug  89",
+				"E HomeEnergy Secure Aug  90",
+				"E HomeEnergy Secure Aug  91",
+				"E HomeEnergy Secure Aug  92",
+				"E HomeEnergy Secure Aug  93",
+				"E HomeEnergy Secure Aug  94",
+				"E HomeEnergy Secure Aug  95",
+				"E HomeEnergy Secure Aug  96",
+				"E HomeEnergy Secure Aug  97",
+				"E HomeEnergy Secure Aug  98",
+				"E HomeEnergy Secure Aug  99",
+				"E HomeEnergy Secure Aug  100",
+				"E HomeEnergy Secure Aug  101",
+				"E HomeEnergy Secure Aug  102",
+				"E HomeEnergy Secure Aug  103",
+				"E HomeEnergy Secure Aug  104",
+				"E HomeEnergy Secure Aug  105",
+				"E HomeEnergy Secure Aug  106",
+				"E HomeEnergy Secure Aug  107",
+				"E HomeEnergy Secure Aug  108",
+				"E HomeEnergy Secure Aug  109",
+				"E HomeEnergy Secure Aug  110",
+				"E HomeEnergy Secure Aug  111",
+				"E HomeEnergy Secure Aug  112"
+
+				
+		};
+		return TariffList;
+	}
+	
+	
+	
+	
+	
+
+}

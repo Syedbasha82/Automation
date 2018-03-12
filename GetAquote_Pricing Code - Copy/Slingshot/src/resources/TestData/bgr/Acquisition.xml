@@ -1,0 +1,514 @@
+<map>
+    <entry>
+        <string>standardDualAcquisition</string>
+        <Acquisition>
+            <tariff>clear-and-simple</tariff>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <email>wandu_zues@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>hillier</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Online Variable February 2014</tariffForGas>
+            <tariffForElectricity>Elec Online Variable February 2014</tariffForElectricity>
+            <tariffForDual>Clear * Simple</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyDD</paymentType>
+            <gasAccountNumber></gasAccountNumber>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <cardName>Testing</cardName>
+            <cardNumber>4012001038488884</cardNumber>
+            <cardType>Visa Debit</cardType>
+            <startMonth>April</startMonth>
+            <startYear>2002</startYear>
+            <expiryMonth>March</expiryMonth>
+            <expiryYear>2012</expiryYear>
+            <cvvCode>123</cvvCode>
+            <salesShopBatch>./domarssales.sh</salesShopBatch>
+            <salesSmartBatch>./doenergysmartmarssales.sh</salesSmartBatch>
+            <standardCode>HOU000</standardCode>
+            <standardEE50Code>HOU041</standardEE50Code> 
+            <gasonlineenergyTariffCode>HOU359</gasonlineenergyTariffCode>
+            <eleconlineenergyTariffCode>HOU259</eleconlineenergyTariffCode>
+            <dualonlineenergyTariffCode>HOU159</dualonlineenergyTariffCode>
+            <gasfixedprice2013TariffCode>HOU360</gasfixedprice2013TariffCode>
+            <elecfixedprice2013TariffCode>HOU260</elecfixedprice2013TariffCode>
+            <dualfixedprice2013TariffCode>HOU160</dualfixedprice2013TariffCode>
+            <energyshareTariffCode> </energyshareTariffCode>
+            <energysmartCode>HOU045</energysmartCode>   
+            <gasCSCode>HOU355</gasCSCode>    
+            <elecCSCode>HOU255</elecCSCode>
+            <dualCSCode>HOU155</dualCSCode>    
+            <sapGasCSCode>G98</sapGasCSCode>
+            <sapElecCSCode>E98</sapElecCSCode>
+            <sapGasFPcode>G99</sapGasFPcode>
+            <sapElecFPcode>E99</sapElecFPcode>
+            <sapGasOVcode>G86</sapGasOVcode>
+            <sapElecOVcode>E86</sapElecOVcode>
+            <fusionGasCScode>BIA355</fusionGasCScode>
+			<fusionElecCScode>BIA255</fusionElecCScode>
+			<fusionDualCScode>BIA155</fusionDualCScode>
+			<fusionGasOVA2103code>BIA359</fusionGasOVA2103code>
+			<fusionElecOVA2103code>BIA259</fusionElecOVA2103code>
+			<fusionDualOVA2103code>BIA159</fusionDualOVA2103code>
+			<fusionGasFPM2014code>BIA360</fusionGasFPM2014code>
+			<fusionElecFPM2014CScode>BIA260</fusionElecFPM2014CScode>
+			<fusionDualFPM2014CScode>BIA160</fusionDualFPM2014CScode>
+			<smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+			<tariffClearSimple>Clear * Simple</tariffClearSimple>
+			<tariffOnlineVariable>Online Variable February 2014</tariffOnlineVariable>
+			<tariffFixFall>Fix * Fall March 2014</tariffFixFall>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>LondonAcquisition</string>
+        <Acquisition>
+            <tariff>standard</tariff>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Standard</tariffForGas>
+            <tariffForElectricity>Elec Standard</tariffForElectricity>
+            <tariffForDual>Standard</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>11049151</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>02</sortCode2>
+            <sortCode3>50</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyVariableDirectDebit</paymentType>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <smartmetergasyes>yes</smartmetergasyes>
+			<smartmeterelecyes>yes</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>AnonymousESAcquisition</string>
+        <Acquisition>
+            <tariff>standard</tariff>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Standard</tariffForGas>
+            <tariffForElectricity>Elec Standard</tariffForElectricity>
+            <tariffForDual>Standard</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyVariableDirectDebit</paymentType>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <smartmetergasyes>yes</smartmetergasyes>
+			<smartmeterelecyes>yes</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>ElecConversion</string>
+        <Acquisition>
+            <tariff>standard</tariff>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <email>abi@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>hillier</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Standard</tariffForGas>
+            <tariffForElectricity>Elec Standard</tariffForElectricity>
+            <tariffForDual>Standard</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyDD</paymentType>
+            <gasAccountNumber></gasAccountNumber>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>standardElectricityAcquisition</string>
+        <Acquisition>
+            <tariff>standard</tariff>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <email>raw@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Standard</tariffForGas>
+            <tariffForElectricity>Elec Standard</tariffForElectricity>
+            <tariffForDual>Standard</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyDD</paymentType>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>OnlineEnergyElectricityAcquisition</string>
+        <Acquisition>
+            <tariff>standard</tariff>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <email>raw@bgdigitaltest.co.uk</email>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <tariffForGas>Gas Standard</tariffForGas>
+            <tariffForElectricity>Elec Standard</tariffForElectricity>
+            <tariffForDual>Standard</tariffForDual>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyDD</paymentType>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment (SmartCard)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment (SmartCard)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment (Smartkey)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment (Smartkey)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment (Token)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment (Token)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment Economy 7 (Smartcard)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment Economy 7 (Smartcard)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment Economy 7 (Smartkey)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment Economy 7 (Smartkey)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>Prepayment Economy 7 (Token)</string>
+        <Acquisition>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentElecSupplier>Prepayment Economy 7 (Token)</currentElecSupplier>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>AnonymousESAcquisitionDual</string>
+        <Acquisition>
+            <fuelType>dual</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyVariableDirectDebit</paymentType>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <salesShopBatch>./domarssales.sh</salesShopBatch>
+            <salesSmartBatch>./doenergysmartmarssales.sh</salesSmartBatch>
+            <standardCode>HOU000</standardCode>
+            <standardEE50Code>HOU041</standardEE50Code> 
+            <gasonlineenergyTariffCode>HOU351</gasonlineenergyTariffCode>
+            <eleconlineenergyTariffCode>HOU251</eleconlineenergyTariffCode>
+            <dualonlineenergyTariffCode>HOU151</dualonlineenergyTariffCode>
+            <gasfixedprice2013TariffCode> </gasfixedprice2013TariffCode>
+            <elecfixedprice2013TariffCode></elecfixedprice2013TariffCode>
+            <dualfixedprice2013TariffCode> </dualfixedprice2013TariffCode>
+            <energyshareTariffCode> </energyshareTariffCode>
+            <energysmartCode>HOU045</energysmartCode>
+            <smartmetergasyes>yes</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>AnonymousESAcquisitionGas</string>
+        <Acquisition>
+            <fuelType>Gas</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyVariableDirectDebit</paymentType>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+    <entry>
+        <string>AnonymousESAcquisitionElec</string>
+        <Acquisition>
+            <fuelType>Elec</fuelType>
+            <gasSupplier>npower</gasSupplier>
+            <elecSupplier>npower</elecSupplier>
+            <password>password12</password>
+            <firstName>Va</firstName>
+            <lastName>tests</lastName>
+            <title>Mr</title>
+            <day>7</day>
+            <month>January</month>
+            <year>1989</year>
+            <telephoneType>Work</telephoneType>
+            <emailType>Work</emailType>
+            <mobileNumber>0123456789</mobileNumber>
+            <postCode>rm38xb</postCode>
+            <address>Stronghold Works 4, Stronghold Works, 4, Langley Close, ROMFORD, Essex, RM3 8XB</address>
+            <monthsLived>4</monthsLived>
+            <yearsLived>4</yearsLived>
+            <currentGasSupplier>Credit Meter</currentGasSupplier>
+            <currentElecSupplier>Single Rate Credit</currentElecSupplier>
+            <accountNumber>01234567</accountNumber>
+            <accountName>Dhiru</accountName>
+            <sortCode1>40</sortCode1>
+            <sortCode2>40</sortCode2>
+            <sortCode3>40</sortCode3>
+            <payday>7</payday>
+            <paymentType>MonthlyVariableDirectDebit</paymentType>
+            <createPassword>password12</createPassword>
+            <retypePassword>password12</retypePassword>
+            <securityQuestion>Place of birth</securityQuestion>
+            <securityAnswer>chennai</securityAnswer>
+            <smartmetergasyes>no</smartmetergasyes>
+			<smartmeterelecyes>no</smartmeterelecyes>
+        </Acquisition>
+    </entry>
+</map>

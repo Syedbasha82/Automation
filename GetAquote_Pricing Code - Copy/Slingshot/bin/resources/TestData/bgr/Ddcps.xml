@@ -1,0 +1,44 @@
+<map>
+	<entry>
+		<string>DdcpsTestData</string>
+			<Ddcps>
+			
+			<bankFirstName>Colin</bankFirstName>
+			<bankLastName>kandaiah</bankLastName>
+			<dateOfBirth>5</dateOfBirth>
+			<monthOfBirh>3</monthOfBirh>
+			<yearOfBirth>6</yearOfBirth>
+			<sortCode1>07</sortCode1>
+			<sortCode2>01</sortCode2>
+			<sortCode3>16</sortCode3>
+			<bankAccountNumber>00003045</bankAccountNumber>
+			
+			<cardType>1</cardType>
+			<cardHolderName>avis</cardHolderName>
+			<cardNumber>4539791001730106</cardNumber>
+			<cardStartMonth>1</cardStartMonth>
+			<cardStartYear>9</cardStartYear>
+			<cardEndMonth>9</cardEndMonth>
+			<cardEndYear>3</cardEndYear>
+			<cardCVV>123</cardCVV>
+			
+			<payDueAmount>10</payDueAmount>
+			<paymentDay>5</paymentDay>
+			<mkpAmount>2</mkpAmount>
+			<adjustMonthlyAmount>23</adjustMonthlyAmount>
+			<refundAmount>3</refundAmount>
+			
+			<updateFirstName>Colin</updateFirstName>
+			<updateLastName>kandaiah</updateLastName>
+			<updateDOB>3</updateDOB>
+			<updateMOB>5</updateMOB>
+			<updateYOB>6</updateYOB>
+			<updateSortCode1>07</updateSortCode1>
+			<updateSortCode2>01</updateSortCode2>
+			<updateSortCode3>16</updateSortCode3>
+			<updateAccountNumber>00003045</updateAccountNumber>
+			
+			</Ddcps>
+			
+	</entry>
+</map>

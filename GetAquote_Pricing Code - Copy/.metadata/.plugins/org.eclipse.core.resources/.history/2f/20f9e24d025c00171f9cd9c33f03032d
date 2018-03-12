@@ -1,0 +1,14 @@
+<suite name="Acquisition">
+    <test name="Acquisition">
+      <classes>	
+ 	  <class name="bg.framework.app.functional.test.reFactoring.SEGetAQuoteTest">
+	        <methods>
+	        
+	        	          			<include name="VerifyGetaQuotePricing_AnonymousJourney"/>
+	        	          			
+	        	          			
+	        </methods>
+	  </class>          
+        </classes>
+      </test>
+</suite>

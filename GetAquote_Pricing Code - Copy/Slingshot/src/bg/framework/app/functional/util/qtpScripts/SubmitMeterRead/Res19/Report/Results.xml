@@ -1,0 +1,601 @@
+﻿<?xml version="1.0"?>
+<!DOCTYPE Report
+[
+<!ELEMENT Report (General ,(Doc|BPT)) >
+<!ATTLIST Report ver CDATA #REQUIRED tmZone CDATA #REQUIRED>
+
+<!ELEMENT General ( DocLocation ) >
+<!ATTLIST General productName CDATA #REQUIRED productVer CDATA #REQUIRED os CDATA #REQUIRED host CDATA #REQUIRED qcserver CDATA #IMPLIED qcproject CDATA #IMPLIED  >
+
+<!ELEMENT BPT (DName,Res,DVer?,TSet?,TInst?,NodeArgs,AdditionalInfo*,Doc*) >
+<!ATTLIST BPT rID ID #REQUIRED >
+
+<!ELEMENT Doc (DName,ConfName?,Res,DVer?,TSet?,TInst?,RunType?,DT?,AdditionalInfo*,Step*,DIter*,Step*,Action*,Doc*,Summary?,TestMaintenanceSummary*,NodeArgs?) >
+<!ATTLIST Doc rID ID #REQUIRED type (Test|BC|BPTWrapperTest|Flow|Group) "Test" productName CDATA #REQUIRED BCIter CDATA #IMPLIED >
+
+<!ELEMENT RunType ( #PCDATA )>
+<!ATTLIST RunType fmStep (False|True) "False" batch (False|True) "False" upDesc (False|True) "False" upChk (False|True) "False" upAS (False|True) "False">
+
+<!ELEMENT DName ( #PCDATA ) >
+
+<!ELEMENT ConfName ( #PCDATA ) >
+
+<!ELEMENT Res ( #PCDATA ) >
+
+<!ELEMENT AdditionalInfo (AdditionalDataName,AdditionalDataValue ) >
+
+<!ELEMENT AdditionalDataName ( #PCDATA ) >
+
+<!ELEMENT AdditionalDataValue ( #PCDATA ) >
+
+<!ELEMENT DVer ( #PCDATA ) >
+
+<!ELEMENT TSet ( #PCDATA ) >
+
+<!ELEMENT TInst ( #PCDATA ) >
+
+<!ELEMENT DIter (Step*,Action+,Summary?,NodeArgs)>
+<!ATTLIST DIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT DocLocation ( #PCDATA )>
+
+<!ELEMENT Action (AName,AIter*,(Step|HtmlStep|Action)*,Summary,ActionMaintenanceSummary*,NodeArgs ) >
+<!ATTLIST Action rID ID #REQUIRED>
+
+<!ELEMENT AIter ((Step|HtmlStep|Action)*,Summary?,NodeArgs) >
+<!ATTLIST AIter rID ID #REQUIRED iterID CDATA #REQUIRED>
+
+<!ELEMENT AName ( #PCDATA ) >
+
+<!ELEMENT TestMaintenanceSummary (ActionMaintenanceSummary*) >
+<!ATTLIST TestMaintenanceSummary ObjectsAdded CDATA #REQUIRED ObjectsUpdated CDATA #REQUIRED StepsUpdated CDATA #REQUIRED StepsComments CDATA #REQUIRED><!ELEMENT ActionMaintenanceSummary (ObjectChange* ) >
+<!ATTLIST ActionMaintenanceSummary Action CDATA #REQUIRED Objects CDATA #REQUIRED Updated CDATA #REQUIRED LinesTotal CDATA #REQUIRED Added CDATA #REQUIRED LinesUpdated CDATA #REQUIRED>
+
+<!ELEMENT ObjectChange  (Hierarchy, PropertyChangeList* ) >
+<!ATTLIST ObjectChange Operation CDATA #IMPLIED OriginalRepository CDATA #IMPLIED>
+
+<!ELEMENT PropertyChangeList (PropertyDef*) >
+
+<!ELEMENT PropertyDef (OriginalValue, NewValue) >
+<!ATTLIST PropertyDef PropName CDATA #REQUIRED OriginRegularExpression (True|False) "False" NewRegularExpression (True|False) "False" AddedProperty (True|False) "False" >
+
+<!ELEMENT OriginalValue ( #PCDATA )>
+
+<!ELEMENT NewValue ( #PCDATA )>
+
+<!ELEMENT Hierarchy  (ObjectName, Hierarchy*) >
+<!ATTLIST Hierarchy MicClass CDATA #REQUIRED>
+
+<!ELEMENT ObjectName  ( #PCDATA ) >
+
+<!ELEMENT Step (Obj,Details,Time,TimeTick* ,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST Step rID ID #REQUIRED retval CDATA #IMPLIED>
+
+<!ELEMENT HtmlStep (HTML,TimeTick*,(Step|HtmlStep|Doc)*,NodeArgs) >
+<!ATTLIST HtmlStep rID ID #REQUIRED >
+
+<!ELEMENT Obj ( #PCDATA ) >
+<!ATTLIST Obj plainTxt (False|True) "True">
+
+<!ELEMENT Details ( #PCDATA ) >
+<!ATTLIST Details plainTxt (False|True) "True">
+
+<!ELEMENT Time ( #PCDATA ) >
+
+<!ELEMENT HTML ( #PCDATA ) >
+
+<!ELEMENT Disp ( #PCDATA ) >
+
+<!ELEMENT TimeTick ( #PCDATA ) >
+
+<!ELEMENT NodeArgs (Disp,TopPane?,BtmPane?,ExtendedInfo? )>
+<!ATTLIST NodeArgs eType CDATA #REQUIRED icon CDATA #REQUIRED nRep CDATA #REQUIRED UserNote CDATA #IMPLIED filter (False|True) "True">
+<!ATTLIST NodeArgs status (Passed|Failed|Done|Warning|Information) "Done">
+<!ATTLIST NodeArgs iconSel CDATA #IMPLIED nType CDATA #IMPLIED MovieMarker CDATA "">
+<!ATTLIST NodeArgs Source CDATA #IMPLIED SourceLine CDATA #IMPLIED >
+
+<!ELEMENT TopPane (Path)>
+
+<!ELEMENT BtmPane ( (Path|WR)?,ASHilite?)>
+<!ATTLIST BtmPane vType CDATA "HTML">
+
+<!ELEMENT Path ( #PCDATA ) >
+
+<!ELEMENT ASHilite ( #PCDATA ) >
+
+<!ELEMENT WR ( #PCDATA ) >
+
+<!ELEMENT ExtendedInfo ( StepData ) >
+
+<!ATTLIST ExtendedInfo StepType CDATA #REQUIRED>
+<!ELEMENT DT (NodeArgs) >
+<!ATTLIST DT rID ID #REQUIRED>
+
+<!ELEMENT Summary (Param*)>
+<!ATTLIST Summary sTime CDATA #IMPLIED eTime CDATA #IMPLIED passed CDATA #IMPLIED failed CDATA #IMPLIED warnings CDATA #IMPLIED retval CDATA #IMPLIED stopped (False|True) "False" >
+
+<!ELEMENT Param (ParamName,ParamVal)+ >
+<!ATTLIST Param paramInOut (In|Out) "In">
+
+<!ELEMENT ParamName ( #PCDATA ) >
+
+<!ELEMENT ParamVal ( #PCDATA ) >
+
+]
+>
+<Report ver="2.0" tmZone="India Standard Time">
+<General productName="QuickTest Professional" productVer="11.00" os="Windows 7" host="PC176102"><DocLocation><![CDATA[D:\karthi\TetrisProject\TetrisProject\Slingshot\src\bg\framework\app\functional\util\qtpScripts\SubmitMeterRead]]></DocLocation></General>
+<Doc rID="T1"   productName= "QuickTest Professional"  >
+<DName><![CDATA[SubmitMeterRead]]></DName>
+<Res><![CDATA[Res19]]></Res>
+<DT rID="T2">
+<NodeArgs eType="Table" icon="2" nRep="4" filter="False" >
+<Disp><![CDATA[Run-Time Data Table]]></Disp>
+<BtmPane vType="Table">
+<Path><![CDATA[Default.xls]]></Path>
+</BtmPane>
+</NodeArgs>
+</DT>
+<DIter rID="T3" iterID="1" >
+<Action rID="T4">
+<AName><![CDATA[Action1]]></AName>
+<Step rID="T5">
+<Obj plainTxt="False" ><![CDATA[Session]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiSession]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:05]]></Time>
+<TimeTick>1384494665</TimeTick>
+<Step rID="T6">
+<Obj plainTxt="False" ><![CDATA[wndSAPEasyAccess]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:05]]></Time>
+<TimeTick>1384494665</TimeTick>
+<Step rID="T7">
+<Obj plainTxt="False" ><![CDATA[wndSAPEasyAccess.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:05]]></Time>
+<TimeTick>1384494665</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="10" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndSAPEasyAccess.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T8">
+<Obj plainTxt="False" ><![CDATA["OKCode":Set "/n ECENV_BP"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "/n ECENV_BP"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:05]]></Time>
+<TimeTick>1384494665</TimeTick>
+<NodeArgs eType="Replay" icon="7" nRep="12" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["OKCode":Set "/n ECENV_BP"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T9">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:05]]></Time>
+<TimeTick>1384494665</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="14" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="9" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndSAPEasyAccess]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T10">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironmentBusiness]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:07]]></Time>
+<TimeTick>1384494667</TimeTick>
+<Step rID="T11">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironmentBusiness.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:07]]></Time>
+<TimeTick>1384494667</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="16" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironmentBusiness.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T12">
+<Obj plainTxt="False" ><![CDATA[edtBusiness Partner.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:09]]></Time>
+<TimeTick>1384494669</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="17" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[edtBusiness Partner.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T13">
+<Obj plainTxt="False" ><![CDATA["edtBusiness Partner":Set "2001578368"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Set "2001578368"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:09]]></Time>
+<TimeTick>1384494669</TimeTick>
+<NodeArgs eType="Replay" icon="8" nRep="19" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["edtBusiness Partner":Set "2001578368"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T14">
+<Obj plainTxt="False" ><![CDATA[SendKey ENTER]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey ENTER]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:09]]></Time>
+<TimeTick>1384494669</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="21" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey ENTER]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="15" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironmentBusiness]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T15">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:11]]></Time>
+<TimeTick>1384494671</TimeTick>
+<Step rID="T16">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:11]]></Time>
+<TimeTick>1384494671</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="23" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="22" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T17">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:11]]></Time>
+<TimeTick>1384494671</TimeTick>
+<Step rID="T18">
+<Obj plainTxt="False" ><![CDATA["Collapse subtree   (Ctrl+Shift":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:11]]></Time>
+<TimeTick>1384494671</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="26" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Collapse subtree   (Ctrl+Shift":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="25" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment_2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T19">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:18]]></Time>
+<TimeTick>1384494678</TimeTick>
+<Step rID="T20">
+<Obj plainTxt="False" ><![CDATA["":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:18]]></Time>
+<TimeTick>1384494678</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="29" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="28" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T21">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment_2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:20]]></Time>
+<TimeTick>1384494680</TimeTick>
+<Step rID="T22">
+<Obj plainTxt="False" ><![CDATA["Expand subtree   (Ctrl+Shift+F":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:20]]></Time>
+<TimeTick>1384494680</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="32" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Expand subtree   (Ctrl+Shift+F":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="31" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment_2]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T23">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:27]]></Time>
+<TimeTick>1384494687</TimeTick>
+<Step rID="T24">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:27]]></Time>
+<TimeTick>1384494687</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="34" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T25">
+<Obj plainTxt="False" ><![CDATA["IS-U Installation":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:27]]></Time>
+<TimeTick>1384494687</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="36" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["IS-U Installation":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T26">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:27]]></Time>
+<TimeTick>1384494687</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="38" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="33" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T27">
+<Obj plainTxt="False" ><![CDATA[wndDisplayInstallation]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:31]]></Time>
+<TimeTick>1384494691</TimeTick>
+<Step rID="T28">
+<Obj plainTxt="False" ><![CDATA[wndDisplayInstallation.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:31]]></Time>
+<TimeTick>1384494691</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="40" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDisplayInstallation.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T29">
+<Obj plainTxt="False" ><![CDATA["btnBillingPeriods":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:31]]></Time>
+<TimeTick>1384494691</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="42" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["btnBillingPeriods":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="39" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDisplayInstallation]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T30">
+<Obj plainTxt="False" ><![CDATA[wndBillingViewofInstallation]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:35]]></Time>
+<TimeTick>1384494695</TimeTick>
+<Step rID="T31">
+<Obj plainTxt="False" ><![CDATA[wndBillingViewofInstallation.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:35]]></Time>
+<TimeTick>1384494695</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="44" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndBillingViewofInstallation.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T32">
+<Obj plainTxt="False" ><![CDATA["tabMYTABSTRIP":Select "MR result"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "MR result"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:35]]></Time>
+<TimeTick>1384494695</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="46" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["tabMYTABSTRIP":Select "MR result"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T33">
+<Obj plainTxt="False" ><![CDATA[wndBillingViewofInstallation.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:38]]></Time>
+<TimeTick>1384494698</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="47" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndBillingViewofInstallation.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T34">
+<Obj plainTxt="False" ><![CDATA["grdBillingRelevantMeterReading":GetCellData 1,"Meter reading date"]]></Obj>
+<Details plainTxt="False" ><![CDATA[GetCellData 1,"Meter reading date"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:38]]></Time>
+<TimeTick>1384494698</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="49" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["grdBillingRelevantMeterReading":GetCellData 1,"Meter reading date"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T35">
+<Obj plainTxt="False" ><![CDATA["grdBillingRelevantMeterReading":GetCellData 1,"Meter read. f. billing"]]></Obj>
+<Details plainTxt="False" ><![CDATA[GetCellData 1,"Meter read. f. billing"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:38]]></Time>
+<TimeTick>1384494698</TimeTick>
+<NodeArgs eType="Replay" icon="12" nRep="51" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["grdBillingRelevantMeterReading":GetCellData 1,"Meter read. f. billing"]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="43" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndBillingViewofInstallation]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T36">
+<Obj plainTxt="False" ><![CDATA["btnBackButton":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:38]]></Time>
+<TimeTick>1384494698</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="53" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["btnBackButton":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T37">
+<Obj plainTxt="False" ><![CDATA["btnBackButton":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:39]]></Time>
+<TimeTick>1384494699</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="55" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["btnBackButton":Click]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T38">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:39]]></Time>
+<TimeTick>1384494699</TimeTick>
+<Step rID="T39">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:39]]></Time>
+<TimeTick>1384494699</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="57" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T40">
+<Obj plainTxt="False" ><![CDATA[wndDataEnvironment.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:41]]></Time>
+<TimeTick>1384494701</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="58" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T41">
+<Obj plainTxt="False" ><![CDATA["Device":SetFocus]]></Obj>
+<Details plainTxt="False" ><![CDATA[SetFocus]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:42]]></Time>
+<TimeTick>1384494702</TimeTick>
+<NodeArgs eType="Replay" icon="10" nRep="60" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["Device":SetFocus]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T42">
+<Obj plainTxt="False" ><![CDATA[SendKey F2]]></Obj>
+<Details plainTxt="False" ><![CDATA[SendKey F2]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:42]]></Time>
+<TimeTick>1384494702</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="62" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[SendKey F2]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="56" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDataEnvironment]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T43">
+<Obj plainTxt="False" ><![CDATA[wndDisplayMaterialSerial]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:45]]></Time>
+<TimeTick>1384494705</TimeTick>
+<Step rID="T44">
+<Obj plainTxt="False" ><![CDATA[wndDisplayMaterialSerial.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:45]]></Time>
+<TimeTick>1384494705</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="64" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDisplayMaterialSerial.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T45">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP":Select "General"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "General"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:46]]></Time>
+<TimeTick>1384494706</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="66" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["TABSTRIP":Select "General"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T46">
+<Obj plainTxt="False" ><![CDATA[wndDisplayMaterialSerial.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:48]]></Time>
+<TimeTick>1384494708</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="67" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDisplayMaterialSerial.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T47">
+<Obj plainTxt="False" ><![CDATA["TABSTRIP":Select "Location"]]></Obj>
+<Details plainTxt="False" ><![CDATA[Select "Location"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:48]]></Time>
+<TimeTick>1384494708</TimeTick>
+<NodeArgs eType="Replay" icon="11" nRep="69" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["TABSTRIP":Select "Location"]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T48">
+<Obj plainTxt="False" ><![CDATA["btnDisplay":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:49]]></Time>
+<TimeTick>1384494709</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="71" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["btnDisplay":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="63" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[wndDisplayMaterialSerial]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T49">
+<Obj plainTxt="False" ><![CDATA[Address maintenance: Display]]></Obj>
+<Details plainTxt="False" ><![CDATA[SAPGuiWindow]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:53]]></Time>
+<TimeTick>1384494713</TimeTick>
+<Step rID="T50">
+<Obj plainTxt="False" ><![CDATA[Address maintenance: Display.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:53]]></Time>
+<TimeTick>1384494713</TimeTick>
+<NodeArgs eType="Replay" icon="6" nRep="73" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Address maintenance: Display.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T51">
+<Obj plainTxt="False" ><![CDATA["btnClose":Click]]></Obj>
+<Details plainTxt="False" ><![CDATA[Click]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:53]]></Time>
+<TimeTick>1384494713</TimeTick>
+<NodeArgs eType="Replay" icon="9" nRep="75" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA["btnClose":Click]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="6" nRep="72" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Address maintenance: Display]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T52">
+<Obj plainTxt="False" ><![CDATA[Session.Exist]]></Obj>
+<Details plainTxt="False" ><![CDATA["Object exists"]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:55]]></Time>
+<TimeTick>1384494715</TimeTick>
+<NodeArgs eType="Replay" icon="5" nRep="76" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Session.Exist]]></Disp>
+</NodeArgs>
+</Step>
+<Step rID="T53">
+<Obj plainTxt="False" ><![CDATA[Close]]></Obj>
+<Details plainTxt="False" ><![CDATA[Close]]></Details>
+<Time><![CDATA[11/15/2013 - 11:21:55]]></Time>
+<TimeTick>1384494715</TimeTick>
+<NodeArgs eType="Replay" icon="5" nRep="78" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Close]]></Disp>
+</NodeArgs>
+</Step>
+<NodeArgs eType="Context" icon="5" nRep="8" Source="Action1" SourceLine="-1" >
+<Disp><![CDATA[Session]]></Disp>
+</NodeArgs>
+</Step>
+<Summary sTime="11/15/2013 - 11:20:56" eTime="11/15/2013 - 11:21:56" passed="0" failed="0" warnings="0" ></Summary>
+<NodeArgs eType="StartAction" icon="4" nRep="7" >
+<Disp><![CDATA[Action1 Summary]]></Disp>
+</NodeArgs>
+</Action>
+<NodeArgs eType="StartIteration" icon="3" nRep="6" >
+<Disp><![CDATA[SubmitMeterRead Iteration 1 (Row 1)]]></Disp>
+</NodeArgs>
+</DIter>
+<Summary sTime="11/15/2013 - 11:20:54" eTime="11/15/2013 - 11:21:56" passed="0" failed="0" warnings="0" ><Param ><ParamName><![CDATA[BpOrgNumber]]></ParamName><ParamVal><![CDATA[]]></ParamVal>
+</Param>
+<Param ><ParamName><![CDATA[Accountnumber]]></ParamName><ParamVal><![CDATA[]]></ParamVal>
+</Param>
+</Summary>
+<NodeArgs eType="StartTest" icon="1" nRep="3" >
+<Disp><![CDATA[Test SubmitMeterRead Summary]]></Disp>
+</NodeArgs>
+</Doc>
+</Report>

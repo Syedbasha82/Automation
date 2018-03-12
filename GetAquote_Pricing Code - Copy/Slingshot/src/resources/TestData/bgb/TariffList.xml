@@ -1,0 +1,47 @@
+<map>
+<entry>
+<string>TariffNames</string>
+<TariffList>
+<tariff1>Fixed Price July 2016</tariff1>  
+<pay11>Direct debit - VDD</pay11>
+<pay12>Cash or Cheque</pay12>
+<pay13></pay13>
+<tariff2>Standard</tariff2>
+<pay21></pay21>
+<pay22></pay22>
+<pay23></pay23>
+<tariff3></tariff3>
+<pay31></pay31>
+<pay32></pay32>
+<pay33></pay33>
+<tariff4></tariff4>
+<pay41></pay41>
+<pay42></pay42>
+<pay43></pay43>
+<tariff5></tariff5>
+<pay51></pay51>
+<pay52></pay52>
+<pay53></pay53>
+<tariff6></tariff6>
+<pay61></pay61>
+<pay62></pay62>
+<pay63></pay63>
+<tariff7></tariff7>
+<pay71></pay71>
+<pay72></pay72>
+<pay73></pay73>
+<tariff8></tariff8>
+<pay81></pay81>
+<pay82></pay82>
+<pay83></pay83>
+<tariff9></tariff9>
+<pay91></pay91>
+<pay92></pay92>
+<pay93></pay93>
+<tariff10></tariff10>
+<pay101></pay101>
+<pay102></pay102>
+<pay103></pay103>
+</TariffList>
+</entry>
+</map>

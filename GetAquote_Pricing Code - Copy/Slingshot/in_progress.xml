@@ -1,0 +1,10 @@
+<suite name="InProgress" verbose="10">
+    <test name="InProgress">
+        <groups>
+            <run><include name="InProgress" /></run>
+        </groups>
+        <packages>
+            <package name="bg.framework.app.functional.test"/>
+        </packages>
+    </test>
+</suite>

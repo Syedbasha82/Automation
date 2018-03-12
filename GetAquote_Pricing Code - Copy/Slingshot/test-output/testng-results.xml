@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Acquisition" duration-ms="4971435" started-at="2018-01-09T13:09:32Z" finished-at="2018-01-09T14:32:23Z">
+    <groups>
+      <group name="Smoke">
+        <method signature="GetAquoteTest.VerifyGetaQuotePricing_AnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="VerifyGetaQuotePricing_AnonymousJourney" class="bg.framework.app.functional.test.reFactoring.GetAquoteTest"/>
+      </group> <!-- Smoke -->
+      <group name="Slingshot">
+        <method signature="GetAquoteTest.VerifyGetaQuotePricing_AnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="VerifyGetaQuotePricing_AnonymousJourney" class="bg.framework.app.functional.test.reFactoring.GetAquoteTest"/>
+      </group> <!-- Slingshot -->
+      <group name="BGBRegistration">
+        <method signature="GetAquoteTest.VerifyGetaQuotePricing_AnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="VerifyGetaQuotePricing_AnonymousJourney" class="bg.framework.app.functional.test.reFactoring.GetAquoteTest"/>
+      </group> <!-- BGBRegistration -->
+    </groups>
+    <test name="Acquisition" duration-ms="4971435" started-at="2018-01-09T13:09:32Z" finished-at="2018-01-09T14:32:23Z">
+      <class name="bg.framework.app.functional.test.reFactoring.GetAquoteTest">
+        <test-method status="PASS" signature="CreateTestLogPath()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="CreateTestLogPath" is-config="true" duration-ms="63" started-at="2018-01-09T18:39:32Z" finished-at="2018-01-09T18:39:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CreateTestLogPath -->
+        <test-method status="PASS" signature="setUp(java.lang.reflect.Method)[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="setUp" is-config="true" duration-ms="27678" started-at="2018-01-09T18:39:32Z" finished-at="2018-01-09T18:40:00Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void bg.framework.app.functional.test.reFactoring.GetAquoteTest.VerifyGetaQuotePricing_AnonymousJourney() throws java.lang.Exception]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="VerifyGetaQuotePricing_AnonymousJourney()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="VerifyGetaQuotePricing_AnonymousJourney" duration-ms="4943695" started-at="2018-01-09T18:40:00Z" finished-at="2018-01-09T20:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- VerifyGetaQuotePricing_AnonymousJourney -->
+        <test-method status="PASS" signature="reportWrapUp()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="reportWrapUp" is-config="true" duration-ms="16" started-at="2018-01-09T20:02:23Z" finished-at="2018-01-09T20:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reportWrapUp -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:bg.framework.app.functional.test.reFactoring.GetAquoteTest@186c6b2]" name="tearDown" is-config="true" duration-ms="0" started-at="2018-01-09T20:02:23Z" finished-at="2018-01-09T20:02:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- bg.framework.app.functional.test.reFactoring.GetAquoteTest -->
+    </test> <!-- Acquisition -->
+  </suite> <!-- Acquisition -->
+</testng-results>
