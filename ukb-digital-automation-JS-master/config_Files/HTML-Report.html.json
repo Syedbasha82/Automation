@@ -1,0 +1,79 @@
+[
+  {
+    "elements": [
+      {
+        "id": "perform-submit-meter-reading-in-\"british-gas\"-business-application;to-validate-that-if-the-customer-is-getting-proper-error-message-when-giving-invalid-post-code",
+        "keyword": "Scenario",
+        "line": 5,
+        "name": "To validate that if the customer is getting proper error message when giving invalid post code",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "the url to perform ASMR",
+            "result": {
+              "status": "passed",
+              "duration": 1298759
+            },
+            "line": 7,
+            "match": {
+              "location": "D:\\ukb-digital-automation-JS-master\\cucumber_POM\\features\\ASMR.steps.js:17"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "name": "user should navigate to the SMR page",
+            "result": {
+              "status": "passed",
+              "duration": 2713044
+            },
+            "line": 8,
+            "match": {
+              "location": "D:\\ukb-digital-automation-JS-master\\cucumber_POM\\features\\ASMR.steps.js:21"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "name": "user should enter the account Number,postcode,email address for \"Invalid_Postcode\"",
+            "result": {
+              "status": "passed",
+              "duration": 29169722
+            },
+            "line": 9,
+            "match": {
+              "location": "D:\\ukb-digital-automation-JS-master\\cucumber_POM\\features\\ASMR.steps.js:26"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "name": "user should verify \"The postcode you've entered for this account doesn't match our records. It should match the postcode on your bill.\" error message for \"Invalid_Postcode\"",
+            "result": {
+              "status": "passed",
+              "duration": 663509
+            },
+            "line": 10,
+            "match": {
+              "location": "D:\\ukb-digital-automation-JS-master\\cucumber_POM\\features\\ASMR.steps.js:31"
+            }
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ASMRPostCodeInvalid",
+            "line": 3
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "perform-submit-meter-reading-in-\"british-gas\"-business-application",
+    "keyword": "Feature",
+    "line": 1,
+    "name": "Perform submit Meter Reading in \"British Gas\" business application",
+    "tags": [],
+    "uri": "D:\\ukb-digital-automation-JS-master\\cucumber_POM\\features\\Features\\ASMR.feature"
+  }
+]

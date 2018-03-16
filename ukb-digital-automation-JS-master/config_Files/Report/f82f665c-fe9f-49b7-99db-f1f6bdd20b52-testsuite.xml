@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ns2:test-suite xmlns:ns2="urn:model.allure.qatools.yandex.ru" start="1521039219423" stop="1521039380712">
+	<name>Perform submit Meter Reading in &quot;British Gas&quot; business application</name>
+	<title>Perform submit Meter Reading in &quot;British Gas&quot; business application</title>
+	<test-cases>
+		<test-case start="1521039219423" stop="1521039254406" status="passed">
+			<name>To validate that if the customer is getting meter read details when giving valid details for Single Registers</name>
+			<title>To validate that if the customer is getting meter read details when giving valid details for Single Registers</title>
+			<description></description>
+			<labels>
+				<label name="Launch URL" value=""/>
+				<label name="Launch URL" value=""/>
+			</labels>
+			<parameters>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+			</parameters>
+			<steps>
+				<step start="1521039219423" stop="1521039229689" status="passed">
+					<name>the url to perform ASMR</name>
+					<title>the url to perform ASMR</title>
+					<attachments>
+						<attachment title="Screenshot" source="4d34d014-7037-499f-ba05-bc36f54dc809-attachment.png" type="image/png" size="90013"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039229689" stop="1521039246001" status="passed">
+					<name>user should navigate to the SMR page</name>
+					<title>user should navigate to the SMR page</title>
+					<attachments>
+						<attachment title="Screenshot" source="cb233d3b-0d6d-4e73-9e66-e99025e4ba4c-attachment.png" type="image/png" size="95523"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039246001" stop="1521039247112" status="passed">
+					<name>user should enter the account Number,postcode,email address for &quot;SubmitMeterRead_Gas&quot;</name>
+					<title>user should enter the account Number,postcode,email address for &quot;SubmitMeterRead_Gas&quot;</title>
+					<attachments>
+						<attachment title="Screenshot" source="f0553c11-3109-4692-9333-cf6390c4dba2-attachment.png" type="image/png" size="108407"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039247112" stop="1521039248580" status="passed">
+					<name>user should verify Account Number, Fuel Type and Meter serial number from meter details page</name>
+					<title>user should verify Account Number, Fuel Type and Meter serial number from meter details page</title>
+					<attachments>
+						<attachment title="Screenshot" source="5cf9e7d3-ffb8-44cb-adf3-bde8ce502140-attachment.png" type="image/png" size="81662"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039248580" stop="1521039249979" status="passed">
+					<name>user should submit the meter read for Single Registers</name>
+					<title>user should submit the meter read for Single Registers</title>
+					<attachments>
+						<attachment title="Screenshot" source="942ccbf4-3c97-421b-a2fb-d76afa7cd3f2-attachment.png" type="image/png" size="89334"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039249979" stop="1521039252621" status="passed">
+					<name>user should click submit button</name>
+					<title>user should click submit button</title>
+					<attachments>
+						<attachment title="Screenshot" source="3f5471b1-84be-4091-a6a3-65dbaea8ffba-attachment.png" type="image/png" size="129565"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039252621" stop="1521039254405" status="passed">
+					<name>user verify the &quot;Confirmation&quot; page title and Updated meter read values</name>
+					<title>user verify the &quot;Confirmation&quot; page title and Updated meter read values</title>
+					<attachments>
+						<attachment title="Screenshot" source="c0ff6273-fdd0-4277-be38-d823114c0763-attachment.png" type="image/png" size="100476"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1521039254408" stop="1521039332276" status="passed">
+			<name>To validate that if the customer is getting meter read details when giving valid details for Single Registers</name>
+			<title>To validate that if the customer is getting meter read details when giving valid details for Single Registers</title>
+			<description></description>
+			<labels>
+				<label name="Launch URL" value=""/>
+				<label name="Launch URL" value=""/>
+			</labels>
+			<parameters>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+			</parameters>
+			<steps>
+				<step start="1521039254408" stop="1521039269668" status="passed">
+					<name>the url to perform ASMR</name>
+					<title>the url to perform ASMR</title>
+					<attachments>
+						<attachment title="Screenshot" source="bd03392e-bc2c-4cdf-b963-566247104de0-attachment.png" type="image/png" size="87344"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039269668" stop="1521039301206" status="passed">
+					<name>user should navigate to the SMR page</name>
+					<title>user should navigate to the SMR page</title>
+					<attachments>
+						<attachment title="Screenshot" source="46906cc5-3b4b-4cba-a17a-2d3585e54851-attachment.png" type="image/png" size="94494"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039301206" stop="1521039302308" status="passed">
+					<name>user should enter the account Number,postcode,email address for &quot;SubmitMeterRead_Electricity&quot;</name>
+					<title>user should enter the account Number,postcode,email address for &quot;SubmitMeterRead_Electricity&quot;</title>
+					<attachments>
+						<attachment title="Screenshot" source="07385f40-e813-411d-b62f-248df94aa8cd-attachment.png" type="image/png" size="108711"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039302308" stop="1521039303515" status="passed">
+					<name>user should verify Account Number, Fuel Type and Meter serial number from meter details page</name>
+					<title>user should verify Account Number, Fuel Type and Meter serial number from meter details page</title>
+					<attachments>
+						<attachment title="Screenshot" source="e342a88e-f736-42af-954d-6ab12971c4f3-attachment.png" type="image/png" size="73751"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039303515" stop="1521039306086" status="passed">
+					<name>user should submit the meter read for Single Registers</name>
+					<title>user should submit the meter read for Single Registers</title>
+					<attachments>
+						<attachment title="Screenshot" source="353261c8-1eae-49b1-8123-48d48f57f60d-attachment.png" type="image/png" size="76926"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039306086" stop="1521039331596" status="passed">
+					<name>user should click submit button</name>
+					<title>user should click submit button</title>
+					<attachments>
+						<attachment title="Screenshot" source="ef19caf1-5401-4400-b553-535a6cb16901-attachment.png" type="image/png" size="99505"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039331596" stop="1521039332275" status="passed">
+					<name>user verify the &quot;Confirmation&quot; page title and Updated meter read values</name>
+					<title>user verify the &quot;Confirmation&quot; page title and Updated meter read values</title>
+					<attachments>
+						<attachment title="Screenshot" source="ba95eb10-78ee-40e3-90ad-cebee828fb9b-attachment.png" type="image/png" size="99499"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+		<test-case start="1521039332277" stop="1521039380711" status="passed">
+			<name>To validate that if the customer displayed with no option shown to customer to opt in reminders</name>
+			<title>To validate that if the customer displayed with no option shown to customer to opt in reminders</title>
+			<description></description>
+			<labels>
+				<label name="Launch URL" value=""/>
+				<label name="Launch URL" value=""/>
+			</labels>
+			<parameters>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+				<parameter kind="environment-variable" name="https://10.224.70.55/business/meterread/submit-meter-read" value=""/>
+			</parameters>
+			<steps>
+				<step start="1521039332277" stop="1521039339958" status="passed">
+					<name>the url to perform ASMR</name>
+					<title>the url to perform ASMR</title>
+					<attachments>
+						<attachment title="Screenshot" source="fe084d66-0ed0-4e0f-a44e-ac067a8dafed-attachment.png" type="image/png" size="87344"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039339958" stop="1521039350943" status="passed">
+					<name>user should navigate to the SMR page</name>
+					<title>user should navigate to the SMR page</title>
+					<attachments>
+						<attachment title="Screenshot" source="e3a95010-a715-4638-b1fc-f2638b9e2bfd-attachment.png" type="image/png" size="94545"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039350943" stop="1521039351899" status="passed">
+					<name>user should enter the account Number,postcode,email address for &quot;Reminder_Already_Submitted&quot;</name>
+					<title>user should enter the account Number,postcode,email address for &quot;Reminder_Already_Submitted&quot;</title>
+					<attachments>
+						<attachment title="Screenshot" source="d4ef39ad-a2c3-4d4b-9267-41e89d495010-attachment.png" type="image/png" size="108376"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039351899" stop="1521039352919" status="passed">
+					<name>user should verify Account Number, Fuel Type and Meter serial number from meter details page</name>
+					<title>user should verify Account Number, Fuel Type and Meter serial number from meter details page</title>
+					<attachments>
+						<attachment title="Screenshot" source="3fa60ee8-791c-4c32-aebd-a4c3a44b9e47-attachment.png" type="image/png" size="82671"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039352934" stop="1521039354254" status="passed">
+					<name>user should submit the meter read for Single Registers</name>
+					<title>user should submit the meter read for Single Registers</title>
+					<attachments>
+						<attachment title="Screenshot" source="6ec69d50-2c01-445f-8c98-09c12f2aa9be-attachment.png" type="image/png" size="88870"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039354254" stop="1521039379801" status="passed">
+					<name>user should click submit button</name>
+					<title>user should click submit button</title>
+					<attachments>
+						<attachment title="Screenshot" source="d8d16e41-1812-4e96-a482-7b709128b247-attachment.png" type="image/png" size="112152"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039379801" stop="1521039380296" status="passed">
+					<name>user verify the &quot;Confirmation&quot; page title and Updated meter read values</name>
+					<title>user verify the &quot;Confirmation&quot; page title and Updated meter read values</title>
+					<attachments>
+						<attachment title="Screenshot" source="ef65ddef-42ff-4389-9adc-655707e26736-attachment.png" type="image/png" size="112152"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+				<step start="1521039380296" stop="1521039380710" status="passed">
+					<name>user should able to see the message that customer already opted in for reminders</name>
+					<title>user should able to see the message that customer already opted in for reminders</title>
+					<attachments>
+						<attachment title="Screenshot" source="8202dd80-9337-4700-91c1-fb8fdf972365-attachment.png" type="image/png" size="112152"/>
+					</attachments>
+					<steps>
+					</steps>
+				</step>
+			</steps>
+			<attachments>
+			</attachments>
+		</test-case>
+	</test-cases>
+</ns2:test-suite>
